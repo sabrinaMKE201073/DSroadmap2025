@@ -1,5 +1,3 @@
-# SQL FUNDAMENTAL PART 1  
----
 ## Introduction to SQL
   
 In SQL, all data is stored in server's hard disk, where Servers are powerful computers that store information and perform services via requests made over a network.
