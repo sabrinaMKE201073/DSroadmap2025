@@ -26,17 +26,22 @@ example as follows:
 
 ## INTRODUCING QUERIES
 
+#### 1) SQL script
 
+SELECT
+FROM ;
 
+wildcard (to select all)
+SELECT *
 
 ## WRITING QUERIES
 
-
-
-
+AS (Aliasing)
+DISTINCT (Unique values)
+CREATE VIEW, used to save SQL Query
 
 ## SQL FLAVORS
- 
+
 
 
 
