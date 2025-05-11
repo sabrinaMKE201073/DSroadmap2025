@@ -41,6 +41,7 @@
 
 **2) ASC** (sort type: Ascending) 
 
+* SQL code:
 <pre>
 <code>
 SELECT title,budget
@@ -49,8 +50,14 @@ ORDER BY budget ASC;
 </code>
 </pre>
 
+* Output:
+<p align="left">
+  <img src="output_ASC.JPG" alt="output DESC" width="250">
+</p>
+
 **2) DESC** (sort type: Descending) 
-  
+
+* SQL code: 
 <pre>
 <code>
 SELECT title, budget
@@ -59,5 +66,9 @@ ORDER BY budget DESC;
 </code>
 </pre>
 
+* Output:
+<p align="left">
+  <img src="output_DESC.JPG" alt="output DESC" width="250">
+</p>
 
 ---
