@@ -117,11 +117,35 @@ ORDER BY birthdate ASC, name DESC;
 
 ### 5️⃣ Grouping the data
 
+```sql
+SELECT
+  certification,
+  language, COUNT(title) AS title_count
+FROM films
+GROUP BY certification, language;
 
+```
 
 
 ### 6️⃣ Filtered the grouped data
+📝 **HAVING**  
+- If using aggregate function, while grouping by category, must use `HAVING` instead of `WHERE` clause, 
+because if not, it will give error output
 
+- `HAVING` is for fitering GROUP records
+- `WHERE` is for filtering INDIVIDUAL records
+
+#### 🔹 Example: Using of HAVING function 
+
+```sql
+SELECT
+  release_year,
+  COUNT(title) AS title_count
+FROM films
+GROUP BY release_year
+HAVING COUNT(title) > 10;
+
+```
 
 ---
 
