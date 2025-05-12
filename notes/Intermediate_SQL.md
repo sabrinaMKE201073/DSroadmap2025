@@ -89,7 +89,7 @@ ORDER BY budget DESC;
 
 ### 4️⃣ Sorting by Multiple Fields
 
-#### 🔹 Example: Same Sort Direction (`DESC`)
+#### 🔸 Example: Same Sort Direction (`DESC`)
 
 ```sql
 SELECT title, wins, imdb_score
@@ -114,6 +114,14 @@ ORDER BY birthdate ASC, name DESC;
 <p align="left">
   <img src="output_mult_field2.JPG" alt="output mixed sort" width="230">
 </p>
+
+### 5️⃣ Grouping the data
+
+
+
+
+### 6️⃣ Filtered the grouped data
+
 
 ---
 
