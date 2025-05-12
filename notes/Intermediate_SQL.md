@@ -12,7 +12,8 @@
 ---
 ## Topic 1: Selecting Data
 
-
+COUNT()
+LIMIT
 
 
 
@@ -52,10 +53,10 @@ ORDER BY budget ASC;
 
 * Output:
 <p align="left">
-  <img src="output_ASC.JPG" alt="output DESC" width="250">
+  <img src="output_ASC.JPG" alt="output DESC" width="230">
 </p>
 
-**2) DESC** (sort type: Descending) 
+**3) DESC** (sort type: Descending) 
 
 * SQL code: 
 <pre>
@@ -68,7 +69,24 @@ ORDER BY budget DESC;
 
 * Output:
 <p align="left">
-  <img src="output_DESC.JPG" alt="output DESC" width="250">
+  <img src="output_DESC.JPG" alt="output DESC" width="230">
 </p>
 
+- In order to make sure null values not include in the table, add additional line for
+  WHERE budget IS NOT NULL as per below:
+  
+  <pre>
+  <code>
+  SELECT title, budget
+  FROM films
+  WHERE budget IS NOT NULL 
+  ORDER BY budget DESC;
+  </code>
+  </pre>
+
+  Hence, the output will be
+  * Output:
+  <p align="left">
+    <img src="output_DESC_2.JPG" alt="output DESC" width="230">
+  </p>
 ---
