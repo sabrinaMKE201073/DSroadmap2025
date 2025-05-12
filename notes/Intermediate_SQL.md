@@ -35,58 +35,106 @@ LIMIT
 
 
 ---
-## Topic 4: Sorting & Grouping
+## 📘 Topic 4: Sorting & Grouping in SQL
 
-**1) ORDER BY** 
-- this function will sort a column alphabetically(A-Z by default)
+### 1️⃣ `ORDER BY` Clause  
+Sorts a column alphabetically (A-Z) by default.
 
-**2) ASC** (sort type: Ascending) 
+---
 
-* SQL code:
-<pre>
-<code>
-SELECT title,budget
+### 2️⃣ Ascending Order: `ASC`
+
+```sql
+SELECT title, budget
 FROM films
 ORDER BY budget ASC;
-</code>
-</pre>
+```
 
-* Output:
+🖼️ Output:  
 <p align="left">
-  <img src="output_ASC.JPG" alt="output DESC" width="230">
+  <img src="output_ASC.JPG" alt="output ASC" width="230">
 </p>
 
-**3) DESC** (sort type: Descending) 
+---
 
-* SQL code: 
-<pre>
-<code>
+### 3️⃣ Descending Order: `DESC`
+
+```sql
 SELECT title, budget
 FROM films
 ORDER BY budget DESC;
-</code>
-</pre>
+```
 
-* Output:
+🖼️ Output:  
 <p align="left">
   <img src="output_DESC.JPG" alt="output DESC" width="230">
 </p>
 
-- In order to make sure null values not include in the table, add additional line for
-  WHERE budget IS NOT NULL as per below:
-  
-  <pre>
-  <code>
-  SELECT title, budget
-  FROM films
-  WHERE budget IS NOT NULL 
-  ORDER BY budget DESC;
-  </code>
-  </pre>
+📝 **Exclude NULL values**  
+To clean up your output and avoid `NULL`, add a `WHERE` clause:
 
-  Hence, the output will be
-  * Output:
-  <p align="left">
-    <img src="output_DESC_2.JPG" alt="output DESC" width="230">
-  </p>
+```sql
+SELECT title, budget
+FROM films
+WHERE budget IS NOT NULL 
+ORDER BY budget DESC;
+```
+
+🖼️ Output:  
+<p align="left">
+  <img src="output_DESC_2.JPG" alt="output DESC without nulls" width="230">
+</p>
+
+---
+
+### 4️⃣ Sorting by Multiple Fields
+
+#### 🔹 Example: Same Sort Direction (`DESC`)
+
+```sql
+SELECT title, wins, imdb_score
+FROM best_movies
+ORDER BY wins DESC, imdb_score DESC;
+```
+
+🖼️ Output:  
+<p align="left">
+  <img src="output_mult_field1.JPG" alt="output multiple fields DESC" width="230">
+</p>
+
+#### 🔸 Example: Mixed Sort Directions (ASC & DESC)
+
+```sql
+SELECT birthdate, name
+FROM people
+ORDER BY birthdate ASC, name DESC;
+```
+
+🖼️ Output:  
+<p align="left">
+  <img src="output_mult_field2.JPG" alt="output mixed sort" width="230">
+</p>
+
+---
+
+### ✅ Summary
+
+| Clause | Description |
+|--------|-------------|
+| `ORDER BY` | Sorts records by specified column(s) |
+| `ASC` | Sort in ascending order |
+| `DESC` | Sort in descending order |
+| Multiple fields | Separate by comma and define order per field |
+
+---
+
+
+
+
+
+
+
+
+
+  
 ---
