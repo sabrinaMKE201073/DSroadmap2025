@@ -1,20 +1,31 @@
 # 🧠 Topic: Introduction to Statistics in Python
 
 ## 🎯 Learning Objectives
-- [ ] Point 1
-- [ ] Point 2
-- [ ] Point 3
+- [ ] Understand and compute basic summary statistics in Python
+- [ ] Use NumPy functions for statistical analysis
+- [ ] Apply statistical concepts to analyze datasets
 
 ---
 
 ## 📖 Key Concepts
 
 ### ✅ Concept 1: Summary Statistics
-1) Variance
 
-2) 
+#### 🔹 1. Variance
+- Measures how spread out the data points are from the mean.
+- **Function**: `np.var()`
 
+```python
+import numpy as np
 
+data = [10, 12, 23, 23, 16, 23, 21, 16]
+variance = np.var(data)
+print("Variance:", variance)
+```
+
+3) Standard deviation
+
+- using np.std()
 
 
 
