@@ -17,11 +17,10 @@
 
 ```python
 import numpy as np
-
-data = [10, 12, 23, 23, 16, 23, 21, 16]
-variance = np.var(data)
-print("Variance:", variance)
+np.var (msleep['sleep_total'], ddof=1)
 ```
+
+Without ddof=1, population variance is calculated instead of sample variance.
 
 3) Standard deviation
 
