@@ -4,29 +4,38 @@
 - [ ] Understand and compute basic summary statistics in Python
 - [ ] Use NumPy functions for statistical analysis
 - [ ] Apply statistical concepts to analyze datasets
+---
+### ✅ Concept 1: Summary Statistics
 
 ---
 
-## 📖 Key Concepts
+### 🔷 1️⃣ Variance
 
-### ✅ Concept 1: Summary Statistics
+- Measures how spread out the data points are from the **mean**.
+- By default, `np.var()` calculates **population variance**.
+- Use `ddof=1` to calculate **sample variance** instead.
 
-#### 🔹 1. Variance
-- Measures how spread out the data points are from the mean.
-- **Function**: `np.var()`
-
+🧪 **Code Example**
 ```python
 import numpy as np
-np.var (msleep['sleep_total'], ddof=1)
+
+# Sample variance of 'sleep_total' column
+np.var(msleep['sleep_total'], ddof=1)
+```
+🔎 Note: Without ddof=1, you're computing population variance.
+
+### 🔷 2️⃣ Standard Deviation
+
+#### Option 1: Manually take the square root of the variance
+```python
+np.sqrt(np.var(msleep['sleep_total'], ddof=1))
+```
+#### Option 2: Use np.std directly
+```python
+np.std(msleep['sleep_total'], ddof=1)
 ```
 
-Without ddof=1, population variance is calculated instead of sample variance.
-
-3) Standard deviation
-
-- using np.std()
-
-
+---
 
 ### ✅ Concept 2: Random Numbers and Probability
 -- details
