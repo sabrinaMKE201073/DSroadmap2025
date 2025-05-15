@@ -87,9 +87,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 df = pd.read_csv("masculinity.csv")
-sns.countplot(x="how_masculine",
+sns.countplot(x="how_masculine",data=df)
 plt.show()
-data=df)
 ```
 <left>
   <img src="howmasculine_surveydata.JPG" alt="bar chart of how masculine dog data" width="370">
