@@ -3,7 +3,7 @@
 - easily read dataset from csv, txt & other type of files
 - when reading dataset with pandas, it will create DataFrame objects
 
-### 📍 working with DataFrame example
+### 📍 working with DataFrame example (read csv file)
 ```python
 import pandas as pd
 df = pd.read_csv("masculinity.csv")
