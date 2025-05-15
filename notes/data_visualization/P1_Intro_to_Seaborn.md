@@ -180,7 +180,7 @@ plt.show()
 
 ### Future reference: List of matplotlib colors code table
 <left>
-  <img src="matplotlib_colors.JPG" alt="color code by matplotlib" width="270">
+  <img src="matplotlib_colors.JPG" alt="color code by matplotlib" width="300">
 </left>
 
 ---
