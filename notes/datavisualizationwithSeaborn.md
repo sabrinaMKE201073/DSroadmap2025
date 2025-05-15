@@ -11,6 +11,7 @@ Advantages of seaborn
 - works well with Pandas
 - built on top of matplotlib
 
+#### Example 1: Scatter plot
 ```python
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -22,3 +23,72 @@ plt.show()
 <left>
   <img src="scatter_plot.JPG" alt="Scatter plot example" width="350">
 </left>
+
+#### Example 2: Count plot
+
+```python
+import seaborn as sns
+import matplotlib.pyplot as plt
+import pandas as pd
+
+gender = ["Female", "Female", "Female", "Female",
+          "Male", "Male", "Male", "Male", "Male", "Male"]
+df = pd.DataFrame({"Gender": gender})
+
+palette = {"Male": "skyblue", "Female": "lightcoral"}
+sns.countplot(data=df, x="Gender", palette=palette)
+plt.title("Gender Count")
+plt.show()
+```
+
+<left>
+  <img src="gender_countplot.JPG" alt="Scatter plot example" width="350">
+</left>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
