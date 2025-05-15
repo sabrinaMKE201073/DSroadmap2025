@@ -62,7 +62,6 @@ plt.show()
 <left>
   <img src="output_region.JPG" alt="output region" width="300">
 </left>
-
 - From the plot, Sub-Saharan Africa has the highest number of countries in the dataset.
 
 
