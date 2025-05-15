@@ -157,7 +157,28 @@ plt.show()
 
 ---
 
-### List of matplotlib colors code table
+### 📍 Exercise: Hue and Count plots
+```python
+# Create a dictionary mapping subgroup values to colors
+palette_colors = {"Rural": "green", "Urban": "blue"}
+
+# Create a count plot of school with location subgroups
+sns.countplot(data=student_data, 
+                x="school",
+                hue="location", 
+                palette=palette_colors)
+
+# Display plot
+plt.show()
+```
+<left>
+  <img src="hue_countplots.JPG" alt="student attended GP vs MS" width="270">
+</left>
+📌 Students at GP tend to come from an urban location, but students at MS are more evenly split.
+
+---
+
+### Future reference: List of matplotlib colors code table
 <left>
   <img src="matplotlib_colors.JPG" alt="color code by matplotlib" width="270">
 </left>
