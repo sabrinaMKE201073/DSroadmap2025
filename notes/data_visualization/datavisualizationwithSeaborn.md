@@ -11,7 +11,7 @@ Advantages of seaborn
 - works well with Pandas
 - built on top of matplotlib
 
-#### Example 1: Scatter plot
+### 📍 Scatter Plot — Visualizing Relationships
 ```python
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -21,10 +21,10 @@ sns.scatterplot(x=height, y=weight)
 plt.show()
 ```
 <left>
-  <img src="scatter_plot.JPG" alt="Scatter plot example" width="250">
+  <img src="scatter_plot.JPG" alt="Scatter plot example" width="300">
 </left>
 
-#### Example 2: Count plot
+### 📍 Count Plot — Visualizing Categorical Data
 
 ```python
 import seaborn as sns
@@ -42,10 +42,10 @@ plt.show()
 ```
 
 <left>
-  <img src="gender_countplot.JPG" alt="Scatter plot example" width="250">
+  <img src="gender_countplot.JPG" alt="Scatter plot example" width="300">
 </left>
 
-#### More example by exercise using GDP dataset
+### 📍 Exercise Example — Count of Countries by Region
 ```python
 # Import Matplotlib and Seaborn
 import seaborn as sns
@@ -58,11 +58,16 @@ sns.countplot(y=region)
 plt.show()
 ```
 <left>
-  <img src="output_region.JPG" alt="output region" width="250">
+  <img src="output_region.JPG" alt="output region" width="300">
 </left>
 
+- From the plot, Sub-Saharan Africa has the highest number of countries in the dataset.
 
 
+### 💬 What I Learned Today
+- Seaborn makes it easier to create beautiful visualizations.
+- Scatter plots are best for showing relationships between two continuous variables.
+- Count plots help visualize how common each category is.
 
 
 
