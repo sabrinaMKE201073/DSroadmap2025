@@ -23,6 +23,7 @@ plt.show()
   <img src="scatter_plot.JPG" alt="Scatter plot example" width="300">
 </left>
 📌 This scatter plot shows the relationship between height and weight — as height increases, weight tends to increase too.
+---
 
 ### 📍 Count Plot — Visualizing Categorical Data
 
@@ -45,6 +46,7 @@ plt.show()
   <img src="gender_countplot.JPG" alt="Scatter plot example" width="300">
 </left>
 📌 This count plot visualizes the number of individuals by gender — more males than females in this sample.
+---
 
 ### 📍 Exercise Example — Count of Countries by Region
 ```python
@@ -92,6 +94,7 @@ plt.show()
   <img src="howmasculine_surveydata.JPG" alt="bar chart of how masculine dog data" width="370">
 </left>
 📌 Most people rate dogs as “somewhat masculine”.
+---
 
 ### 📍 Exercise: Fear of Spiders 
 ```python
@@ -115,8 +118,10 @@ plt.show()
   <img src="tips_vs_totalbills.JPG" alt="tips vs total bills among customer" width="270">
 </left>
 📌 Higher total bills lead to higher tips. Smokers tend to have smaller bills.
+---
 
 ### 📍 Customizing Hue Colors
+
 ```python
 hue_colors= {"Yes": "black","No": "red"}
 sns.scatterplot(x="total_bill",y="tip",data=tips,hue="smoker", palette=hue_colors)
@@ -126,12 +131,14 @@ plt.show()
   <img src="hue_color.JPG" alt="spicifying hue color" width="270">
 </left>
 📌 Customized color palette for smoker groups.
+---
 
 ### List of matplotlib colors code table
 <left>
   <img src="matplotlib_colors.JPG" alt="color code by matplotlib" width="270">
 </left>
 
+---
 
 ### 🎓 What I Learned Today
 - Seaborn simplifies beautiful visualizations.
