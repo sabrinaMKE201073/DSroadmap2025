@@ -66,12 +66,12 @@ plt.show()
 
 ---
 
-#### What is Pandas?
+### What is Pandas?
 - Python lib for Data Analysis
 - easily read dataset from csv, txt & other type of files
 - when reading dataset with pandas, it will create DataFrame objects
 
-#### 📍 working with DataFrame example (read csv file)
+### 📍 working with DataFrame example (read csv file)
 ```python
 import pandas as pd
 df = pd.read_csv("masculinity.csv")
@@ -81,7 +81,7 @@ df.head()
   <img src="read_csv_example.JPG" alt="read csv example" width="370">
 </left>
 
-#### 📍 Using DataFrame with countplot()
+### 📍 Using DataFrame with countplot()
 ```python
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -95,7 +95,7 @@ plt.show()
 </left>
 - Based on the plot, most of dogs are somewhat masculine based on the survey.
 
-#### 📍 Exercise: Making a countplot() with a DataFrame 
+### 📍 Exercise: Making a countplot() with a DataFrame 
 ```python
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -110,6 +110,12 @@ plt.show()
 - The data on the plot showed that most of young people not scared of spider
 
 ---
+
+
+
+
+
+
 
 ### 💬 What I Learned Today
 - Seaborn makes it easier to create beautiful visualizations.
