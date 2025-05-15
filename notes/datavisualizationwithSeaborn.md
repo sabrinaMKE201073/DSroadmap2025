@@ -1,4 +1,4 @@
-#Introduction to Data Visualization with Seaborn
+# Introduction to Data Visualization with Seaborn
 
 ### 🖼️ Why is Seaborn useful?
 
