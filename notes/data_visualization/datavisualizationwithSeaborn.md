@@ -23,6 +23,7 @@ plt.show()
 <left>
   <img src="scatter_plot.JPG" alt="Scatter plot example" width="300">
 </left>
+- This scatter plot shows the relationship between height and weight — as height increases, weight tends to increase too.
 
 ### 📍 Count Plot — Visualizing Categorical Data
 
@@ -44,6 +45,7 @@ plt.show()
 <left>
   <img src="gender_countplot.JPG" alt="Scatter plot example" width="300">
 </left>
+- This count plot shows the number of individuals by gender. It shows that there are more males than females in this dataset.
 
 ### 📍 Exercise Example — Count of Countries by Region
 ```python
