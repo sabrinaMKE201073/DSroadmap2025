@@ -21,7 +21,7 @@ sns.scatterplot(x=height, y=weight)
 plt.show()
 ```
 <left>
-  <img src="scatter_plot.JPG" alt="Scatter plot example" width="300">
+  <img src="scatter_plot.JPG" alt="Scatter plot example" width="250">
 </left>
 
 #### Example 2: Count plot
@@ -42,7 +42,7 @@ plt.show()
 ```
 
 <left>
-  <img src="gender_countplot.JPG" alt="Scatter plot example" width="300">
+  <img src="gender_countplot.JPG" alt="Scatter plot example" width="250">
 </left>
 
 #### More example by exercise using GDP dataset
