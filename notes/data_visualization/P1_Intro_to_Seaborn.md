@@ -94,6 +94,20 @@ plt.show()
   <img src="howmasculine_surveydata.JPG" alt="bar chart of how masculine dog data" width="370">
 </left>
 
+#### 📍 Exercise: Making a countplot() with a DataFrame 
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+df = pd.read_csv(csv_filepath)
+sns.countplot(x="Spiders",data=df)
+plt.show()
+```
+<left>
+  <img src="spiders_plot.JPG" alt="bar chart of young people scared of spiders" width="270">
+</left>
+- The data on the plot showed that most of young people not scared of spider
+
 ---
 
 ### 💬 What I Learned Today
