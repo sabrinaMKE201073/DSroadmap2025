@@ -93,6 +93,7 @@ plt.show()
 <left>
   <img src="howmasculine_surveydata.JPG" alt="bar chart of how masculine dog data" width="370">
 </left>
+- Based on the plot, most of dogs are somewhat masculine based on the survey.
 
 #### 📍 Exercise: Making a countplot() with a DataFrame 
 ```python
