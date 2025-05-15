@@ -141,7 +141,7 @@ plt.show()
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Change the legend order in the scatter plot
+# create a scatter plot which legend order in rural, then followed by urban
 sns.scatterplot(x="absences", y="G3", 
                 data=student_data, 
                 hue="location",
