@@ -135,6 +135,28 @@ plt.show()
 
 ---
 
+### 📍 Exercise: Hue and Scatter plots
+```python
+# Import Matplotlib and Seaborn
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Change the legend order in the scatter plot
+sns.scatterplot(x="absences", y="G3", 
+                data=student_data, 
+                hue="location",
+                hue_order=["Rural","Urban"])
+
+# Show plot
+plt.show()
+```
+<left>
+  <img src="rural_urban.JPG" alt="rural vs urban area" width="270">
+</left>
+📌 Based on the scatter plot, it shows the students with higher absences tend to have lower grades in both rural and urban areas.
+
+---
+
 ### List of matplotlib colors code table
 <left>
   <img src="matplotlib_colors.JPG" alt="color code by matplotlib" width="270">
