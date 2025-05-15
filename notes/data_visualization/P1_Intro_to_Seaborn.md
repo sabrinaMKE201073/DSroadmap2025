@@ -111,10 +111,17 @@ plt.show()
 
 ---
 
-
-
-
-
+### Adding a 3rd variable with hue (based on Tip dataset)
+```python
+import matplotlib.pyplot as plt
+import seaborn as sns
+sns.scatterplot(x="total_bill", y="tip", data=tips, hue="smoker")
+plt.show() 
+```
+<left>
+  <img src="tips_vs_totalbills.JPG" alt="tips vs total bills among customer" width="270">
+</left>
+- From the scatter plot, we can see that the larger the total bill, the larger the tips given to the store, also, we can see the majority of the smoking people is those with less bills.
 
 
 ### 💬 What I Learned Today
