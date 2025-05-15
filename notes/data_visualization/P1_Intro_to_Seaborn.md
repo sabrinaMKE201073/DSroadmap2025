@@ -109,7 +109,7 @@ plt.show()
 
 ---
 
-### 📍 Adding a 3rd variable with hue 
+### 📍 Adding a 3rd variable with `hue`
 ```python
 sns.scatterplot(x="total_bill", y="tip", data=tips, hue="smoker")
 plt.show() 
@@ -118,6 +118,7 @@ plt.show()
   <img src="tips_vs_totalbills.JPG" alt="tips vs total bills among customer" width="270">
 </left>
 📌 Higher total bills lead to higher tips. Smokers tend to have smaller bills.
+
 ---
 
 ### 📍 Customizing Hue Colors
@@ -131,6 +132,7 @@ plt.show()
   <img src="hue_color.JPG" alt="spicifying hue color" width="270">
 </left>
 📌 Customized color palette for smoker groups.
+
 ---
 
 ### List of matplotlib colors code table
