@@ -113,8 +113,6 @@ plt.show()
 
 ### Adding a 3rd variable with hue (based on Tip dataset)
 ```python
-import matplotlib.pyplot as plt
-import seaborn as sns
 sns.scatterplot(x="total_bill", y="tip", data=tips, hue="smoker")
 plt.show() 
 ```
@@ -122,6 +120,23 @@ plt.show()
   <img src="tips_vs_totalbills.JPG" alt="tips vs total bills among customer" width="270">
 </left>
 - From the scatter plot, we can see that the larger the total bill, the larger the tips given to the store, also, we can see the majority of the smoking people is those with less bills.
+
+### Specifying hue orders and colors
+```python
+import matplotlib.pyplot as plt
+import seaborn as sns
+hue_colors= {"Yes": "black","No": "red"}
+sns.scatterplot(x="total_bill",y="tip",data=tips,hue="smoker", palette=hue_colors)
+plt.show()
+```
+<left>
+  <img src="hue_color.JPG" alt="spicifying hue color" width="270">
+</left>
+
+### List of matplotlib colors code table
+<left>
+  <img src="matplotlib_colors.JPG" alt="color code by matplotlib" width="270">
+</left>
 
 
 ### 💬 What I Learned Today
