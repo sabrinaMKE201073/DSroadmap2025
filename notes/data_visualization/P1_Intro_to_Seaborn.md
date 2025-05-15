@@ -1,15 +1,14 @@
-# Introduction to Data Visualization with Seaborn
+# 🎨 Introduction to Data Visualization with Seaborn
 
-### 🖼️ Why is Seaborn useful? 
+## 🖼️ Why Use Seaborn?
 
-<center>
-  <img src="seaborn_useful.JPG" alt="Seaborn Useful" width="400">
-</center>
+Seaborn is a Python library for statistical data visualization, built on top of Matplotlib.
 
-Advantages of seaborn
-- easy to use
-- works well with Pandas
-- built on top of matplotlib
+✅ Easy to use  
+✅ Integrates well with Pandas  
+✅ Improves plot aesthetics  
+
+---
 
 ### 📍 Scatter Plot — Visualizing Relationships
 ```python
@@ -23,7 +22,7 @@ plt.show()
 <left>
   <img src="scatter_plot.JPG" alt="Scatter plot example" width="300">
 </left>
-- This scatter plot shows the relationship between height and weight — as height increases, weight tends to increase too.
+📌 This scatter plot shows the relationship between height and weight — as height increases, weight tends to increase too.
 
 ### 📍 Count Plot — Visualizing Categorical Data
 
@@ -45,35 +44,33 @@ plt.show()
 <left>
   <img src="gender_countplot.JPG" alt="Scatter plot example" width="300">
 </left>
-- This count plot shows the number of individuals by gender. It shows that there are more males than females in this dataset.
+📌 This count plot visualizes the number of individuals by gender — more males than females in this sample.
 
 ### 📍 Exercise Example — Count of Countries by Region
 ```python
-# Import Matplotlib and Seaborn
 import seaborn as sns
 import matplotlib.pyplot as plt
-
-# Create count plot with region on the y-axis
 sns.countplot(y=region)
-
-# Show plot
 plt.show()
 ```
 <left>
   <img src="output_region.JPG" alt="output region" width="300">
 </left>
-- From the plot, Sub-Saharan Africa has the highest number of countries in the dataset.
+📌 Sub-Saharan Africa has the highest number of countries in the dataset.
 
 ---
+
+## 🐼 Using Pandas with Seaborn
 
 ### What is Pandas?
 - Python lib for Data Analysis
 - easily read dataset from csv, txt & other type of files
 - when reading dataset with pandas, it will create DataFrame objects
 
-### 📍 working with DataFrame example (read csv file)
+### 📍 Read CSV File into DataFrame
 ```python
 import pandas as pd
+
 df = pd.read_csv("masculinity.csv")
 df.head()
 ```
@@ -81,11 +78,12 @@ df.head()
   <img src="read_csv_example.JPG" alt="read csv example" width="370">
 </left>
 
-### 📍 Using DataFrame with countplot()
+### 📍 Count Plot from CSV
 ```python
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+
 df = pd.read_csv("masculinity.csv")
 sns.countplot(x="how_masculine",data=df)
 plt.show()
@@ -93,13 +91,10 @@ plt.show()
 <left>
   <img src="howmasculine_surveydata.JPG" alt="bar chart of how masculine dog data" width="370">
 </left>
-- Based on the plot, most of dogs are somewhat masculine based on the survey.
+📌 Most people rate dogs as “somewhat masculine”.
 
-### 📍 Exercise: Making a countplot() with a DataFrame 
+### 📍 Exercise: Fear of Spiders 
 ```python
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 df = pd.read_csv(csv_filepath)
 sns.countplot(x="Spiders",data=df)
 plt.show()
@@ -107,11 +102,11 @@ plt.show()
 <left>
   <img src="spiders_plot.JPG" alt="bar chart of young people scared of spiders" width="270">
 </left>
-- The data on the plot showed that most of young people not scared of spider
+📌 Most young people in the dataset are not scared of spiders.
 
 ---
 
-### Adding a 3rd variable with hue (based on Tip dataset)
+### 📍 Adding a 3rd variable with hue 
 ```python
 sns.scatterplot(x="total_bill", y="tip", data=tips, hue="smoker")
 plt.show() 
@@ -119,12 +114,10 @@ plt.show()
 <left>
   <img src="tips_vs_totalbills.JPG" alt="tips vs total bills among customer" width="270">
 </left>
-- From the scatter plot, we can see that the larger the total bill, the larger the tips given to the store, also, we can see the majority of the smoking people is those with less bills.
+📌 Higher total bills lead to higher tips. Smokers tend to have smaller bills.
 
-### Specifying hue orders and colors
+### 📍 Customizing Hue Colors
 ```python
-import matplotlib.pyplot as plt
-import seaborn as sns
 hue_colors= {"Yes": "black","No": "red"}
 sns.scatterplot(x="total_bill",y="tip",data=tips,hue="smoker", palette=hue_colors)
 plt.show()
@@ -132,6 +125,7 @@ plt.show()
 <left>
   <img src="hue_color.JPG" alt="spicifying hue color" width="270">
 </left>
+📌 Customized color palette for smoker groups.
 
 ### List of matplotlib colors code table
 <left>
@@ -139,10 +133,12 @@ plt.show()
 </left>
 
 
-### 💬 What I Learned Today
-- Seaborn makes it easier to create beautiful visualizations.
-- Scatter plots are best for showing relationships between two continuous variables.
-- Count plots help visualize how common each category is.
+### 🎓 What I Learned Today
+- Seaborn simplifies beautiful visualizations.
+- Scatter plots show relationships between continuous variables.
+- Count plots show frequencies of categorical variables.
+- Hue adds a third variable to visualizations.
+- Seaborn works great with Pandas for quick insights.
 
 
 
