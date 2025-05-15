@@ -21,7 +21,7 @@ sns.scatterplot(x=height, y=weight)
 plt.show()
 ```
 <left>
-  <img src="scatter_plot.JPG" alt="Scatter plot example" width="350">
+  <img src="scatter_plot.JPG" alt="Scatter plot example" width="300">
 </left>
 
 #### Example 2: Count plot
@@ -42,11 +42,24 @@ plt.show()
 ```
 
 <left>
-  <img src="gender_countplot.JPG" alt="Scatter plot example" width="350">
+  <img src="gender_countplot.JPG" alt="Scatter plot example" width="300">
 </left>
 
+#### More example by exercise using GDP dataset
+```python
+# Import Matplotlib and Seaborn
+import seaborn as sns
+import matplotlib.pyplot as plt
 
+# Create count plot with region on the y-axis
+sns.countplot(y=region)
 
+# Show plot
+plt.show()
+```
+<left>
+  <img src="output_region.JPG" alt="output region" width="250">
+</left>
 
 
 
