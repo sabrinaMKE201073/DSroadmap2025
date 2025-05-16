@@ -336,6 +336,18 @@ sns.catplot(x="smoker",
 - This is useful when the dataset contains many outliers, as the mean can be skewed.
 - The median is a more robust statistic in such cases.
 
+### 📍 Example: Customize the confidence interval CI
+
+```python
+sns.catplot(x="smoker",
+            y="total_bill",
+            data=tips,
+            kind="point",
+            capsize=0.2) #to turn off the CI, use ci = None
+```
+<left>
+  <img src="capsize.JPG" width="350">
+</left>
 
 
 
