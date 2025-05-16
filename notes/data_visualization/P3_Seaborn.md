@@ -282,6 +282,23 @@ sns.catplot(x="romantic", y="G3",
 | 95% CI shown | ✅                    | ✅                    |
 </div>
 
+### 📍 Example: Create a point plot
+
+```python
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+sns.catplot(x="age",
+            y="masculinity_important",
+            data=masculinity_data,
+            hue="feel_masculine",
+            kind="point")
+plt.show()
+
+```
+<left>
+  <img src="masculine_point.JPG" width="350">
+</left>
 
 
 
