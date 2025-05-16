@@ -158,7 +158,16 @@ sns.relplot(x="hour",
 
 ---
 
+### 📍 Adjusting line style
 
+```python
+markers=True #to display marker for each data point
+dashes=False #change line style to exact line
+```
+
+<left>
+  <img src="line.JPG" alt="line style" width="300">
+</left>
 
 
 
