@@ -21,9 +21,13 @@
     <img src="change_order.JPG" alt="order of masculinity example" width="300">
   </left>
 
+💡 *Based on the order of the masculinity from not masculine to very masculine, we can see that the bar plot shown the majority of the dog masculinity is under category of somewhat masculine type*
+
 ---
 
 ### 📍 Bar plots using catplot() function
+- display the mean of quantitative variable per category
+
   ```python
   sns.catplot(x="day",
               y="total_bills",
@@ -33,7 +37,8 @@
   <left>
     <img src="bar_plot1.JPG" alt="bar plot example" width="300">
   </left>
-
+  
+💡 *The highest total bill obtained on Sunday whereas the lowest bill is on Friday*
 
 
 
