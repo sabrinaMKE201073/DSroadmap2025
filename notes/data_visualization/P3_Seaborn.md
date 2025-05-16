@@ -258,28 +258,29 @@ sns.catplot(x="romantic", y="G3",
 
 ### 📈 Difference between Point plots vs. line plots
 
-<div align="left">
-  <img src="line_point.JPG" width="400">
-</div>
-
+<div align="center">
+  <img src="line_point.JPG" width="500">
+</div> <div align="center">
+  
 |              | Line Plot                   | Point Plot  |
 | ------------ | --------------------------- | ----------- |
 | X-axis type  | Quantitative (usually time) | Categorical |
 | Shows mean   | ✅                           | ✅           |
 | 95% CI shown | ✅                           | ✅           |
+</div>
 
 ### 📊 Difference between Point plots vs. bar plots
 
-<div align="left">
-  <img src="point_bar.JPG" width="400">
-</div>
+<div align="center">
+  <img src="point_bar.JPG" width="500">
+</div> <div align="center">
 
 |              | Bar Plot             | Point Plot           |
 | ------------ | -------------------- | -------------------- |
 | Visual style | Bars with error bars | Dots with error bars |
 | Shows mean   | ✅                    | ✅                    |
 | 95% CI shown | ✅                    | ✅                    |
-
+</div>
 
 
 
