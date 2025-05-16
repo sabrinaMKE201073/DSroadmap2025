@@ -113,8 +113,28 @@ sns.relplot(x="horsepower", y="mpg",
 plt.show()
 ```
 <left>
-  <img src="horsepower_plot.JPG" alt="vary the color of points by no. of cylinder" width="300">
+  <img src="horsepower_plot.JPG" alt="vary the color of points by no. of cylinder" width="400">
 </left>
 📌 Cars with higher horsepower tend to get a lower number of miles per gallon. They also tend to have a higher number of cylinders. 
+
+### Exercise 2 : relationship between how fast a car can accelerate at different country
+  
+```python
+# Create a scatter plot of acceleration vs. mpg
+sns.relplot(x="acceleration", y="mpg", 
+            data=mpg, kind="scatter",
+            hue="origin",
+            style="origin")
+```
+<left>
+  <img src="acceleration_country.JPG" alt="how fast a car can accelerate at different country" width="400">
+</left>
+📌 Cars from the USA tend to accelerate more quickly and get lower miles per gallon compared to cars from Europe and Japan.
+
+
+
+
+
+
 
  
