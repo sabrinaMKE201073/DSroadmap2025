@@ -230,7 +230,7 @@ plt.show()
   <img src="hue_urbanvsrural.JPG" width="300">
 </div>
 
-
+💡 *The median grades are quite similar between each group, but the spread of the distribution looks larger among students who have internet access.*
 
 ---
 ---
