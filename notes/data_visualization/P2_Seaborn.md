@@ -139,3 +139,27 @@ sns.relplot(x="acceleration", y="mpg",
 
 ### Line plots
 - Each point represents the same object tracked over time
+
+---
+
+### 📍 Example for Line plot
+
+```python
+sns.relplot(x="hour",
+            y="NO_2_mean",
+            data=air_df_loc_mean,
+            kind="line",
+            style="location",
+            hue="location")
+```
+![air pollution by location](airpollution.JPG)
+
+📌 *South region tends to have slightly higher average Nitrogen Dioxide levels compared to other regions*
+
+---
+
+
+
+
+
+
