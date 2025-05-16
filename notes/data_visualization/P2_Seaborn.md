@@ -73,7 +73,7 @@ sns.relplot(x = "total_bill",
 
 ---
 
-### Exercise Subplots 5: Creating two-factor subplots
+### Exercise : Creating two-factor subplots
   
 ```python
 sns.relplot(x="G1", y="G3", 
@@ -90,4 +90,11 @@ sns.relplot(x="G1", y="G3",
 </left>
 📌 From the subplots, The first semester grade does correlate with the final grade, regardless of what kind of support the student received.
 
-2) 
+---
+
+2) Customizing Scatter plots (size,hue,style,alpha)
+- better contrast
+- easier to analyse the plots
+
+
+ 
