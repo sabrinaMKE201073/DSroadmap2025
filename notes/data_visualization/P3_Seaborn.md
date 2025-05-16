@@ -61,12 +61,29 @@
     <img src="phoneusage.JPG" alt="survey on internet usage" width="500">
   </left>
 
-  💡 Based on the bar plots, we can observe that:
+  💡 Based on the plots, we can observe that:
   
   - *Most individuals use the internet for a few hours each day, and this trend is consistent across all   age groups.*
   - *However, younger individuals (under 21 years old) tend to spend more time online compared to those aged 21 and above.*
 
+---
 
+  ### 📍 Exercise: Bar plots
+  ```python
+  # Create a bar plot of interest in math, separated by gender
+  sns.catplot(x="Gender",
+              y="Interested in Math",
+              data=survey_data,
+              kind="bar")
+  ```
+  <left>
+    <img src="math.JPG" alt="math" width="500">
+  </left>
+
+  💡 Based on the bar plots, we can observe that:
+  
+  - *When the y-variable is Boolean (True/False), Seaborn's bar plot displays the proportion of responses that are True.*
+  - *In this case, the plot shows that males report a significantly higher interest in math compared to females.*
 
 
 
