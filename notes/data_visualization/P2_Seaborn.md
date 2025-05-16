@@ -199,7 +199,8 @@ ci = "sd"
 <left>
   <img src="sd_ci.JPG" width="250">
 </left>
-📌 shaded area this time will represents the standard deviation, which shows the spread of the distribution of observations at each x value.
+
+📌 *shaded area this time will represents the standard deviation, which shows the spread of the distribution of observations at each x value.*
 
 ---
 
@@ -219,6 +220,8 @@ sns.relplot(x="model_year",
 <left>
   <img src="off_ci_diffcountry.JPG" width="350">
 </left>
+
+📌 *We can see that this downward trend in horsepower was more pronounced among cars from the USA*
 
 ---
 
