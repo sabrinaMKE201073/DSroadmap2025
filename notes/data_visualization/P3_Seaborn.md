@@ -300,6 +300,41 @@ plt.show()
   <img src="masculine_point.JPG" width="350">
 </left>
 
+### 📍 Example: Disconnect the point from the point plot
+
+```python
+sns.catplot(x="age",
+            y="masculinity_important",
+            data=masculinity_data,
+            hue="feel_masculine",
+            kind="point",
+            join=False)
+```
+<left>
+  <img src="join_off.JPG" width="350">
+</left>
+
+### 📍 Example: Display the median
+
+```python
+import matplotlib.pyplot as plt
+import seaborn as sns
+from numpy import median
+
+sns.catplot(x="smoker",
+            y="total_bill",
+            data=tips,
+            kind="point",
+            estimator=median)
+```
+<left>
+  <img src="median.JPG" width="350">
+</left>
+
+🔑 Keypoints:
+- To use the median instead of the mean in plots, import median and pass it to the estimator parameter.
+- This is useful when the dataset contains many outliers, as the mean can be skewed.
+- The median is a more robust statistic in such cases.
 
 
 
