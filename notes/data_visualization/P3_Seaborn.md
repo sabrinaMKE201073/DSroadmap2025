@@ -122,7 +122,7 @@
 - See median, spread, skewness, and outliers
 - Facilitates comparisons between groups
 
-<div align="center">
+<div align="left">
   <img src="box_plot.JPG" width="350">
 </div>
 
