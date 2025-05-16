@@ -77,7 +77,7 @@
               kind="bar")
   ```
   <left>
-    <img src="math.JPG" alt="math" width="500">
+    <img src="math.JPG" alt="math" width="300">
   </left>
 
   💡 Based on the bar plots, we can observe that:
@@ -85,6 +85,27 @@
   - *When the y-variable is Boolean (True/False), Seaborn's bar plot displays the proportion of responses that are True.*
   - *In this case, the plot shows that males report a significantly higher interest in math compared to females.*
 
+  ### 📍 Exercise: Customizing Bar plots
+  ```python
+  # List of categories from lowest to highest
+  category_order = ["<2 hours", "2 to 5 hours", "5 to 10 hours", ">10 hours"]
+
+  # Turn off the confidence intervals
+  sns.catplot(x="study_time",
+              y="G3",
+              data=student_data,
+              kind="bar",
+              order=category_order,
+              ci=None)
+  ```
+  <left>
+    <img src="study_time.JPG" alt="math" width="300">
+  </left>
+
+  💡 Based on the bar plots, we can observe that:
+  
+  - *The bar plot shows that students who reported studying more tend to have slightly higher average final grades.*
+  - *However, the relationship between study time and performance is weak, indicating that study time alone may not strongly predict final grades.*
 
 
 
