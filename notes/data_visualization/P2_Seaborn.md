@@ -71,35 +71,23 @@ sns.relplot(x = "total_bill",
   <img src="subplots_days.JPG" alt="subplot daily in specific order" width="300">
 </left>
 
+---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### Exercise Subplots 5: Creating two-factor subplots
+  
+```python
+sns.relplot(x="G1", y="G3", 
+            data=student_data,
+            kind="scatter", 
+            col="schoolsup",
+            col_order=["yes", "no"],
+            row = "famsup",
+            row_order=["yes", "no"] 
+            )
+```
+<left>
+  <img src="two_factors.JPG" alt="creating two factor subplots" width="300">
+</left>
+📌 From the subplots, The first semester grade does correlate with the final grade, regardless of what kind of support the student received.
 
 2) 
