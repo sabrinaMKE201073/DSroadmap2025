@@ -85,6 +85,8 @@
   - *When the y-variable is Boolean (True/False), Seaborn's bar plot displays the proportion of responses that are True.*
   - *In this case, the plot shows that males report a significantly higher interest in math compared to females.*
 
+---
+
   ### 📍 Exercise: Customizing Bar plots
   ```python
   # List of categories from lowest to highest
@@ -107,11 +109,16 @@
   - *The bar plot shows that students who reported studying more tend to have slightly higher average final grades.*
   - *However, the relationship between study time and performance is weak, indicating that study time alone may not strongly predict final grades.*
 
+---
+---
+
+## 📦 2) Box plots
 
 
+---
+---
 
-
-
+## 🎯 3) Point plots
 
 
 
