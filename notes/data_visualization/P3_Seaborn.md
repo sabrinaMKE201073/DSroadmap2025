@@ -143,10 +143,20 @@ g = sns.catplot(x="time",
 plt.show()
 ```
 <div align="left">
-  <img src="box_plot2.JPG" width="350">
+  <img src="box_plot2.JPG" width="300">
 </div>
 
-
+### 📍 Omitting the outliers from box plot
+```python
+g = sns.catplot(x="time",
+              y="total_bill",
+              data=tips,
+              kind="box"
+              sym="") 
+```
+<div align="left">
+  <img src="omit_out.JPG" width="300">
+</div>
 
 ---
 ---
