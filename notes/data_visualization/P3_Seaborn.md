@@ -345,10 +345,17 @@ sns.catplot(x="smoker",
             kind="point",
             capsize=0.2) #to turn off the CI, use ci = None
 ```
+For capsize = 0.2,
+
 <left>
   <img src="capsize.JPG" width="350">
 </left>
 
+For ci = None,
+
+<left>
+  <img src="cioff.JPG" width="350">
+</left>
 
 
 
