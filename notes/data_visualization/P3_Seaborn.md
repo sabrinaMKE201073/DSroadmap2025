@@ -232,6 +232,22 @@ plt.show()
 
 💡 *The median grades are quite similar between each group, but the spread of the distribution looks larger among students who have internet access.*
 
+### 📍 Exercise 3 : Creating & interpret a box plot
+
+```python
+# Set the whiskers at the min and max values
+sns.catplot(x="romantic", y="G3",
+            data=student_data,
+            kind="box",
+            whis=[0, 100])
+
+```
+<div align="left">
+  <img src="romantic.JPG" width="300">
+</div>
+
+💡 *The median grade is equal for both groups, but students not in a romantic relationship have a higher maximum grade.*
+
 ---
 ---
 
