@@ -7,6 +7,7 @@
 - comparisons between groups
 
 ### 📍 Count plot using catplot() function
+
   ```python
   category_order = ["No answer","Not at all","Not very","Somewhat","Very"]
 
@@ -51,6 +52,7 @@
 ---
 
   ### 📍 Exercise: Count plots
+  
   ```python
   sns.catplot(y="Internet usage", 
               data=survey_data,
@@ -69,6 +71,7 @@
 ---
 
   ### 📍 Exercise: Bar plots
+  
   ```python
   # Create a bar plot of interest in math, separated by gender
   sns.catplot(x="Gender",
@@ -88,6 +91,7 @@
 ---
 
   ### 📍 Exercise: Customizing Bar plots
+  
   ```python
   # List of categories from lowest to highest
   category_order = ["<2 hours", "2 to 5 hours", "5 to 10 hours", ">10 hours"]
@@ -130,6 +134,7 @@
 - floating points = outliers
 
 ### 📍 Creating a box plots
+
 ```python
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -157,6 +162,33 @@ g = sns.catplot(x="time",
 <div align="left">
   <img src="omit_out.JPG" width="300">
 </div>
+
+### 📍 Changing whiskers using `whis`
+
+```python
+#by default, whiskers extend to 1.5 x (IQR)
+#IQR = interquartile range (25th to 75th percentile of a distribution of data
+
+#we can set this range as per our query
+
+whis = 2.0 #for example, to extend to 2.0 x (IQR)
+whis = [5,95] #to show 5th & 95th percentile
+whis = [0,100] #to show min & max values
+```
+  ### 📍 Example using `whis` for min & max values
+
+  ```python
+  g= sns.catplot(x="time",
+                  y="total_bill",
+                  data=tips,
+                  kind="box",
+                  whis=[0, 100])
+  ```
+  <div align="left">
+    <img src="min_max.JPG" width="300">
+  </div>
+  
+  💡 *Based on the box plot here, there's no outlier shown. This is because the box & whiskers cover the entire range of data*
 
 ---
 ---
