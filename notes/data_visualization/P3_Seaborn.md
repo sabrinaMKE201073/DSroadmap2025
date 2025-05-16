@@ -192,7 +192,7 @@ whis = [0,100] #to show min & max values
 
 ---
 
-### 📍 Exercise: Creating & interpret a box plot
+### 📍 Exercise 1 : Creating & interpret a box plot
 
 ```python
 # Specify the category ordering
@@ -211,6 +211,26 @@ sns.catplot(x = "study_time",
 <div align="left">
   <img src="box_plotstudy.JPG" width="300">
 </div>
+
+### 📍 Exercise 2 : compare the distribution students based on internet access
+
+```python
+# Create a box plot with subgroups and omit the outliers
+sns.catplot(x="internet",
+              y="G3",
+              data=student_data,
+              kind="box",
+              hue="location",
+              sym="")
+
+# Show plot
+plt.show()
+```
+<div align="left">
+  <img src="hue_urbanvsrural.JPG" width="300">
+</div>
+
+
 
 ---
 ---
