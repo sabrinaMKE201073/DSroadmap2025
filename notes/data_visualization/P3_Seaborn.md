@@ -253,8 +253,32 @@ sns.catplot(x="romantic", y="G3",
 
 ## 🎯 3) Point plots
 
+- Shows the **Mean** of quantitative variable
+- Vertical line shows 95% confident intervals
 
+### 📈 Difference between Point plots vs. line plots
 
+<div align="left">
+  <img src="line_point.JPG" width="400">
+</div>
+
+|              | Line Plot                   | Point Plot  |
+| ------------ | --------------------------- | ----------- |
+| X-axis type  | Quantitative (usually time) | Categorical |
+| Shows mean   | ✅                           | ✅           |
+| 95% CI shown | ✅                           | ✅           |
+
+### 📊 Difference between Point plots vs. bar plots
+
+<div align="left">
+  <img src="point_bar.JPG" width="400">
+</div>
+
+|              | Bar Plot             | Point Plot           |
+| ------------ | -------------------- | -------------------- |
+| Visual style | Bars with error bars | Dots with error bars |
+| Shows mean   | ✅                    | ✅                    |
+| 95% CI shown | ✅                    | ✅                    |
 
 
 
