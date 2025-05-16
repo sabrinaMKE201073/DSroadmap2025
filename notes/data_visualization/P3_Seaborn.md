@@ -50,6 +50,24 @@
 
 ---
 
+  ### 📍 Exercise: Count plots
+  ```python
+  # Create count plot of internet usage
+  sns.catplot(x="Internet usage",
+              data=survey_data,
+              kind="count")
+
+  # Rotate x-axis labels
+  plt.xticks(rotation=45)
+
+  # Show plot
+  plt.show()
+  ```
+  <left>
+    <img src="count_plotex.JPG" alt="survey on internet usage" width="300">
+  </left>
+
+  💡 *Based on the bar plot,we can see that most of young people spend few hours a day on the internet*
 
 
 
