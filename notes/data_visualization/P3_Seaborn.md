@@ -61,7 +61,7 @@
     <img src="phoneusage.JPG" alt="survey on internet usage" width="500">
   </left>
 
-  💡 Key points:
+  💡 Based on the bar plots, we can observe that:
   
   - *Most individuals use the internet for a few hours each day, and this trend is consistent across all   age groups.*
   - *However, younger individuals (under 21 years old) tend to spend more time online compared to those aged 21 and above.*
