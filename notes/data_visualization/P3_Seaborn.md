@@ -175,7 +175,7 @@ whis = 2.0 #for example, to extend to 2.0 x (IQR)
 whis = [5,95] #to show 5th & 95th percentile
 whis = [0,100] #to show min & max values
 ```
-  ### 📍 Example using `whis` for min & max values
+  ### 📍 Example: using `whis` for min & max values
 
   ```python
   g= sns.catplot(x="time",
@@ -189,6 +189,28 @@ whis = [0,100] #to show min & max values
   </div>
   
   💡 *Based on the box plot here, there's no outlier shown. This is because the box & whiskers cover the entire range of data*
+
+---
+
+### 📍 Exercise: Creating & interpret a box plot
+
+```python
+# Specify the category ordering
+study_time_order = ["<2 hours", 
+                    "2 to 5 hours", 
+                    "5 to 10 hours", 
+                    ">10 hours"]
+
+# Create a box plot and set the order of the categories
+sns.catplot(x = "study_time",
+            y = "G3",
+            data=student_data,
+            kind="box",
+            order=study_time_order)
+```
+<div align="left">
+  <img src="box_plotstudy.JPG" width="300">
+</div>
 
 ---
 ---
