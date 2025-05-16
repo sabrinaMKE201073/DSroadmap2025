@@ -194,6 +194,7 @@ sns.relplot(x="hour", y="NO_2",
 
 ```python
 ci = "sd"
+#to turn off the ci, can set it to "None"
 ```
 <left>
   <img src="sd_ci.JPG" width="250">
