@@ -171,7 +171,7 @@ dashes=False #change line style to exact line
 
 ---
 
-### 📍 Multiple observation per x-value
+### 📍 Multiple observation per x-value (Visualize a confidence interval)
 
 ```python
 sns.relplot(x="hour", y="NO_2",
@@ -187,5 +187,21 @@ sns.relplot(x="hour", y="NO_2",
 - The shaded area shows the 95% confidence interval (CI).
 - CI tells us the range where the true average likely falls.
 - Wider shaded areas = more uncertainty in the average.
+
+---
+
+### 📍 How measurement of NO2 varied across different collection station at a given time
+
+```python
+ci = "sd"
+```
+<left>
+  <img src="sd_ci.JPG" width="250">
+</left>
+📌 shaded area this time will represents the standard deviation, which shows the spread of the distribution of observations at each x value.
+
+
+
+
 
 
