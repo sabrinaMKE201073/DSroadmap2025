@@ -246,7 +246,7 @@ sns.catplot(x="romantic", y="G3",
   <img src="romantic.JPG" width="300">
 </div>
 
-💡 *The median grade is equal for both groups, but students not in a romantic relationship have a higher maximum grade.*
+💡 *The median grade is equal for both groups, but students not in a romantic relationship have a slightly higher maximum grade.*
 
 ---
 ---
