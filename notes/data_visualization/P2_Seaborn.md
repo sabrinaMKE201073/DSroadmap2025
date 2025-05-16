@@ -1,13 +1,12 @@
+## 📊 Relation Plot & Subplots with Seaborn
 
-# 📊 Relation Plot & Subplots with Seaborn
-
-## 1. `relplot()` Overview
+### 1. `relplot()` Overview
 - A relational plot function that creates either scatter or line plots.
 - Supports creation of subplots in a single figure.
 
 ---
 
-## 📍 Subplots 1: Column Example
+### 📍 Subplots 1: Column Example
 
 ```python
 import seaborn as sns
@@ -26,7 +25,7 @@ plt.show()
 
 ---
 
-## 📍 Subplots 2: Row Example
+### 📍 Subplots 2: Row Example
 
 ```python
 sns.relplot(x="total_bill",
@@ -41,7 +40,7 @@ sns.relplot(x="total_bill",
 
 ---
 
-## 📍 Subplots 3: Combination of Column and Row
+### 📍 Subplots 3: Combination of Column and Row
 
 ```python
 sns.relplot(x = "total_bill",
@@ -57,7 +56,7 @@ sns.relplot(x = "total_bill",
 
 ---
 
-## 📍 Subplots 4: Customizing Subplots Layout
+### 📍 Subplots 4: Customizing Subplots Layout
 
 ```python
 sns.relplot(x = "total_bill",
@@ -74,7 +73,7 @@ sns.relplot(x = "total_bill",
 
 ---
 
-## 📍 Exercise: Creating Two-Factor Subplots
+### 📍 Exercise: Creating Two-Factor Subplots
 
 ```python
 sns.relplot(x="G1", y="G3", 
@@ -93,7 +92,7 @@ sns.relplot(x="G1", y="G3",
 
 ---
 
-## 2. 🎨 Customizing Scatter Plots (size, hue, style, alpha)
+### 2. 🎨 Customizing Scatter Plots (size, hue, style, alpha)
 - Enhances visual contrast and analysis
 
 ### 📍 Exercise 1: Horsepower vs Fuel Efficiency
