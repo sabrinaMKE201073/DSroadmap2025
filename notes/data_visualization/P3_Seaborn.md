@@ -114,6 +114,39 @@
 
 ## 📦 2) Box plots
 
+- Shows the **Distribution** of quantitative data
+- See median, spread, skewness, and outliers
+- Facilitates comparisons between groups
+
+<div align="center">
+  <img src="box_plot.JPG" width="350">
+</div>
+
+💡 Keypoint:
+
+- colored box = represents 25th to 75th percentile
+- line in middle of box = median
+- whiskers( lines that extend from the ends of the box to show the range of the data, excluding outliers) = spread of distribution
+- floating points = outliers
+
+### 📍 Creating a box plots
+```python
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+g = sns.catplot(x="time",
+              y="total_bill",
+              data=tips,
+              kind="box"
+              order=["Dinner","Lunch"])
+
+plt.show()
+```
+<div align="left">
+  <img src="box_plot2.JPG" width="350">
+</div>
+
+
 
 ---
 ---
