@@ -38,7 +38,21 @@
     <img src="bar_plot1.JPG" alt="bar plot example" width="300">
   </left>
   
-💡 *The highest total bill obtained on Sunday whereas the lowest bill is on Friday*
+  ### 💡 Key points:
+  - *The highest total bill obtained on Sunday whereas the lowest bill is on Friday*
+  - *Lines at the centre of each bar showed the confidence intervals for these mean*
+
+  ```python
+  #to turn off the auto confidence interval lines,
+  #set ci to None
+  ci = None
+  ```
+
+---
+
+
+
+
 
 
 
