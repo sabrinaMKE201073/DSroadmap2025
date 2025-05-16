@@ -96,5 +96,25 @@ sns.relplot(x="G1", y="G3",
 - better contrast
 - easier to analyse the plots
 
+### Exercise 1 : relationship between power of car's engine vs fuel efficiency
+  
+```python
+# Import Matplotlib and Seaborn
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Create scatter plot of horsepower vs. mpg
+sns.relplot(x="horsepower", y="mpg", 
+            data=mpg, kind="scatter", 
+            size="cylinders",
+            hue="cylinders")
+
+# Show plot
+plt.show()
+```
+<left>
+  <img src="horsepower_plot.JPG" alt="vary the color of points by no. of cylinder" width="300">
+</left>
+📌 Cars with higher horsepower tend to get a lower number of miles per gallon. They also tend to have a higher number of cylinders. 
 
  
