@@ -201,7 +201,26 @@ ci = "sd"
 </left>
 📌 shaded area this time will represents the standard deviation, which shows the spread of the distribution of observations at each x value.
 
+---
 
+### 📍 Plotting subgroups in line plots
+
+```python
+sns.relplot(x="model_year", 
+            y="horsepower", 
+            data=mpg, 
+            kind="line", 
+            ci=None, #turn off the ci
+            style = "origin", #various of style
+            hue = "origin", #various of color
+            markers=True, #marker style for each line
+            dashes=False) #solid lines
+```
+<left>
+  <img src="off_ci_diffcountry.JPG" width="350">
+</left>
+
+---
 
 
 
