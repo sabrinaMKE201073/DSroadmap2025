@@ -169,6 +169,23 @@ dashes=False #change line style to exact line
   <img src="line.JPG" alt="line style" width="300">
 </left>
 
+---
 
+### 📍 Multiple observation per x-value
+
+```python
+sns.relplot(x="hour", y="NO_2",
+            data=air_df,
+            kind="line")
+```
+<left>
+  <img src="shaded_1.JPG" alt="line style" width="250">
+</left>
+
+📌 Key Points:
+- When x-values repeat, Seaborn calculates the mean automatically.
+- The shaded area shows the 95% confidence interval (CI).
+- CI tells us the range where the true average likely falls.
+- Wider shaded areas = more uncertainty in the average.
 
 
