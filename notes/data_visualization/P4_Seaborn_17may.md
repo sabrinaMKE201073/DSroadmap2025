@@ -1,4 +1,4 @@
-# 🎨🔧Customizing Seaborn Plots
+ # 🎨🔧Customizing Seaborn Plots
 
 ### Why Customize?
 - Enhance visual clarity
@@ -129,6 +129,7 @@ sns.set_context("poster")
 - *This will make all plot elements much larger and easier to see in a large display, like a poster presentation..*
 
 ---
+---
 
 ## 4️⃣ 🏷️ Add Title & Labels
 
@@ -140,7 +141,7 @@ sns.set_context("poster")
 | `FacetGrid`      | `relplot()`, `catplot()`           | Can create subplots                |
 | `AxesSubplot`    | `scatterplot()`, `countplot()`, etc. | Only creates a single plot         |
  
-
+### 📍 fig.suptitle function (for `FacetGrid` object type)
 
 ```python
 g = sns.catplot(x="Region",
@@ -150,8 +151,17 @@ g = sns.catplot(x="Region",
 
 g.fig.suptitle("New Title", y=1.03) #y here represents the height of the title from figure plot
 ```
- 
+---
 
+### 📍 set_title function (for `AxesSubplot` object type)
+
+```python
+g = sns.catplot(x="Region",
+            y="Birthrate",
+            data=gdp_data)
+
+g.set_title("New Title", y=1.03) 
+```
 
 
 
