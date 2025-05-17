@@ -145,6 +145,8 @@ sns.set_context("poster")
 > - In order to check the plot type, before further customization
 > - can use  `type()` function
 
+For Example:
+
 ```python
 # Create scatter plot
 g = sns.relplot(x="weight", 
