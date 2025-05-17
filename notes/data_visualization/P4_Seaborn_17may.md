@@ -103,14 +103,52 @@ sns.set_palette(custom_palette)
 ---
 
 ## 3️⃣ `sns.set_context()`
-> 📌 Changes the scale of the plot elements and labels
+> 📌used to scale up or down the visual elements in a plot.
+> It's especially useful for adapting plots for different display environments—whether you're showing it in a paper, on a slide, or during a talk.
 
 Available style presets: (from smallest to largest scale)
-- `"paper"`
-- `"notebook"`
-- `"talk"` 
-- `"poster"`
+
+| Context      | Use Case                                                   |
+| ------------ | ---------------------------------------------------------- |
+| `"paper"`    | For printed publications (compact visuals)                 |
+| `"notebook"` | Default; ideal for Jupyter Notebooks                       |
+| `"talk"`     | Slightly larger for presentations                          |
+| `"poster"`   | Very large—perfect for conference posters or large screens |
 
 ---
+
+### 📍 Exercise: Changing the scale using context function
+```python
+sns.set_context("poster")
+```
+<left>
+  <img src="poster_size.JPG" width="500">
+</left>
+
+🔑 Keypoints:
+- *This will make all plot elements much larger and easier to see in a large display, like a poster presentation..*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
