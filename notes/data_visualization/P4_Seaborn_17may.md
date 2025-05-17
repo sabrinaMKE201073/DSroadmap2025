@@ -133,17 +133,24 @@ sns.set_context("poster")
 
 ## 4️⃣ 🏷️ Add Title & Labels
 
-> - Creative informative visualizations
-> - `FacetGrid` vs `AxesSubplot` objects
+### 🎯 Why This Matters?
 
-| **Object Type** | **Plot Types**                     | **Characteristics**               |
-|------------------|------------------------------------|------------------------------------|
-| `FacetGrid`      | `relplot()`, `catplot()`           | Can create subplots                |
-| `AxesSubplot`    | `scatterplot()`, `countplot()`, etc. | Only creates a single plot         |
+✅ Makes your visualizations more informative
+
+✅ Helps your audience understand what the plot is showing
+
+✅ Important when working with different plot objects
 
 
-> - In order to check the plot type, before further customization
-> - can use  `type()` function
+### 🧩 Plot Object Types
+
+| 🔹 **Object Type** | 📊 **Plot Functions**                | 🧠 **Characteristics**         |
+| ------------------ | ------------------------------------ | ------------------------------ |
+| `FacetGrid`        | `relplot()`, `catplot()`             | Can create **subplots**        |
+| `AxesSubplot`      | `scatterplot()`, `countplot()`, etc. | Creates a **single plot** only |
+
+### 🔍 How to Check Plot Type
+> Use the type() function to identify what type of object your plot is — this helps you apply the correct customization methods.
 
 For Example:
 
@@ -155,23 +162,17 @@ g = sns.relplot(x="weight",
                 kind="scatter")
 
 # Identify plot type
-type_of_g = type(g)
-
-# Print type
-print(type_of_g)
+print(type(g))  # Output: <class 'seaborn.axisgrid.FacetGrid'>
 ```
-Output:
-
-<left>
-  <img src="example_output_type.JPG" width="300">
-</left>
-
-> Hence, from this output, we knows that the object type for this scatter plot is `FacetGrid`
+🧠 From the output, we know the object type is `FacetGrid`
 
 ---
 
-### 📍 `.fig.suptitle()` function (for `FacetGrid` object type)
-> usually used for the main title
+## 🖼️ Title and Label Functions
+
+### 1️⃣ 🏷️ `.fig.suptitle()` — Main Title for `FacetGrid`
+
+> Used for setting the main title of the figure.
 
 ```python
 g = sns.catplot(x="Region",
@@ -179,23 +180,25 @@ g = sns.catplot(x="Region",
             data=gdp_data,
             kind="box")
 
-g.fig.suptitle("New Title", y=1.03) #y here represents the height of the title from figure plot
+g.fig.suptitle("Birthrate by region", y=1.03) #y here represents the height of the title from figure plot
 ```
 ---
 
-### 📍 `.set_title()` function (for `AxesSubplot` object type)
-> used for subplot title
+### 2️⃣ 🗂️ `.set_title()` — Title for `AxesSubplot`
+
+> Used for subplot titles (like a single plot in a grid).
 
 ```python
-g = sns.catplot(x="Region",
-            y="Birthrate",
+ax = sns.catplot(x="GDP",
+            y="Life_Expectancy",
             data=gdp_data)
 
-g.set_title("New Title", y=1.03) 
+ax.set_title("Life Expectancy vs GDP", y=1.03) 
 ```
 
-### 📍 Adding Axis labels using `.set()` function
-> used for labelling x-axis & y-axis
+### 3️⃣ 🏷️ `.set()` — Axis Labels
+
+> For customizing x-axis and y-axis labels:
 
 ```python
 g = sns.catplot(x="Region",
@@ -203,16 +206,18 @@ g = sns.catplot(x="Region",
                 data=gdp_data,
                 kind="box")
 
-g.set(xlabel="New X Label",
-      ylabel="New Y Label")
+g.set(xlabel="Region",
+      ylabel="Birthrate")
 ```
 
-### 📍 Rotating Axis labels using `.xticks()` function
-> used to rotate the x-axis label to desired position
+### 📍 4️⃣ 🔄 `plt.xticks(rotation=…)` — Rotate Axis Labels
+
+> To rotate labels on the x-axis for better readability:
 
 ```python
 plt.xticks(rotation=90)
 ```
+📌 Use this when you have many or long category names on the x-axis.
 
 
 
