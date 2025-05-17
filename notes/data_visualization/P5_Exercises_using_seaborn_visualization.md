@@ -86,7 +86,7 @@ g.set(xlabel="Location of Residence",
 plt.show()
 ```
 <left>
-  <img src="title_subtitle.JPG" width="500">
+  <img src="title_subtitle.JPG" width="700">
 </left>
 
 🔑 Based on the two plots:
