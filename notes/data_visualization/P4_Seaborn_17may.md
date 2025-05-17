@@ -45,20 +45,64 @@ sns.catplot(x="age",
 ### Available preset palette:
 
 1) Diverging Palette
-> useful for a clear contrast view
+> 📌 Best used when you want to highlight deviation or contrast from a central value (e.g., increase vs. decrease)
 
+<div align="center">
+  <img src="diverging.JPG" height="150" width="500">
+</div>
+
+Examples:
 - `"RdBu"`
 - `"PRGn"`
 - `"RdBu_r"` 
 - `"PRGn_r"`
 
 2) Sequential Palette
-> useful for emphasizing a variable on a continuous scale
-   
+> 📌 Best for showing ordered data or continuous scale (e.g., low → high)
+
+<div align="center">
+  <img src="seq.JPG" height="150" width="500">
+</div>
+
+Examples:
 - `"Greys"`
 - `"Blues"`
 - `"PuRd"`
 - `"GnBu"`
+
+3) Custom palette
+> 📌 Simple custom palette using color names
+
+<div align="center">
+  <img src="custom.JPG" height="50" width="400">
+</div>
+
+Examples:
+- `"red"`
+- `"green"`
+- `"orange"`
+- `"blue"`
+- `"yellow"`
+- `"purple"`
+
+4) Hex custom palette
+> 📌 For full control over color styling
+
+<div align="center">
+  <img src="hex_color.JPG" height="50" width="400">
+</div>
+
+```python
+custom_palette = ['#FBB4AE', '#B3CDE3', '#CCEBC5',
+             '#DECBE4', '#FED9A6', '#FFFFCC',
+             '#E5D8BD', '#FDDAEC', '#F2F2F2']
+
+sns.set_palette(custom_palette)
+```
+
+
+
+
 
 ---
 
