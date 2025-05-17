@@ -128,13 +128,29 @@ sns.set_context("poster")
 🔑 Keypoints:
 - *This will make all plot elements much larger and easier to see in a large display, like a poster presentation..*
 
+---
+
+## 4️⃣ 🏷️ Add Title & Labels
+
+> - Creative informative visualizations
+> - `FacetGrid` vs `AxesSubplot` objects
+
+| **Object Type** | **Plot Types**                     | **Characteristics**               |
+|------------------|------------------------------------|------------------------------------|
+| `FacetGrid`      | `relplot()`, `catplot()`           | Can create subplots                |
+| `AxesSubplot`    | `scatterplot()`, `countplot()`, etc. | Only creates a single plot         |
+ 
 
 
+```python
+g = sns.catplot(x="Region",
+            y="Birthrate",
+            data=gdp_data,
+            kind="box")
 
-
-
-
-
+g.fig.suptitle("New Title", y=1.03) #y here represents the height of the title from figure plot
+```
+ 
 
 
 
