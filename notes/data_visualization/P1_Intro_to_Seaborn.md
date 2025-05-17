@@ -110,6 +110,8 @@ plt.show()
 ---
 
 ### 📍 Adding a 3rd variable with `hue`
+> By set the hue, it will create subgroup which displayed as diff colors on a single plot
+
 ```python
 sns.scatterplot(x="total_bill", y="tip", data=tips, hue="smoker")
 plt.show() 
