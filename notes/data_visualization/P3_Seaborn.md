@@ -357,7 +357,31 @@ For ci = None,
   <img src="cioff.JPG" width="350">
 </left>
 
+---
 
+### 📍 Exercise: Is being in a romantic relationship affect the school attendance?
+
+```python
+# Import median function from numpy
+from numpy import median
+
+# Plot the median number of absences instead of the mean
+sns.catplot(x="romantic", y="absences",
+			data=student_data,
+            kind="point",
+            hue="school",
+            ci=None,
+            estimator=median)
+
+# Show plot
+plt.show()
+```
+<left>
+  <img src="romantic_point.JPG" width="350">
+</left>
+
+🔑 Keypoints:
+- *Students in romantic relationships at the GP school show higher average and median absences, whereas this trend isn’t seen among students at the MS school.*
 
 
 
