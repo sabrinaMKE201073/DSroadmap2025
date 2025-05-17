@@ -142,6 +142,32 @@ sns.set_context("poster")
 | `AxesSubplot`    | `scatterplot()`, `countplot()`, etc. | Only creates a single plot         |
 
 
+> - In order to check the plot type, before further customization
+> - can use  `type()` function
+
+```python
+# Create scatter plot
+g = sns.relplot(x="weight", 
+                y="horsepower", 
+                data=mpg,
+                kind="scatter")
+
+# Identify plot type
+type_of_g = type(g)
+
+# Print type
+print(type_of_g)
+```
+Output:
+
+<left>
+  <img src="example_output_type.JPG" width="300">
+</left>
+
+> Hence, from this output, we knows that the object type for this scatter plot is `FacetGrid`
+
+---
+
 ### 📍 `.fig.suptitle()` function (for `FacetGrid` object type)
 > usually used for the main title
 
