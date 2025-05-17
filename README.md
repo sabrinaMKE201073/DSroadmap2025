@@ -1,6 +1,6 @@
 <h1 id="dsroadmap2025"># DSroadmap2025</h1>
 
-<h2>📊 Data Science Learning Journey with DataCamp</h2>
+<h2>📊 Data Science Learning Journey</h2>
 <p>Welcome to my learning repository! This repo contains my personal notes, practice notebooks, and code from my progress through the <strong>DataCamp Associate Data Scientist</strong> and <strong>SQL Fundamentals</strong> tracks.</p>
 
 <hr>
