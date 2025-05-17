@@ -140,8 +140,10 @@ sns.set_context("poster")
 |------------------|------------------------------------|------------------------------------|
 | `FacetGrid`      | `relplot()`, `catplot()`           | Can create subplots                |
 | `AxesSubplot`    | `scatterplot()`, `countplot()`, etc. | Only creates a single plot         |
- 
-### 📍 fig.suptitle function (for `FacetGrid` object type)
+
+
+### 📍 `.fig.suptitle()` function (for `FacetGrid` object type)
+> usually used for the main title
 
 ```python
 g = sns.catplot(x="Region",
@@ -153,7 +155,8 @@ g.fig.suptitle("New Title", y=1.03) #y here represents the height of the title f
 ```
 ---
 
-### 📍 set_title function (for `AxesSubplot` object type)
+### 📍 `.set_title()` function (for `AxesSubplot` object type)
+> used for subplot title
 
 ```python
 g = sns.catplot(x="Region",
@@ -163,6 +166,25 @@ g = sns.catplot(x="Region",
 g.set_title("New Title", y=1.03) 
 ```
 
+### 📍 Adding Axis labels using `.set()` function
+> used for labelling x-axis & y-axis
+
+```python
+g = sns.catplot(x="Region",
+                y="Birthrate",
+                data=gdp_data,
+                kind="box")
+
+g.set(xlabel="New X Label",
+      ylabel="New Y Label")
+```
+
+### 📍 Rotating Axis labels using `.xticks()` function
+> used to rotate the x-axis label to desired position
+
+```python
+plt.xticks(rotation=90)
+```
 
 
 
