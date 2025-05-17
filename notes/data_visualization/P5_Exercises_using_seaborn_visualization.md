@@ -19,7 +19,7 @@ sns.catplot(x="Gender", y="Age",
 plt.show()
 ```
 <left>
-  <img src="customized1.JPG" width="350">
+  <img src="customized1.JPG" width="400">
 </left>
 
 🔑 Based om the plots:
@@ -56,7 +56,7 @@ g.fig.suptitle("Age of Those Interested in Pets vs. Not")
 plt.show()
 ```
 <left>
-  <img src="exercise2.JPG" width="400">
+  <img src="exercise2.JPG" width="500">
 </left>
 
 🔑 Based on the plots:
@@ -86,7 +86,7 @@ g.set(xlabel="Location of Residence",
 plt.show()
 ```
 <left>
-  <img src="title_subtitle.JPG" width="400">
+  <img src="title_subtitle.JPG" width="500">
 </left>
 
 🔑 Based on the two plots:
