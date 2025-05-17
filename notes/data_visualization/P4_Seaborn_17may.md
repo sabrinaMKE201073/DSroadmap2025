@@ -100,9 +100,16 @@ custom_palette = ['#FBB4AE', '#B3CDE3', '#CCEBC5',
 sns.set_palette(custom_palette)
 ```
 
+---
 
+## 3️⃣ `sns.set_context()`
+> 📌 Changes the scale of the plot elements and labels
 
-
+Available style presets: (from smallest to largest scale)
+- `"paper"`
+- `"notebook"`
+- `"talk"` 
+- `"poster"`
 
 ---
 
