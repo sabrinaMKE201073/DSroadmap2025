@@ -66,16 +66,31 @@ plt.show()
 
 ### 3️⃣ Exercise 3: Box plot with subgroups & subplots
 
-> Explore the young people survey dataset to see if the proportion of people who like techno music differs based on:
+> Explore the young people survey dataset to see if the proportion of people who like techno music differs based on gender & living area
 
-🎧 Gender ("Gender")
+```python
+# Set the figure style to "dark"
+sns.set_style("dark")
 
-🏡 Living area ("Village - town")
+# Adjust to add subplots per gender
+g = sns.catplot(x="Village - town", y="Likes Techno", 
+                data=survey_data, kind="bar",
+                col = "Gender")
 
+# Add title and axis labels
+g.fig.suptitle("Percentage of Young People Who Like Techno", y=1.02)
+g.set(xlabel="Location of Residence", 
+       ylabel="% Who Like Techno")
 
+# Show plot
+plt.show()
+```
+<left>
+  <img src="title_subtitle.JPG" width="400">
+</left>
 
-
-
+🔑 Based on the two plots:
+*In summary, Males like techno more than females overall. Village residents (both genders) tend to like techno more than city residents.*
 
 
 
