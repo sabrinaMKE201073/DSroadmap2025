@@ -119,17 +119,97 @@ sns.boxplot(data=books, x="year", y="genre")
 
 > Observation: Children's books tend to be published slightly later, but year ranges across genres are similar.
 
+---
+
+### 🧪 6. Explore group data 
+
+- `.groupby()` - groups data by category
+
+Aggregating function indicates how to summarize grouped data
+
+- `.sum()`
+
+- `.count()`
+  
+- `.min()`
+  
+- `.max()`
+
+- `.mean()`
+
+- `.var()`
+
+- `.std()`
 
 
+```Python
+books.groupby("genre").mean()
+```
 
+  <left>
+    <img src="mean.JPG" width="350">
+  </left>
 
+---
 
+### 🧪 7. Aggregating ungrouped data
 
+- `.agg()`
 
+> - to apply aggregate function across a DataFrame
+> - aggregate data across all rows in a given column name
+> - typically used for more than one function
 
+Available preset:
 
+- `"mean"`
+- `"std"`
+- `"median"`
 
+---
 
+### Specifying agg for columns
+
+```Python
+books.agg({"rating": ["mean", "std"], "year": ["median"]})
+```
+
+  <left>
+    <img src="agg.JPG" width="200">
+  </left>
+
+---
+
+### Named summary columns
+
+```Python
+books.groupby("genre").agg(
+mean_rating ("rating", "mean"),
+std_rating=("rating", "std"),
+median_year=("year", "median")
+)
+```
+
+  <left>
+    <img src="summary.JPG" width="350">
+  </left>
+
+Observation: Based on the table output, Fiction genre has the lowest average rating as well as the largest variation in ratings.
+
+---
+
+### Visualizing categorical summaries
+
+Using Barplot
+```Python
+sns.barplot(data=books, x="genre", y="rating")
+plt.show()
+```
+  <left>
+    <img src="barplot.JPG" width="500">
+  </left>
+
+Observation: based on the bar plot, Fiction books have the lowest rating, their ratings also have a little more variation.
 
 
 
