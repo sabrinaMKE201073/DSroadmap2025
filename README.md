@@ -24,3 +24,11 @@
   <li>💼 To build a data portfolio for job applications</li>
   <li>🔁 To reinforce concepts by practicing and sharing</li>
 </ul>
+
+---
+
+## 🗓️ Daily Logs
+
+I reflect on my progress, learning focus, and goals in [daily logs](https://github.com/sabrinaMKE201073/DSroadmap2025/tree/main/daily-logs).
+
+> 📅 Latest: [18 May 2025 — Seaborn done & planning ahead](https://github.com/sabrinaMKE201073/DSroadmap2025/blob/main/daily-logs/2025-05-18.md)
