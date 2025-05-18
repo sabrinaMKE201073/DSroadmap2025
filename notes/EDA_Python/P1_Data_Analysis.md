@@ -25,8 +25,6 @@ sns.histplot(data=books,
             binwidth=.1)
 plt.show()
 ```
-
-Output : Histogram plot
   
   <left>
     <img src="hist1.JPG" width="350">
@@ -36,7 +34,7 @@ Output : Histogram plot
 
 ## ✅ 3. Data Validation and Type Checking
 
-> Checking Data Types
+### 🔍 Checking Data Types
 
 ```Python
 books.dtypes
@@ -67,6 +65,78 @@ books.dtypes
 | Dictionary  | `dict`       |
 | List        | `list`       |
 | Boolean     | `bool`       |
+
+---
+
+### 🏷️ 4. Validating categorical data 
+
+Using `.isin()` to Check Specific Categories
+
+```Python
+books["genre"].isin(["Fiction", "Non Fiction"])
+```
+
+  <left>
+    <img src="isin.JPG" width="200">
+  </left>
+
+> Tip: Use `~` to invert the result and filter items not in the list.
+
+---
+
+#### 🔎 Filter Rows Based on Category Match
+
+ ```Python
+ books[books["genre"].isin(["Fiction", "Non Fiction"])].head()
+ ```
+
+ <left>
+    <img src="isin2.JPG" width="500">
+  </left>
+
+---
+
+### 🧪 5. Validating numerical data 
+
+Handy Functions:
+
+- `df.select_dtypes("number")` - to select & view numerical columns in the dataframe
+
+- `df["column"].min()`
+
+- `df["column"].max()`
+
+
+ #### 🔸 Visualize with `sns.boxplot` 
+
+```Python
+sns.boxplot(data=books, x="year", y="genre")
+```
+
+  <left>
+    <img src="bocplot.JPG" width="350">
+  </left>
+
+> Observation: Children's books tend to be published slightly later, but year ranges across genres are similar.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
