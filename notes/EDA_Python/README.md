@@ -2,6 +2,8 @@
 
 ### ~ Learning in progress 🔄 
 > Started (18-05-2025)
+>
+> Module 1✅
 
 This folder contains notes, examples, and checklists related to EDA using Python.
 
