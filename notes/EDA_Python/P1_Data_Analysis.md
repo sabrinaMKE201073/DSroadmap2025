@@ -7,7 +7,7 @@
 | Function           | Description                                                                 |
 |--------------------|-----------------------------------------------------------------------------|
 | `.head()`          | Returns the first few rows – useful for a quick overview.                   |
-| `.info()`          | Displays column names, non-null counts, and data types.                     |
+| `.info()`          | Displays a summary of column names, non-missing values, and data types.                     |
 | `.value_counts()`  | Shows counts of unique values – great for categorical columns.              |
 | `.describe()`      | Summary stats for numeric columns (mean, std, min, quartiles, max).         |
 
