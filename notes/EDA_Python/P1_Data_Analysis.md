@@ -1,20 +1,21 @@
 # Module 1: Getting to Know a Dataset
 
-## 1) Functions used for Exploring Data Analysis
+---
 
-`.head()` - get a first few rows for take a look at our dataframe overview
+## 🧰 1. Functions for Exploring Data
 
-`.info()` - to check on the dataframe datatype and basic info
-
-`.value_counts()` - give a closer look for categorical columns by count function
-
-`.describe()` - give numberical column statistics (such as count,mean, std, min,quartile, max value)
+| Function           | Description                                                                 |
+|--------------------|-----------------------------------------------------------------------------|
+| `.head()`          | Returns the first few rows – useful for getting a quick overview.           |
+| `.info()`          | Displays column names, non-null counts, and data types.                     |
+| `.value_counts()`  | Shows counts of unique values – best used on categorical columns.           |
+| `.describe()`      | Gives summary stats for numeric columns (mean, std, min, 25/50/75%, max).   |
 
 ---
 
-## 2) Visualizing numerical data (using seaborn/matplotlib)
+## 📊 2. Visualizing Numerical Data
 
-> Classic way of numerical data distribution : Histogram
+### Example: Plotting a Histogram with Seaborn
 
 ```Python
 import seaborn as sns
@@ -33,11 +34,19 @@ Output : Histogram plot
 
 ---
 
-## Data validation
+## ✅ 3. Data Validation and Type Checking
 
-`.dtypes()` - to check on the dataframe datatype (but sometimes it didnt give the exact correct type)
+> Checking Data Types
 
-a) Update data type using `.astype()` function
+```Python
+books.dtypes
+```
+
+> Note: `.dtypes` may show a general type like `object` for strings or mixed types.
+
+---
+
+### 🔄 Converting Data Types using `.astype()`
 
 ```Python
 books["year"] = books["year"].astype(int)
@@ -47,6 +56,18 @@ books.dtypes
   <left>
     <img src="float_to_int.JPG" width="150">
   </left>
+
+### 🧮 Python Data Types Summary
+
+| Type        | Python Name |
+|-------------|--------------|
+| String      | `str`        |
+| Integer     | `int`        |
+| Float       | `float`      |
+| Dictionary  | `dict`       |
+| List        | `list`       |
+| Boolean     | `bool`       |
+
 
 
 
