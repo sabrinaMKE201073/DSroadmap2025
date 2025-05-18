@@ -1,4 +1,4 @@
-# Module 1: Getting to Know a Dataset
+# 📘 Module 1: Getting to Know a Dataset
 
 ---
 
@@ -6,56 +6,57 @@
 
 | Function           | Description                                                                 |
 |--------------------|-----------------------------------------------------------------------------|
-| `.head()`          | Returns the first few rows – useful for getting a quick overview.           |
+| `.head()`          | Returns the first few rows – useful for a quick overview.                   |
 | `.info()`          | Displays column names, non-null counts, and data types.                     |
-| `.value_counts()`  | Shows counts of unique values – best used on categorical columns.           |
-| `.describe()`      | Gives summary stats for numeric columns (mean, std, min, 25/50/75%, max).   |
+| `.value_counts()`  | Shows counts of unique values – great for categorical columns.              |
+| `.describe()`      | Summary stats for numeric columns (mean, std, min, quartiles, max).         |
 
 ---
 
 ## 📊 2. Visualizing Numerical Data
 
-### Example: Plotting a Histogram with Seaborn
+### 🔹 Histogram Example (Using Seaborn)
 
-```Python
+```python
 import seaborn as sns
 import matplotlib.pyplot as plt
-sns.histplot(data=books,
-            x="rating",
-            binwidth=.1)
+
+sns.histplot(data=books, x="rating", binwidth=0.1)
 plt.show()
 ```
-  
-  <left>
-    <img src="hist1.JPG" width="350">
-  </left>
+
+<left>
+  <img src="hist1.JPG" width="350">
+</left>
 
 ---
 
-## ✅ 3. Data Validation and Type Checking
+## ✅ 3. Data Validation & Type Checking
 
 ### 🔍 Checking Data Types
 
-```Python
+```python
 books.dtypes
 ```
 
-> Note: `.dtypes` may show a general type like `object` for strings or mixed types.
+> `.dtypes` may return `object` for columns with strings or mixed types.
 
 ---
 
-### 🔄 Converting Data Types using `.astype()`
+### 🔄 Converting Data Types with `.astype()`
 
-```Python
+```python
 books["year"] = books["year"].astype(int)
 books.dtypes
 ```
 
-  <left>
-    <img src="float_to_int.JPG" width="150">
-  </left>
+<left>
+  <img src="float_to_int.JPG" width="150">
+</left>
 
-### 🧮 Python Data Types Summary
+---
+
+### 🧮 Common Python Data Types
 
 | Type        | Python Name |
 |-------------|--------------|
@@ -68,160 +69,127 @@ books.dtypes
 
 ---
 
-### 🏷️ 4. Validating categorical data 
+## 🏷️ 4. Validating Categorical Data
 
-Using `.isin()` to Check Specific Categories
+### ✅ Using `.isin()` to Check Specific Categories
 
-```Python
+```python
 books["genre"].isin(["Fiction", "Non Fiction"])
 ```
 
-  <left>
-    <img src="isin.JPG" width="200">
-  </left>
+<left>
+  <img src="isin.JPG" width="200">
+</left>
 
-> Tip: Use `~` to invert the result and filter items not in the list.
-
----
-
-#### 🔎 Filter Rows Based on Category Match
-
- ```Python
- books[books["genre"].isin(["Fiction", "Non Fiction"])].head()
- ```
-
- <left>
-    <img src="isin2.JPG" width="500">
-  </left>
+> Tip: Use `~` to invert the result and filter items **not** in the list.
 
 ---
 
-### 🧪 5. Validating numerical data 
+### 🔎 Filter Rows Based on Category Match
 
-Handy Functions:
+```python
+books[books["genre"].isin(["Fiction", "Non Fiction"])].head()
+```
 
-- `df.select_dtypes("number")` - to select & view numerical columns in the dataframe
+<left>
+  <img src="isin2.JPG" width="500">
+</left>
 
-- `df["column"].min()`
+---
 
-- `df["column"].max()`
+## 🧪 5. Validating Numerical Data
 
+### 📌 Handy Functions
 
- #### 🔸 Visualize with `sns.boxplot` 
+- `df.select_dtypes("number")` – Select numerical columns  
+- `df["column"].min()` – Minimum value  
+- `df["column"].max()` – Maximum value  
 
-```Python
+---
+
+### 🔸 Boxplot Visualization by Category
+
+```python
 sns.boxplot(data=books, x="year", y="genre")
 ```
 
-  <left>
-    <img src="bocplot.JPG" width="350">
-  </left>
+<left>
+  <img src="bocplot.JPG" width="350">
+</left>
 
-> Observation: Children's books tend to be published slightly later, but year ranges across genres are similar.
+> Observation: Children's books tend to be published slightly later, but the range of years is similar across genres.
 
 ---
 
-### 🧪 6. Explore group data 
+## 📚 6. Grouping and Aggregating Data
 
-- `.groupby()` - groups data by category
+### 🔢 Group Data with `.groupby()`
 
-Aggregating function indicates how to summarize grouped data
+Use `.groupby()` + aggregation method like:
 
 - `.sum()`
-
 - `.count()`
-  
 - `.min()`
-  
 - `.max()`
-
 - `.mean()`
-
 - `.var()`
-
 - `.std()`
 
-
-```Python
+```python
 books.groupby("genre").mean()
 ```
 
-  <left>
-    <img src="mean.JPG" width="350">
-  </left>
+<left>
+  <img src="mean.JPG" width="350">
+</left>
 
 ---
 
-### 🧪 7. Aggregating ungrouped data
+## 📊 7. Aggregating Ungrouped Data with `.agg()`
 
-- `.agg()`
+### 🔧 Apply Multiple Aggregations
 
-> - to apply aggregate function across a DataFrame
-> - aggregate data across all rows in a given column name
-> - typically used for more than one function
-
-Available preset:
-
-- `"mean"`
-- `"std"`
-- `"median"`
-
----
-
-### Specifying agg for columns
-
-```Python
+```python
 books.agg({"rating": ["mean", "std"], "year": ["median"]})
 ```
 
-  <left>
-    <img src="agg.JPG" width="200">
-  </left>
+<left>
+  <img src="agg.JPG" width="200">
+</left>
+
+> `.agg()` applies multiple aggregate functions across one or more columns.
 
 ---
 
-### Named summary columns
+### 🧾 Named Summary Columns
 
-```Python
+```python
 books.groupby("genre").agg(
-mean_rating ("rating", "mean"),
-std_rating=("rating", "std"),
-median_year=("year", "median")
+    mean_rating=("rating", "mean"),
+    std_rating=("rating", "std"),
+    median_year=("year", "median")
 )
 ```
 
-  <left>
-    <img src="summary.JPG" width="350">
-  </left>
+<left>
+  <img src="summary.JPG" width="350">
+</left>
 
-Observation: Based on the table output, Fiction genre has the lowest average rating as well as the largest variation in ratings.
+> Observation: Fiction genre has the lowest average rating and the highest variation.
 
 ---
 
-### Visualizing categorical summaries
+## 📉 8. Visualizing Categorical Summaries
 
-Using Barplot
-```Python
+### 📊 Using `barplot()`
+
+```python
 sns.barplot(data=books, x="genre", y="rating")
 plt.show()
 ```
-  <left>
-    <img src="barplot.JPG" width="500">
-  </left>
 
-Observation: based on the bar plot, Fiction books have the lowest rating, their ratings also have a little more variation.
+<left>
+  <img src="barplot.JPG" width="500">
+</left>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+> Observation: Fiction books tend to have lower ratings with slightly more variation.
