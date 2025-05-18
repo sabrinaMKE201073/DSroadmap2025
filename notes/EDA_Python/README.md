@@ -1,4 +1,6 @@
-# 🔍 Exploratory Data Analysis (EDA) in Python ~ in progress 🔄
+# 🔍 Exploratory Data Analysis (EDA) in Python 
+
+### ~ in progress 🔄
 
 This folder contains notes, examples, and checklists related to EDA using Python.
 
