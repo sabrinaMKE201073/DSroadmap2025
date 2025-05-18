@@ -1,6 +1,7 @@
 # 🔍 Exploratory Data Analysis (EDA) in Python 
 
-### ~ Learning in progress 🔄 Begin (18-05-2025)
+### ~ Learning in progress 🔄 
+> Begin (18-05-2025)
 
 This folder contains notes, examples, and checklists related to EDA using Python.
 
