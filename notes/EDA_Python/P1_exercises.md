@@ -53,7 +53,16 @@ print(unemployment.agg(["mean", "std"]))
   <img src="meanstd.JPG" width="400">
 </left>
 
+Question B: 
+Print the mean and standard deviation (in that order) of the unemployment rates for each year, grouped by continent.
 
+```python
+print(unemployment.groupby("continent").agg(["mean", "std"]))
+```
+
+<left>
+  <img src="meanstd2.JPG" width="400">
+</left>
 
 
 
