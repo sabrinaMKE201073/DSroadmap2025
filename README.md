@@ -36,14 +36,17 @@ Welcome to my learning repository! This repo contains:
 
 I’m working on 3 focused, job-relevant portfolio projects:
 
-- 🧠 **CareerMatchAI**  
-  A Personalized Job Recommender System using LLM/NLP and content-based filtering
+🧠 **CareerMatchAI**  
+A Personalized Job Recommender System using LLM/NLP and content-based filtering  
+> *Helps job seekers match to relevant roles based on resume and job description text*
 
-- 🐦 **BirdNet++**  
-  Upgraded version of my master’s thesis: CNN-based Fine-Grained Bird Species Classification with transfer learning
+🐦 **BirdNet++**  
+Upgraded version of my master’s thesis: CNN-based Fine-Grained Bird Species Classification with transfer learning  
+> *Improves classification accuracy for similar-looking bird species using transfer learning*
 
-- 💸 **TransactiScan**  
-  An Explainable AI (XAI) approach to anomaly detection in financial transactions for AML compliance
+💸 **TransactiScan**  
+An Explainable AI (XAI) approach to anomaly detection in financial transactions for AML compliance  
+> *Detects suspicious transactions and provides human-readable explanations for analysts*
 
 🎯 Target: Complete at least **1 project by May 31, 2025**
 
@@ -61,3 +64,5 @@ I reflect on my daily study progress, project work, and goals in the [daily-logs
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/nurulsabrina1910/)  
 - 📁 [Back to Main GitHub](https://github.com/sabrinaMKE201073)
+
+👉 Stay tuned for updates!
