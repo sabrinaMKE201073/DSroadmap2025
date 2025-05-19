@@ -40,7 +40,7 @@ plt.show()
 
 ---
 
-### 🔹 Exercise 3 (using .groupby() and .agg()
+### 🔹 Exercise 3 summaries exercise using .groupby() and .agg()
 
 Question A: 
 Print the mean and standard deviation of the unemployment rates for each year (in that order).
@@ -64,6 +64,26 @@ print(unemployment.groupby("continent").agg(["mean", "std"]))
   <img src="meanstd2.JPG" width="400">
 </left>
 
+---
+
+### 🔹 Exercise 4 Named aggregation exercise
+
+Question : 
+Your task is to create a DataFrame called continent_summary which shows a row for each continent. The DataFrame columns will contain the mean unemployment rate for each continent in 2021 as well as the standard deviation of the 2021 employment rate. 
+
+```python
+continent_summary = unemployment.groupby("continent").agg(
+    # Create the mean_rate_2021 column
+    mean_rate_2021=("2021","mean"),
+    # Create the std_rate_2021 column
+    std_rate_2021=("2021","std")
+)
+print(continent_summary)
+```
+
+<left>
+  <img src="meanstd3.JPG" width="350">
+</left>
 
 
 
