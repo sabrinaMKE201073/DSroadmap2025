@@ -50,7 +50,7 @@ print(unemployment.agg(["mean", "std"]))
 ```
 
 <left>
-  <img src="meanstd.JPG" width="400">
+  <img src="meanstd.JPG" width="450">
 </left>
 
 Question B: 
@@ -61,7 +61,7 @@ print(unemployment.groupby("continent").agg(["mean", "std"]))
 ```
 
 <left>
-  <img src="meanstd2.JPG" width="400">
+  <img src="meanstd2.JPG" width="450">
 </left>
 
 ---
