@@ -1,34 +1,62 @@
-<h1 id="dsroadmap2025"># DSroadmap2025</h1>
+# 🧭 DSroadmap2025  
+## 📊 Data Science Learning Journey + AI Portfolio Projects
 
-<h2>📊 Data Science Learning Journey</h2>
-<p>Welcome to my learning repository! This repo contains my personal notes, practice notebooks, and code from my progress through the <strong>DataCamp Associate Data Scientist</strong> and <strong>SQL Fundamentals</strong> tracks.</p>
+Welcome to my learning repository! This repo contains:
 
-<h3>🧠 Courses Covered So Far</h3>
-<ul>
-  <li>✅ Introduction to Python</li>
-  <li>✅ Intermediate Python</li>
-  <li>✅ Data Manipulation with pandas</li>
-  <li>✅ Joining Data with Pandas</li>
-  <li>✅ Introduction to SQL</li>
-  <li>✅ Intermediate SQL</li>
-  <li>✅ Introduction to Data Visualization with Seaborn</li>
-  <li>🔄 Cleaning Data with Python <em>(In Progress)</em></li>
-  <li>🔄 Introduction to Statistics in Python <em>(In Progress)</em></li>
-</ul>
+- My personal notes and code from the **DataCamp Associate Data Scientist** track  
+- Plans and progress for **strategic AI/data projects** as part of my job search in 2025
 
-<hr>
+---
 
-<h3>🚀 Why I Created This Repo</h3>
-<ul>
-  <li>📌 To document my learning journey</li>
-  <li>💼 To build a data portfolio for job applications</li>
-  <li>🔁 To reinforce concepts by practicing and sharing</li>
-</ul>
+## 🧠 Courses Covered So Far
+
+- ✅ Introduction to Python  
+- ✅ Intermediate Python  
+- ✅ Data Manipulation with pandas  
+- ✅ Joining Data with pandas  
+- ✅ Introduction to SQL  
+- ✅ Intermediate SQL  
+- ✅ Introduction to Data Visualization with Seaborn  
+- 🔄 Cleaning Data with Python *(In Progress)*  
+- 🔄 Introduction to Statistics in Python *(In Progress)*  
+- 🔜 EDA in Python, Intro to Functions in Python *(Next)*  
+
+---
+
+## 🚀 Why I Created This Repo
+
+- 📌 To document and track my data science upskilling  
+- 💼 To build a public portfolio for job applications  
+- 🧪 To apply what I learn through real-world projects
+
+---
+
+## 💼 Portfolio Projects – May 2025 Plan
+
+I’m working on 3 focused, job-relevant portfolio projects:
+
+- 🧠 **CareerMatchAI**  
+  A Personalized Job Recommender System using LLM/NLP and content-based filtering
+
+- 🐦 **BirdNet++**  
+  Upgraded version of my master’s thesis: CNN-based Fine-Grained Bird Species Classification with transfer learning
+
+- 💸 **TransactiScan**  
+  An Explainable AI (XAI) approach to anomaly detection in financial transactions for AML compliance
+
+🎯 Target: Complete at least **1 project by May 31, 2025**
 
 ---
 
 ## 🗓️ Daily Logs
 
-I reflect on my progress, learning focus, and goals in [daily logs](https://github.com/sabrinaMKE201073/DSroadmap2025/tree/main/daily-logs).
+I reflect on my daily study progress, project work, and goals in the [daily-logs folder](https://github.com/sabrinaMKE201073/DSroadmap2025/tree/main/daily-logs).
 
-> 📅 Latest: [18 May 2025 — Seaborn done & planning ahead](https://github.com/sabrinaMKE201073/DSroadmap2025/blob/main/daily-logs/2025-05-18.md)
+> 📅 Latest: [19 May 2025 — EDA + Project Planning](https://github.com/sabrinaMKE201073/DSroadmap2025/blob/main/daily-logs/2025-05-19.md)
+
+---
+
+## 🔗 Connect With Me
+
+- 💼 [LinkedIn](https://www.linkedin.com/in/nurulsabrina1910/)  
+- 📁 [Back to Main GitHub](https://github.com/sabrinaMKE201073)
