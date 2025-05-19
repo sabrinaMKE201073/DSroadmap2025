@@ -89,5 +89,11 @@ plt.show()
 
 ## 🔗 Correlation
 
+• Describes direction and strength of relationship between two variables
+• Can help us use variables to predict future outcomes
+
+---
 
 ## 🎯 Factor relationships & distributions
+
+---
