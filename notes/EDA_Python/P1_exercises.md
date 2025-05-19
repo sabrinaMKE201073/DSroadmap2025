@@ -85,8 +85,20 @@ print(continent_summary)
   <img src="meanstd3.JPG" width="350">
 </left>
 
+### 🧩 Exercise 5 
 
+```python
+# Create a bar plot of continents and their average unemployment
+sns.barplot(data=unemployment, x="continent", y="2021")
+plt.xticks(rotation=90)
+plt.show()
+```
 
+<left>
+  <img src="plot1.JPG" width="450">
+</left>
+
+🔑While Europe has higher average unemployment than Asia, it also has a smaller confidence interval for that average, so the average value is more reliable.
 
 
 
