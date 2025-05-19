@@ -17,9 +17,10 @@ Welcome to my learning repository! This repo contains:
 - ✅ Introduction to SQL  
 - ✅ Intermediate SQL  
 - ✅ Introduction to Data Visualization with Seaborn  
-- 🔄 Cleaning Data with Python *(In Progress)*  
-- 🔄 Introduction to Statistics in Python *(In Progress)*  
-- 🔜 EDA in Python, Intro to Functions in Python *(Next)*  
+- 🔄 EDA in Python *(In Progress)*
+- 🔜 Cleaning Data with Python *(Next)*  
+- 🔜 Intro to Functions in Python *(Next)*  
+- 🔜 Introduction to Statistics in Python *(Next)*  
 
 ---
 
