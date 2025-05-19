@@ -38,9 +38,20 @@ plt.show()
 
 📌 Notice how different the ranges in unemployment are between continents. For example, Africa's 50th percentile is lower than that of North America, but the range is much wider.
 
+---
 
+### 🔹 Exercise 3 (using .groupby() and .agg()
 
+Question A: 
+Print the mean and standard deviation of the unemployment rates for each year (in that order).
 
+```python
+print(unemployment.agg(["mean", "std"]))
+```
+
+<left>
+  <img src="meanstd.JPG" width="400">
+</left>
 
 
 
