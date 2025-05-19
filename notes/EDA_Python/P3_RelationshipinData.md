@@ -85,7 +85,9 @@ plt.show()
 - The shaded **confidence interval (CI)** area reflects a 95% probability that the true mean falls within that range.
 - A **wide CI** implies high variability—consider exploring deeper (e.g., check for outliers or additional grouping).
 
+---
 
 ## 🔗 Correlation
+
 
 ## 🎯 Factor relationships & distributions
