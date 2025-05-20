@@ -4,6 +4,8 @@
 > Started (18-05-2025)
 >
 > Module 1✅
+> Module 3✅
+
 
 This folder contains notes, examples, and checklists related to EDA using Python.
 
