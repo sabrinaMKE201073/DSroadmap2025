@@ -30,3 +30,19 @@ plt.show()
 <left>
   <img src="income_woman.JPG" width="500">
 </left>
+
+📌 Just as in the correlation matrix, you can see that the relationship between income_woman and marriage_duration is not a strong one
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
