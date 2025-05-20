@@ -4,30 +4,21 @@
 
 ## 🕰️ **Patterns Over Time**
 
-Understanding how data changes over time is crucial for spotting trends and seasonal patterns. First, we must ensure that any time-based column is in the correct datetime format.
+To analyze trends and seasonality, we must ensure date-related columns are properly formatted.
 
 ---
 
-### 🧹 **Step 1: Fix Date & Time Data Types**
+### 🧹 Step 1: Ensure Proper DateTime Format
 
-> 📝 *Pandas often misinterprets date/time columns as string (`object`) types. Converting them to `datetime` is essential for time-based analysis.*
+> 📝 Pandas may treat date columns as strings (`object` type), so converting them to `datetime` is key for time-based analysis.
 
----
-
-#### ✅ Option 1: Use `parse_dates` in `pd.read_csv()`
-
-Converts a column into `datetime` **while importing** the CSV.
+#### ✅ Option 1: Convert during import
 
 ```python
 divorce = pd.read_csv("divorce.csv", parse_dates=["marriage_date"])
-divorce.dtypes  # marriage_date should now be datetime64
 ```
 
----
-
-#### ✅ Option 2: Use `pd.to_datetime()` after import
-
-Convert the column to datetime **after loading** the dataset.
+#### ✅ Option 2: Convert after import
 
 ```python
 divorce["marriage_date"] = pd.to_datetime(divorce["marriage_date"])
@@ -35,9 +26,9 @@ divorce["marriage_date"] = pd.to_datetime(divorce["marriage_date"])
 
 ---
 
-### 🛠️ **Step 2: Creating a DateTime Column from Multiple Columns**
+### 🛠️ Step 2: Combine Multiple Columns into One Date
 
-Sometimes, you have separate columns for month, day, and year. Combine them like this:
+If dates are split into year, month, and day columns:
 
 ```python
 divorce["marriage_date"] = pd.to_datetime(divorce[["month", "day", "year"]])
@@ -49,13 +40,12 @@ divorce["marriage_date"] = pd.to_datetime(divorce[["month", "day", "year"]])
 
 ---
 
-### 🔍 **Step 3: Extract Specific Date Parts**
+### 🔍 Step 3: Extract Date Components
 
-Use `.dt` accessor to extract components like month, year, or day.
+Use `.dt` to pull out specific parts like month, year, or weekday:
 
 ```python
 divorce["marriage_month"] = divorce["marriage_date"].dt.month
-divorce.head()
 ```
 
 <left>
@@ -64,9 +54,9 @@ divorce.head()
 
 ---
 
-## 📈 **Visualizing Patterns Over Time: Line Plot**
+## 📈 **Line Plot for Time Patterns**
 
-> A line plot is useful to show how a numeric variable changes over time. It aggregates y-values and shows a confidence interval by default.
+> Line plots are great for showing how a numeric variable changes over time.
 
 ```python
 sns.lineplot(data=divorce, x="marriage_month", y="marriage_duration")
@@ -79,21 +69,19 @@ plt.show()
 
 ---
 
-### 📌 **Interpretation:**
+### 📌 Interpretation:
 
-- The blue **line** shows the mean `marriage_duration` for each `marriage_month`.
-- The shaded **confidence interval (CI)** area reflects a 95% probability that the true mean falls within that range.
-- A **wide CI** implies high variability—consider exploring deeper (e.g., check for outliers or additional grouping).
+- The line shows the **average marriage duration** for each month.
+- The shaded area is the **95% confidence interval (CI)**.
+- A **wider CI** suggests more variation—look into possible outliers or subgroups.
 
 ---
 
-## 🔗 Correlation
+## 🔗 Correlation Analysis
 
-• Describes direction and strength of relationship between two variables
-• Can help us use variables to predict future outcomes
+> Understand how two variables move together—linearly.
 
-1) Pandas `.corr()` method
-> calculates Pearson correlation coefficient, measuring linear relationship.
+### 1️⃣ Using `.corr()` in Pandas
 
 ```python
 divorce.corr()
@@ -103,30 +91,25 @@ divorce.corr()
   <img src="correlation.JPG" width="500">
 </left>
 
-📌 *A value closer to zero is indicative of a weak relationship, while values closer to one or negative one indicate stronger relationships.*
+📌 A value:
+- Close to **0** = weak relationship  
+- Close to **1 or -1** = strong relationship
 
-2) Correlation heatmap (`.heatmap`)
-> A correlation heatmap is a visual way to show how strongly different variables in your dataset are related to each other. The values range from:
-- +1: Strong positive correlation (as one increases, the other increases)
-- 0: No correlation
-- -1: Strong negative correlation (as one increases, the other decreases)
-
-The color helps you spot these relationships easily:
-
-👍🏼 Light colors (like beige) = strong positive correlation
-
-🍇 Dark colors (like deep purple/black) = strong negative correlation
+### 2️⃣ Correlation Heatmap with Seaborn
 
 ```python
 sns.heatmap(divorce.corr(), annot=True)
 plt.show()
 ```
+📌 Colors help spot trends:
+- 👍🏼 Light (e.g., beige): strong **positive** correlation  
+- 🍇 Dark (e.g., deep purple): strong **negative** correlation  
+
+🧠 Example: `marriage_year` vs. `marriage_duration` shows a strong negative correlation (-0.81) since marriages in earlier years had more time to last longer.
 
 <left>
   <img src="heatmap.JPG" width="500">
 </left>
-
-📌 *Here, we can see that marriage year and marriage duration are strongly negatively correlated whith value of -0.81; 
 
 ### Correlation in context
 ```python
@@ -138,27 +121,26 @@ divorce["divorce_date"].max() #Output: Timestamp ('2015-11-03 00:00:00')
 
 ---
 
-### Visualizing realtionship
+## 🔍 **Beyond Linear: Visualizing Relationships**
 
-- Pearson coefficient we've been looking at only describes the linear correlation between variables.
-- Variables can have a strong non-linear relationship and a Pearson correlation coefficient of close to zero. 
-- This is why it's important to complement our correlation calculations with other plots (such as scatter plot
+Correlation doesn't capture non-linear patterns. Use visual tools to explore further.
 
 <left>
   <img src="v_r.JPG" width="500">
 </left>
 
+### 📉 Scatter Plots
+
+Simple yet effective to see patterns between two numeric variables.
+
 ---
 
-### Pairplots
-> - Next level of scatterplots
-> - useful for quick overview of relationships within dataset
-> - dificult to interpret especially with big datasets
-> - pairplot plots all pairwise relationships between numerical variables in one visualization. 
+### 🔗 Pair Plots
+
+> A grid of scatter plots showing all combinations of numeric variables.
 
 ```python
 sns.pairplot(data=divorce)
-plt.show()
 ```
 
 <left>
@@ -167,38 +149,39 @@ plt.show()
 
 ---
 
-### Limiting Pairplots
-> We can limit the number of plotted relationships by setting the vars argument equal to the variables of interest.
+For specific variables:
 
 ```python
 sns.pairplot(data=divorce, vars=["income_man", "income_woman", "marriage_duration"])
 ```
+
 <left>
   <img src="negativecorrelation.JPG" width="500">
 </left>
 
-📌 Keypoint: When we compare how income of husband, income of wife, and marriage duration relate to one another, there is no strong visible trend. In the scatterplots (from the pairplot), the points are likely scattered randomly, not forming a clear line or curve. hence,  income doesn’t seem to strongly influence marriage length.
+📌 When income vs. marriage duration shows scattered points, it suggests **no strong relationship**.
 
 ---
 
-## 🎯 Factor relationships & distributions
+## 🎯 **Categorical Factors & Distributions**
 
-> In this chapter, let's see how categorical variable related to education of man affect the marriage duration.
-> Next, we will see the relationship between marriage age and education
+Let’s see how **education levels** affect marriage duration.
 
-## PART 1
-### 1) Level of education: male partner using '.value_counts()`
+### 📊 Education Level Distribution
 
 ```python
 divorce["education_man"].value_counts()
 ```
+
 <left>
   <img src="count_education.JPG" width="300">
 </left>
 
-📌 Keypoint: most men have an education level between primary and professional, with a few men in the "None" or "Other" categories.
+📌 Most men have an education level between primary and professional levels.
 
-### 2) Exploring categorical relationships using `.histplot`
+---
+
+### 📉 Histogram by Category
 
 ```python
 sns.histplot(data=divorce,
@@ -211,9 +194,11 @@ plt.show()
   <img src="hist_hue_edu.JPG" width="500">
 </left>
 
-📌 Since education levels are stacked on top of each other, the relationship between marriage duration and male education level isn't super clear.
+📌 Stacked bars can be hard to interpret.
 
-### 3) Kernel Density Estimate (KDE) plots
+---
+
+### 3) 📈 Kernel Density Estimate (KDE) plots
 > Similiar to histogram, KDE allow us to visualize distributions.
 > KDE are more interpretable, though, especially when multiple distributions are shown.
 
@@ -227,12 +212,11 @@ plt.show()
   <img src="kde.JPG" width="500">
 </left>
 
-📌 Notice that the location of the peak marriage duration for each level of the male partner's education is more identifiable in this KDE plot than it was in the histogram. However, due to the smoothing algorithm used in KDE plots, the curve can include values that don't make sense, so it's important to set good smoothing parameters.
-📌 zooming in on the KDE plot showing the distribution of male education levels, we can see that the distribution seems to suggest that some couples had marriage durations of less than zero which is impossible.
+📌 Easier to see the peak marriage duration for each education level, but curves can include unrealistic values.
 
 ---
 
-### 4) Fix KDE plots using `cut` keyword argument
+### 🛠 Fix KDE Plot with `cut=0`
 
 ```python
 sns.kdeplot(data=divorce,
@@ -245,10 +229,11 @@ plt.show()
   <img src="cut0.JPG" width="500">
 </left>
 
-📌 When we set cut equal to zero, the curve will be limited to values between the minimum and maximum x values, Hence, The plot now shows only marriage durations greater than or equal to one year, the shortest marriage duration in the dataset.
+📌 Limits the curve to valid duration values only.
 
-### 5) Cumulative KDE plots 
-> This will give cumulative distribution function, we can set the cumulative keyword argument to True. 
+---
+
+### 📈 Cumulative KDE Plot
 
 ```python
 sns.kdeplot(data=divorce,
@@ -262,18 +247,20 @@ plt.show()
   <img src="cum1.JPG" width="500">
 </left>
 
+📌 Shows the **cumulative distribution**, useful for comparing groups.
+
 ---
 
-## PART 2
-###  Is there a relationship between age at marriage and education level?
-> We can create columns representing the approximate age at marriage for men and women by subtracting each partner's birth year from the marriage year.
+## 👩‍❤️‍👨 **Marriage Age vs Education Level**
+
+Create age-at-marriage columns:
 
 ```python
 divorce["man_age_marriage"] = divorce["marriage_year"] - divorce["dob_man"].dt.year 
 divorce["woman_age_marriage"] = divorce["marriage_year"] - divorce["dob_woman"].dt.year
 ```
 
-### 1) Scatter plot with categorical variables
+### 📉 Scatter Plot by Education Level
 
 ```python
 sns.scatterplot(data=divorce,  
@@ -286,6 +273,17 @@ plt.show()
   <img src="scatter_age.JPG" width="500">
 </left>
 
-📌 The results suggest that men with a professional education level, represented with orange dots, may tend to get married later
+📌 Orange dots (professional education) show men may marry later in life.
 
+---
 
+## ✅ Final Thoughts
+
+You've now explored:
+- Time-based analysis using datetime
+- Visualizing trends with line plots
+- Understanding linear and non-linear relationships
+- Using KDE and pair plots for distributions
+- Analyzing categorical effects on numeric outcomes
+
+🎯 These skills are fundamental for building insightful data stories. Great job!
