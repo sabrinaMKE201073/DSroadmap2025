@@ -35,6 +35,31 @@ plt.show()
 
 ---
 
+## Categorical data in scatter plots
+Q3: Create a scatter plot that shows woman_age_marriage on the x-axis and income_woman on the y-axis; each data point should be colored based on the woman's level of education, represented by education_woman.
+
+```python
+# Create the scatter plot
+sns.scatterplot(data=divorce,  
+                x="woman_age_marriage", 
+                y="income_woman",  
+                hue="education_woman") 
+plt.show()
+```
+
+<left>
+  <img src="education_women.JPG" width="500">
+</left>
+
+📌 There is a positive correlation between professional education and higher salaries, as you might expect. The relationship between women's age at marriage and education level is a little less clear.
+
+
+
+
+
+
+
+
 
 
 
