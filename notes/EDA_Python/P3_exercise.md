@@ -15,5 +15,7 @@ plt.show()
   <img src="num_kids_year.JPG" width="450">
 </left>
 
+📌 it looks like couples who had later marriage years also had fewer children during their marriage.
+
 ---
 
