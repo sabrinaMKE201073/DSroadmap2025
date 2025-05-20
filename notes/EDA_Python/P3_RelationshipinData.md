@@ -208,8 +208,7 @@ plt.show()
 ---
 
 ### 3) 📈 Kernel Density Estimate (KDE) plots
-> Similiar to histogram, KDE allow us to visualize distributions.
-> KDE are more interpretable, though, especially when multiple distributions are shown.
+> Kernel Density Estimate (KDE) plots are a great alternative to histograms when you want to show multiple distributions in the same visual
 
 ```python
 sns.kdeplot(data=divorce,
