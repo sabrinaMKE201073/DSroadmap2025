@@ -56,7 +56,7 @@ An Explainable AI (XAI) approach to anomaly detection in financial transactions 
 
 I reflect on my daily study progress, project work, and goals in the [daily-logs folder](https://github.com/sabrinaMKE201073/DSroadmap2025/tree/main/daily-logs).
 
-> 📅 Latest: [19 May 2025 — EDA + Project Planning](https://github.com/sabrinaMKE201073/DSroadmap2025/blob/main/daily-logs/2025-05-19.md)
+> 📅 Latest: [20 May 2025 — EDA + Project Planning](https://github.com/sabrinaMKE201073/DSroadmap2025/blob/main/daily-logs/2025-05-20.md)
 
 ---
 
