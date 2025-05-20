@@ -208,7 +208,7 @@ sns.histplot(data=divorce,
 plt.show() 
 ```
 <left>
-  <img src="hist_hue_edu.JPG" width="300">
+  <img src="hist_hue_edu.JPG" width="500">
 </left>
 
 📌 Since education levels are stacked on top of each other, the relationship between marriage duration and male education level isn't super clear.
@@ -224,7 +224,7 @@ sns.kdeplot(data=divorce,
 plt.show() 
 ```
 <left>
-  <img src="kde.JPG" width="400">
+  <img src="kde.JPG" width="500">
 </left>
 
 📌 Notice that the location of the peak marriage duration for each level of the male partner's education is more identifiable in this KDE plot than it was in the histogram. However, due to the smoothing algorithm used in KDE plots, the curve can include values that don't make sense, so it's important to set good smoothing parameters.
@@ -242,7 +242,7 @@ sns.kdeplot(data=divorce,
 plt.show() 
 ```
 <left>
-  <img src="cut0.JPG" width="400">
+  <img src="cut0.JPG" width="500">
 </left>
 
 📌 When we set cut equal to zero, the curve will be limited to values between the minimum and maximum x values, Hence, The plot now shows only marriage durations greater than or equal to one year, the shortest marriage duration in the dataset.
@@ -259,7 +259,7 @@ sns.kdeplot(data=divorce,
 plt.show() 
 ```
 <left>
-  <img src="cum1.JPG" width="400">
+  <img src="cum1.JPG" width="500">
 </left>
 
 ---
