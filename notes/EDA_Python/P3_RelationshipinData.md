@@ -181,13 +181,111 @@ sns.pairplot(data=divorce, vars=["income_man", "income_woman", "marriage_duratio
 
 ---
 
-
-
-
-
-
-
-
 ## 🎯 Factor relationships & distributions
 
+> In this chapter, let's see how categorical variable related to education of man affect the marriage duration.
+> Next, we will see the relationship between marriage age and education
+
+## PART 1
+### 1) Level of education: male partner using '.value_counts()`
+
+```python
+divorce["education_man"].value_counts()
+```
+<left>
+  <img src="count_education.JPG" width="300">
+</left>
+
+📌 Keypoint: most men have an education level between primary and professional, with a few men in the "None" or "Other" categories.
+
+### 2) Exploring categorical relationships using `.histplot`
+
+```python
+sns.histplot(data=divorce,
+            x="marriage_duration",
+            hue="education_man",
+            binwidth=1) 
+plt.show() 
+```
+<left>
+  <img src="hist_hue_edu.JPG" width="300">
+</left>
+
+📌 Since education levels are stacked on top of each other, the relationship between marriage duration and male education level isn't super clear.
+
+### 3) Kernel Density Estimate (KDE) plots
+> Similiar to histogram, KDE allow us to visualize distributions.
+> KDE are more interpretable, though, especially when multiple distributions are shown.
+
+```python
+sns.kdeplot(data=divorce,
+            x="marriage_duration",
+            hue="education_man") 
+plt.show() 
+```
+<left>
+  <img src="kde.JPG" width="400">
+</left>
+
+📌 Notice that the location of the peak marriage duration for each level of the male partner's education is more identifiable in this KDE plot than it was in the histogram. However, due to the smoothing algorithm used in KDE plots, the curve can include values that don't make sense, so it's important to set good smoothing parameters.
+📌 zooming in on the KDE plot showing the distribution of male education levels, we can see that the distribution seems to suggest that some couples had marriage durations of less than zero which is impossible.
+
 ---
+
+### 4) Fix KDE plots using `cut` keyword argument
+
+```python
+sns.kdeplot(data=divorce,
+            x="marriage_duration",
+            hue="education_man"
+            cut=0) 
+plt.show() 
+```
+<left>
+  <img src="cut0.JPG" width="400">
+</left>
+
+📌 When we set cut equal to zero, the curve will be limited to values between the minimum and maximum x values, Hence, The plot now shows only marriage durations greater than or equal to one year, the shortest marriage duration in the dataset.
+
+### 5) Cumulative KDE plots 
+> This will give cumulative distribution function, we can set the cumulative keyword argument to True. 
+
+```python
+sns.kdeplot(data=divorce,
+            x="marriage_duration",
+            hue="education_man"
+            cut=0,
+            cumulative=True) 
+plt.show() 
+```
+<left>
+  <img src="cum1.JPG" width="400">
+</left>
+
+---
+
+## PART 2
+###  Is there a relationship between age at marriage and education level?
+> We can create columns representing the approximate age at marriage for men and women by subtracting each partner's birth year from the marriage year.
+
+```python
+divorce["man_age_marriage"] = divorce["marriage_year"] - divorce["dob_man"].dt.year 
+divorce["woman_age_marriage"] = divorce["marriage_year"] - divorce["dob_woman"].dt.year
+```
+
+### 1) Scatter plot with categorical variables
+
+```python
+sns.scatterplot(data=divorce,  
+                x="woman_age_marriage", 
+                y="man_age_marriage",  
+                hue="education_man") 
+plt.show() 
+```
+<left>
+  <img src="scatter_age.JPG" width="500">
+</left>
+
+📌 The results suggest that men with a professional education level, represented with orange dots, may tend to get married later
+
+
