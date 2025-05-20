@@ -177,6 +177,9 @@ sns.pairplot(data=divorce, vars=["income_man", "income_woman", "marriage_duratio
   <img src="negativecorrelation.JPG" width="500">
 </left>
 
+📌 Keypoint: When we compare how income of husband, income of wife, and marriage duration relate to one another, there is no strong visible trend. In the scatterplots (from the pairplot), the points are likely scattered randomly, not forming a clear line or curve. hence,  income doesn’t seem to strongly influence marriage length.
+
+---
 
 
 
