@@ -133,6 +133,15 @@ Correlation doesn't capture non-linear patterns. Use visual tools to explore fur
 
 Simple yet effective to see patterns between two numeric variables.
 
+```python
+sns.scatterplot(data=divorce,x="marriage_duration", y="num_kids")
+plt.show()
+```
+
+<left>
+  <img src="scatter_plot.JPG" width="500">
+</left>
+
 ---
 
 ### 🔗 Pair Plots
