@@ -47,6 +47,19 @@ print(planes.isna().sum())
 
 ---
 
+### Strategies for remaining missing data
+
+To print the values and frequencies of the Additional_Info column in a pandas DataFrame, you can use the .value_counts() method
+
+```python
+print(planes["Additional_Info"].value_counts())
+```
+
+<left>
+  <img src="plane3.JPG" width="300">
+</left>
+
+
 
 
 
