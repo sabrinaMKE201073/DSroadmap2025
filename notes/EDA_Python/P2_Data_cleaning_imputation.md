@@ -175,3 +175,4 @@ plt.show()
   <img src="histplot.JPG" width="400">
 </left>
 
+🧠 Once the data was in the right format, you were able to plot the distribution of 'Duration' and see that the most common flight length is around three hours.
