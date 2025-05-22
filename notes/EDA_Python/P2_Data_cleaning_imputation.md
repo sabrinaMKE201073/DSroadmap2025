@@ -153,3 +153,25 @@ plt.show()
 🧠 It's clear that the majority of flights are short-haul, and virtually none are longer than 16 hours!
 
 
+---
+
+### Data cleaning for `Duration` column and convert it to the correct data type float for analysis
+
+```python
+# Preview the column
+print(planes["Duration"].head())
+
+# Remove the string character
+planes["Duration"] = planes["Duration"].str.replace("h", "")
+
+# Convert to float data type
+planes["Duration"] = planes["Duration"].astype(float)
+
+# Plot a histogram
+sns.histplot(planes["Duration"])
+plt.show()
+```
+<left>
+  <img src="histplot.JPG" width="400">
+</left>
+
