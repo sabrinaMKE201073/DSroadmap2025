@@ -150,5 +150,6 @@ plt.show()
   <img src="category.JPG" width="400">
 </left>
 
+🧠 It's clear that the majority of flights are short-haul, and virtually none are longer than 16 hours!
 
 
