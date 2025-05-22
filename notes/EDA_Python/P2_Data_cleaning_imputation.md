@@ -93,7 +93,21 @@ print(planes.isna().sum())
 
 ---
 
+### Finding the number of unique values
 
+```python
+# Filter the DataFrame for object columns
+non_numeric = planes.select_dtypes("object")
+
+# Loop through columns
+for column in non_numeric.columns:
+  
+  # Print the number of unique values
+  print(f"Number of unique values in {column} column: ", non_numeric[column].nunique())
+```
+<left>
+  <img src="object1.JPG" width="200">
+</left>
 
 
 
