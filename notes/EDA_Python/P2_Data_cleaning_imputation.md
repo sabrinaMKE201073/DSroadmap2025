@@ -109,8 +109,46 @@ for column in non_numeric.columns:
   <img src="object1.JPG" width="400">
 </left>
 
+---
+### Flight duration categories in object type such as `5h 25m'
+
+<left>
+  <img src="object2.JPG" width="400">
+</left>
 
 
+```python
+# Create a list of categories
+flight_categories = ["Short-haul", "Medium", "Long-haul"]
+
+short_flights = "^0h|^1h|^2h|^3h|^4h"
+medium_flights = "^5h|^6h|^7h|^8h|^9h"
+long_flights = "^10h|^11h|^12h|^13h|^14h|^15h|^16h"
+```
+
+### Adding duration categories
+
+```python
+# Create conditions for values in flight_categories to be created
+conditions = [
+    (planes["Duration"].str.contains(short_flights)),
+    (planes["Duration"].str.contains(medium_flights)),
+    (planes["Duration"].str.contains(long_flights))
+]
+
+# Apply the conditions list to the flight_categories
+planes["Duration_Category"] = np.select(conditions, 
+                                        flight_categories,
+                                        default="Extreme duration")
+
+# Plot the counts of each category
+sns.countplot(data=planes, x="Duration_Category")
+plt.show()
+```
+
+<left>
+  <img src="category.JPG" width="400">
+</left>
 
 
 
