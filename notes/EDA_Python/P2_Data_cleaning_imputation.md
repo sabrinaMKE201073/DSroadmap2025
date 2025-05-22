@@ -106,7 +106,7 @@ for column in non_numeric.columns:
   print(f"Number of unique values in {column} column: ", non_numeric[column].nunique())
 ```
 <left>
-  <img src="object1.JPG" width="200">
+  <img src="object1.JPG" width="400">
 </left>
 
 
