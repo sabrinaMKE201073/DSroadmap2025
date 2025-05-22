@@ -86,8 +86,16 @@ print(planes.isna().sum())
 ```
 
 <left>
-  <img src="plane5.JPG" width="300">
+  <img src="plane5.JPG" width="200">
 </left>
+
+🧠 By remove the "Additional_Info" column and impute the median by "Airline" for missing values of "Price", we've managed to remove all missing values from all columns.
+
+---
+
+
+
+
 
 
 
