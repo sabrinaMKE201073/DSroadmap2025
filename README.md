@@ -17,7 +17,9 @@ Welcome to my learning repository! This repo contains:
 - ✅ Introduction to SQL  
 - ✅ Intermediate SQL  
 - ✅ Introduction to Data Visualization with Seaborn  
-- 🔄 EDA in Python *(In Progress)*
+- ✅ EDA in Python
+- ✅ Large Language Models (LLMs) Concepts
+- ✅ Understanding Artificial Intelligence
 - 🔜 Cleaning Data with Python *(Next)*  
 - 🔜 Intro to Functions in Python *(Next)*  
 - 🔜 Introduction to Statistics in Python *(Next)*  
