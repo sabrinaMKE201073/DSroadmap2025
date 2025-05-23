@@ -35,6 +35,53 @@ np.sqrt(np.var(msleep['sleep_total'], ddof=1))
 np.std(msleep['sleep_total'], ddof=1)
 ```
 
+### 🔷 3️⃣ Mean absolute deviation
+
+```python
+dists = msleep['sleep_total'] - np.mean(msleep['sleep_total'])
+np.mean(np.abs(dists))
+```
+
+Standard deviation vs. mean absolute deviation
+> - Standard deviation squares distances, penalizing longer distances more than shorter ones.
+> - Mean absolute deviation penalizes each distance equally.
+> - One isn't better than the other, but SD is more common than MAD.
+
+### 🔷 4️⃣ Quantiles
+
+```python
+np.quantile(msleep['sleep_total'], 0.5)
+```
+🔎 0.5 quantile = median
+
+Quartiles
+```python
+np.quantile(msleep['sleep_total'], [0, 0.25, 0.5, 0.75, 1])
+```
+
+<left>
+  <img src="quantile1.JPG" width="350">
+</left>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
 
 ### ✅ Concept 2: Random Numbers and Probability
