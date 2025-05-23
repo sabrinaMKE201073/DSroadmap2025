@@ -95,11 +95,24 @@ from scipy.stats import iqr
 iqr (msleep['sleep_total'])
 #output: 5.9
 ```
+### 🔷 7️⃣Outlier
 
+A data point is an outlier if:
+- data < Q1 - 1.5 × IQR or
+- data > Q3 + 1.5 × IQR
 
+```python
+from scipy.stats import iqr
+iqr = iqr(msleep['bodywt'])
+Lower_threshold = np.quantile (msleep['bodywt'], 0.25) - 1.5 × igr
+upper_threshold = np.quantile (msleep['bodywt'], 0.75) + 1.5 × igr
 
+msleep [(msleep ['bodywt'] < lower_threshold) | (msleep ['bodywt'] > upper_threshold)]
+```
 
-
+<left>
+  <img src="outliers.JPG" width="350">
+</left>
 
 
 
