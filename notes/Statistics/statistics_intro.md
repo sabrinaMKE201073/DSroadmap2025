@@ -54,26 +54,47 @@ np.quantile(msleep['sleep_total'], 0.5)
 ```
 🔎 0.5 quantile = median
 
-Quartiles
+### 🔷 5️⃣ Quartiles
 ```python
 np.quantile(msleep['sleep_total'], [0, 0.25, 0.5, 0.75, 1])
 ```
 
 <left>
-  <img src="quantile1.JPG" width="350">
+  <img src="quantile1.JPG" width="300">
 </left>
 
+📦 Boxplot represent quartiles
+```python
+import matplotlib.pyplot as plt
+plt.boxplot(msleep['sleep_total'])
+plt.show()
+```
+<left>
+  <img src="boxplot.JPG" width="250">
+</left>
 
+Quantiles using `np.linspace (start, stop, num)` 
 
+> num = to set how many intervals
 
+```python
+np.quantile(msleep['sleep_total'], np.linspace(0, 1, 5))
+#output: array([ 1.9, 7.85, 10.1, 13.75, 19.9 ])
+```
+### 🔷 6️⃣ Interquartile range (IQR)
 
+> Height of the box in a boxplot
 
+```python
+np.quantile(msleep ['sleep_total'], 0.75) - np.quantile(msleep ['sleep_total'], 0.25)
+#output: 5.9
+```
 
-
-
-
-
-
+```python
+from scipy.stats import iqr
+iqr (msleep['sleep_total'])
+#output: 5.9
+```
 
 
 
