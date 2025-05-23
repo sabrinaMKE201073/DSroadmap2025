@@ -95,7 +95,7 @@ from scipy.stats import iqr
 iqr (msleep['sleep_total'])
 #output: 5.9
 ```
-### 🔷 7️⃣Outlier
+### 🔷 7️⃣ Outlier
 
 A data point is an outlier if:
 - data < Q1 - 1.5 × IQR or
@@ -109,13 +109,19 @@ upper_threshold = np.quantile (msleep['bodywt'], 0.75) + 1.5 × igr
 
 msleep [(msleep ['bodywt'] < lower_threshold) | (msleep ['bodywt'] > upper_threshold)]
 ```
-
+### 🔷 8️⃣ To check all statistics at once
 <left>
   <img src="outliers.JPG" width="350">
 </left>
 
+```python
+msleep['bodywt'].describe()
+```
 
 
+<left>
+  <img src="describe method.JPG" width="250">
+</left>
 ---
 
 ### ✅ Concept 2: Random Numbers and Probability
