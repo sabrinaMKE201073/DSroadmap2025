@@ -109,19 +109,20 @@ upper_threshold = np.quantile (msleep['bodywt'], 0.75) + 1.5 × igr
 
 msleep [(msleep ['bodywt'] < lower_threshold) | (msleep ['bodywt'] > upper_threshold)]
 ```
-### 🔷 8️⃣ To check all statistics at once
+
 <left>
   <img src="outliers.JPG" width="350">
 </left>
 
+### 🔷 8️⃣ To check all statistics at once
 ```python
 msleep['bodywt'].describe()
 ```
 
-
 <left>
   <img src="describe method.JPG" width="250">
 </left>
+
 ---
 
 ### ✅ Concept 2: Random Numbers and Probability
