@@ -120,7 +120,7 @@ msleep['bodywt'].describe()
 ```
 
 <left>
-  <img src="describe method.JPG" width="250">
+  <img src="describe method.JPG" width="200">
 </left>
 
 ---
