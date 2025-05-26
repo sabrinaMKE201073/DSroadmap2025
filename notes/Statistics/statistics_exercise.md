@@ -26,3 +26,37 @@ plt.show()
 <left>
   <img src="ex1b.JPG" width="400">
 </left>
+
+c) Question: Create a histogram of co2_emission for the eggs in food_category and show the plot.
+
+```python
+plt.figure() #use to start a new plot separate from any previous ones.
+
+food_consumption[food_consumption['food_category'] == 'eggs']['co2_emission'].hist()
+plt.show()
+```
+
+<left>
+  <img src="ex1c.JPG" width="400">
+</left>
+
+
+📌*Beef has the largest amount of variation in its CO2 emissions, while eggs have a relatively small amount of variation.*
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
