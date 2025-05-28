@@ -35,7 +35,7 @@ Welcome to my learning repository! This repo contains:
 
 ---
 
-## 💼 Portfolio Projects – May 2025 Plan
+## 💼 Portfolio Projects – June 2025 Plan
 
 I’m working on 3 focused, job-relevant portfolio projects:
 
