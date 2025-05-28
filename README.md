@@ -50,7 +50,7 @@ Upgraded version of my master’s thesis: CNN-based Fine-Grained Bird Species Cl
 An Explainable AI (XAI) approach to anomaly detection in financial transactions for AML compliance  
 > *Detects suspicious transactions and provides human-readable explanations for analysts*
 
-🎯 Target: Complete at least **1 project by May 31, 2025**
+🎯 Target: Complete at least **2 projects by June 15, 2025**
 
 ---
 
@@ -59,4 +59,6 @@ An Explainable AI (XAI) approach to anomaly detection in financial transactions 
 - 💼 [LinkedIn](https://www.linkedin.com/in/nurulsabrina1910/)  
 - 📁 [Back to Main GitHub](https://github.com/sabrinaMKE201073)
 
-👉 Stay tuned for updates!
+## 🔄 Ongoing Updates
+
+I’ll keep updating this folder as I complete more lessons. Stay tuned!
