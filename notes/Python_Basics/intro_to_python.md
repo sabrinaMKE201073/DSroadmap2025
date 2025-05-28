@@ -4,6 +4,6 @@
 
 `type()` - to check on data type (`int`/ `float` / `str` / `bool`)
 
-## List slicing
-
-<img src="list1.JPG" width="400">
+```python
+fam = ["liz", 1.73, "emma", 1.68, "mom", 1.71, "dad", 1.89]
+```
