@@ -20,9 +20,13 @@ Welcome to my learning repository! This repo contains:
 - ✅ EDA in Python  
 - ✅ Large Language Models (LLMs) Concepts  
 - ✅ Understanding Artificial Intelligence
-- 🔄🔄 Supervised Machine Learning: Regression and Classification *(Current progress)*
-- 🔜 Cleaning Data with Python *(Next)*  
-- 🔜 Intro to Functions in Python *(Next)*  
+---
+
+- 🔄 Supervised Machine Learning: Regression and Classification *(Current progress)*
+- 🔄 Intro to Functions in Python *(Next)*
+---
+
+- 🔜 Cleaning Data with Python *(Next)*   
 - 🔜 Introduction to Statistics in Python *(Next)*  
 
 ---
