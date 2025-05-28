@@ -17,9 +17,10 @@ Welcome to my learning repository! This repo contains:
 - ✅ Introduction to SQL  
 - ✅ Intermediate SQL  
 - ✅ Introduction to Data Visualization with Seaborn  
-- ✅ EDA in Python
-- ✅ Large Language Models (LLMs) Concepts
+- ✅ EDA in Python  
+- ✅ Large Language Models (LLMs) Concepts  
 - ✅ Understanding Artificial Intelligence
+- 🔄🔄 Supervised Machine Learning: Regression and Classification *(Current progress)*
 - 🔜 Cleaning Data with Python *(Next)*  
 - 🔜 Intro to Functions in Python *(Next)*  
 - 🔜 Introduction to Statistics in Python *(Next)*  
@@ -38,19 +39,19 @@ Welcome to my learning repository! This repo contains:
 
 I’m working on 3 focused, job-relevant portfolio projects:
 
-🧠 **CareerMatchAI**  
+### 🧠 CareerMatchAI  
 A Personalized Job Recommender System using LLM/NLP and content-based filtering  
 > *Helps job seekers match to relevant roles based on resume and job description text*
 
-🐦 **BirdNet++**  
+### 🐦 BirdNet++  
 Upgraded version of my master’s thesis: CNN-based Fine-Grained Bird Species Classification with transfer learning  
 > *Improves classification accuracy for similar-looking bird species using transfer learning*
 
-💸 **TransactiScan**  
+### 💸 TransactiScan  
 An Explainable AI (XAI) approach to anomaly detection in financial transactions for AML compliance  
 > *Detects suspicious transactions and provides human-readable explanations for analysts*
 
-🎯 Target: Complete at least **2 projects by June 15, 2025**
+🎯 **Target:** Complete at least **2 projects by June 15, 2025**
 
 ---
 
@@ -59,6 +60,10 @@ An Explainable AI (XAI) approach to anomaly detection in financial transactions 
 - 💼 [LinkedIn](https://www.linkedin.com/in/nurulsabrina1910/)  
 - 📁 [Back to Main GitHub](https://github.com/sabrinaMKE201073)
 
+---
+
 ## 🔄 Ongoing Updates
+
+Currently learning: **Supervised Machine Learning: Regression and Classification**
 
 I’ll keep updating this folder as I complete more lessons. Stay tuned!
