@@ -22,8 +22,8 @@ Welcome to my learning repository! This repo contains:
 - ✅ Understanding Artificial Intelligence
 ---
 
-- 🔄 Supervised Machine Learning: Regression and Classification *(Current progress)*
-- 🔄 Intro to Functions in Python *(Next)*
+- 🔄 Supervised Machine Learning: Regression and Classification *(Current progress on coursera)*
+- 🔄 Intro to Functions in Python *(Current progress on datacamp)*
 ---
 
 - 🔜 Cleaning Data with Python *(Next)*   
