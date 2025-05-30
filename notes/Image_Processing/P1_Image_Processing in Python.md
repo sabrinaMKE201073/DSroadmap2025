@@ -170,10 +170,13 @@ show_image(horizontally_flipped,'Horizontally flipped image')
 
 ---
 
+## What is histogram?
+Graphical representation of amount of pixels for each intensity value
+> From 0(pure black) to 255 (pure white)
 
+<img src="darklight.JPG" width="500">
 
-
-
+📌The first image is really dark (which consist of low intensity 0-50 range of gray levels) whereas the second image is lighter and has most of the pixels between 200-255 range)
 
 
 
