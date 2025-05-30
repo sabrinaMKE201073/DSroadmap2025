@@ -219,7 +219,10 @@ Application of thresholding
 
 ---
 
+1) First threshold (image > thresh)
+
 ```python
+#set optimal threshold value
 thresh = 127
 
 # Apply thresholding to the image
@@ -232,11 +235,80 @@ show_image(binary,'Thresholded')
 
 <img src="thr1.JPG" width="500">
 
+2) Inverted threshold (image <= thresh)
+
+```python
+inverted_binary = image <= thresh
+
+show_image(image,'Original')
+show_image(inverted_binary,'Inverted thresholded')
+```
+
 <img src="thr2.JPG" width="500">
+
+3) Categories :
+
+- Global / Histogram based: good for uniform backgrounds
+- Local / adaptive: for uneven background illumination
+
+4) Other thresholding algorithms
+
+```python
+from skimage.filters import try_all_threshold
+
+# Obtain all the resulting images
+fig, ax = try_all_threshold (image, verbose=False)
+
+# Showing resulting plots
+show_plot(fig, ax)
+```
 
 <img src="thr3.JPG" width="700">
 
-<img src="thr4.JPG" width="700">
+---
+
+5) Optimal thresh value using Global based
+
+> for uniform background images
+
+```python
+# Import the otsu threshold function
+from skimage.filters import threshold_otsu
+
+# Obtain the optimal threshold value
+thresh = threshold_otsu(image)
+
+# Apply thresholding to the image
+binary_global = image > thresh
+
+# Show the original and binarized image
+show_image(image, 'Original')
+show_image(binary_global, 'Global thresholding')
+```
+
+<img src="thr4.JPG" width="800">
+
+6) Optimal thresh value using Local based
+
+> For uneven background
+
+```python
+# Import the local threshold function
+from skimage.filters import threshold_local
+
+# Set the block size to 35
+block_size = 35
+
+# Obtain the optimal local thresholding
+local_thresh = threshold_local(text_image, block_size, offset=10)
+
+# Apply local thresholding and obtain the binary image
+binary_local = text_image › local_thresh
+
+# Show the original and binarized image
+show_image (text_image, 'Original')
+show_image (binary_local, 'Local thresholding')
+```
 
 <img src="thr5.JPG" width="500">
 
