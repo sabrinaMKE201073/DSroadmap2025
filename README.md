@@ -20,15 +20,14 @@ Welcome to my learning repository! This repo contains:
 - ✅ EDA in Python  
 - ✅ Large Language Models (LLMs) Concepts  
 - ✅ Understanding Artificial Intelligence
+- ✅ Intro to Functions in Python
 ---
-
+- 🔄 Image Processing in Python (Datacamp)
 - 🔄 Supervised Machine Learning: Regression and Classification *(Current progress on coursera)*
-- 🔄 Intro to Functions in Python *(Current progress on datacamp)*
 ---
 
 - 🔜 Cleaning Data with Python *(Next)*   
 - 🔜 Introduction to Statistics in Python *(Next)*  
-
 ---
 
 ## 🚀 Why I Created This Repo
