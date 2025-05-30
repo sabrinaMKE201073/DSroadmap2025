@@ -85,7 +85,7 @@ show_image(binary_global, 'Global thresholding')
   <img src="e42.JPG" width="400">
 </p>
 
-📌if using the global threshold, the image is unclear after thresholded.
+📌if using the global threshold, some of the formula is unclear after thresholded.
 
 ```python
 # Import the local threshold function
