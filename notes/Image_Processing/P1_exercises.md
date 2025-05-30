@@ -12,4 +12,11 @@ seville_horizontal_flip = np.fliplr(seville_vertical_flip)
 # Show the resulting image
 show_image(seville_horizontal_flip, 'Seville')
 ```
-<img src="e12.JPG" width="300">
+<p align="right">
+  <img src="e12.JPG" width="500">
+</p>
+
+
+---
+
+
