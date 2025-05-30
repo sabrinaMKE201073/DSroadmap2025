@@ -66,8 +66,48 @@ show_image(binary, 'Binary image')
   <img src="e32.JPG" width="400">
 </p>
 
+---
 
+### Exercise 4: Apply uneven background illumination for better result\
 
+<img src="e41.JPG" width="300">
+
+```python
+global_thresh = threshold_otsu(page_image)
+
+# Obtain the binary image by applying global thresholding
+binary_global = page_image > global_thresh
+
+# Show the binary image obtained
+show_image(binary_global, 'Global thresholding')
+```
+<p align="center">
+  <img src="e42.JPG" width="400">
+</p>
+
+📌if using the global threshold, the image is unclear after thresholded.
+
+```python
+# Import the local threshold function
+from skimage.filters import threshold_local
+
+# Set the block size to 35
+block_size = 35
+
+# Obtain the optimal local thresholding
+local_thresh = threshold_local(page_image, block_size, offset=10)
+
+# Obtain the binary image by applying local thresholding
+binary_local = page_image > local_thresh
+
+# Show the binary image
+show_image(binary_local, 'Local thresholding')
+```
+<p align="right">
+  <img src="e43.JPG" width="400">
+</p>
+
+📌 Much better version using Local threshold for this kind of image, if the image has a wide variation of background intensity.
 
 
 
