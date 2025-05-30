@@ -27,7 +27,13 @@ Operations to on images and videos to:
 5) Image Recognition
 > Distinguish objects in an image
 
-scikitimage
+---
 
+## What is an image
+A digital image is an array/matrix/square pixels which arranged in columns & rows (2-dimensional matrix)
+
+<img src="imagee.JPG" width="500">
+
+<img src="grayscale.JPG" width="500">
 
 
