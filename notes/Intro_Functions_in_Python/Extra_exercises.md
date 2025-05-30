@@ -37,7 +37,7 @@ result2 = count_entries(tweets_df,'lang','source')
 print(result1)
 print(result2)
 ```
-<img src="output1.JPG" width="350">
+<img src="output1.JPG" width="600">
 
 
 
