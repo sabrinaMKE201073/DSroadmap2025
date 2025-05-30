@@ -174,12 +174,26 @@ show_image(horizontally_flipped,'Horizontally flipped image')
 Graphical representation of amount of pixels for each intensity value
 > From 0(pure black) to 255 (pure white)
 
+Application of histograms
+- used for analysis
+- thresholding
+- to alter the brightness & contrast
+- to equalize an image
+
 <img src="darklight.JPG" width="500">
 
 📌The first image is really dark (which consist of low intensity 0-50 range of gray levels) whereas the second image is lighter and has most of the pixels between 200-255 range)
 
+```python
+#Red color of the image
+red = image[:, :, 0]
 
-
+#Display the red histogram
+plt.hist(red.ravel(), bins=256)
+plt.title('Red Histogram')
+plt.show()
+```
+<img src="hist1.JPG" width="500">
 
 
 
