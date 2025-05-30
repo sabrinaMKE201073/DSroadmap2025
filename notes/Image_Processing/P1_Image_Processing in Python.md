@@ -1,37 +1,28 @@
-# Introduction to Image Processing & scikit-image
+# 🎨 Introduction to Image Processing & scikit-image
 
 <img src="scikitimage.JPG" width="200">
 
 ## What is image processing?
-> subset of computer vision
+> A subfield of computer vision — where pixels meet purpose!
 
-Operations to on images and videos to:
-- Enhance an image
-- Extract useful information
-- Analyze it and make decisions
-
----
-
-### Purposes
-
-1) Visualization
-> Objects that are not visible
-
-2) Image sharpening and restoration
-> A better image
-
-3) Image retrieval
-> Seek for the image of interest
-      
-4) Measurement of pattern
-> Measures various objects
-
-5) Image Recognition
-> Distinguish objects in an image
+You can:
+- Enhance images 🪄
+- Extract insights 🔍
+- Analyze visuals & make decisions 🧠
 
 ---
 
-## What is an image?
+## 🔍 Why Use Image Processing?
+
+1. **See the Unseen** — Reveal hidden details  
+2. **Sharpen & Restore** — Clear up blurry images  
+3. **Search Images** — Find what you're looking for  
+4. **Measure Patterns** — Quantify shapes & features  
+5. **Recognize Objects** — Spot people, faces, cats 😺
+
+---
+
+## 🧱 What is an image?
 A digital image is an array/matrix/square pixels which arranged in columns & rows (2-dimensional matrix)
 
 <img src="imagee.JPG" width="400">
@@ -40,7 +31,7 @@ A digital image is an array/matrix/square pixels which arranged in columns & row
 
 --- 
 
-## Import image for scikit-image
+## 🛠️ Load Images with `scikit-image`
 
 ```python
 from skimage import data
@@ -48,7 +39,7 @@ rocket_image = data.rocket()
 ```
 <img src="skimage1.JPG" width="300">
 
-## RGB vs Grayscale color
+## 🌈 RGB vs Grayscale color
 
 ```python
 from skimage import color
@@ -65,7 +56,7 @@ show_image(grayscale, "Grayscale")
 
 ---
 
-### Exercise: RGB to grayscale
+### ✏️ Exercise: RGB ➡️ grayscale
 
 ```python
 # Import the modules from skimage
@@ -90,7 +81,7 @@ show_image(gray_scaled_rocket, 'Grayscale image')
 
 ---
 
-## Numpy for Images
+## 🧮 NumPy for Image Manipulation
 
 Fundamentals of image processing
 techniques
@@ -104,18 +95,13 @@ madrid_image = plt.imread('/madrid.jpeg')
 type(madrid_image)   #output: <class 'numpy.ndarray'>
 ```
 
-### Colors with Numpy
+### 🎨 Colors with Numpy
 
 1) Default colormap in RGB
 
 ```python
-# Obtaining the red values of the image
-red image[:, :, 0]
-
-# Obtaining the green values of the image
-green image [:, :, 1]
-
-# Obtaining the blue values of the image
+red = image[:, :, 0]
+green = image[:, :, 1]
 blue = image[:, :, 2]
 ```
 <img src="rgb.JPG" width="700">
@@ -133,15 +119,13 @@ plt.show()
 ```
 <img src="graymap.JPG" width="700">
 
-### Shapes & Sizes
-> To accessing the shape & size of this image:
+### Image Shape & Size
 
 <img src="shape2.JPG" width="300">
 
 ```python
-madrid_image.shape  #shape of (426, 640, 3)
-
-madrid_image.size   #817920
+madrid_image.shape  # (426, 640, 3)
+madrid_image.size   # 817920
 ```
 🖊️ The picture displayed consist the height of 426, width of 640 and 3 color of representation (RGB-3 image).
 
@@ -149,9 +133,10 @@ Next, the image consist of 817920 total number of pixels.
 
 ---
 
-### Flipping images 
+### 🔄 Flip Images
 
-1) vertically
+1) Vertical:
+
 ```python
 vertically_flipped = np.flipud(madrid_image)
 show_image(vertically_flipped,'Vertically flipped image')
@@ -159,7 +144,7 @@ show_image(vertically_flipped,'Vertically flipped image')
 
 <img src="vetical.JPG" width="300">
 
-2) horizontally
+2) Horizontal:
 
 ```python
 horizontally_flipped = np.fliplr(madrid_image)
@@ -170,25 +155,20 @@ show_image(horizontally_flipped,'Horizontally flipped image')
 
 ---
 
-## What is histogram?
-Graphical representation of amount of pixels for each intensity value
-> From 0(pure black) to 255 (pure white)
+## 📊 What is histogram?
+Represents pixel intensity from 0 (black) to 255 (white).
 
-Application of histograms
-- used for analysis
-- thresholding
-- to alter the brightness & contrast
-- to equalize an image
+Use it to:
+- Adjust brightness/contrast
+- Perform thresholding
+- Analyze images
 
 <img src="darklight.JPG" width="500">
 
 📌The first image is really dark (which consist of low intensity 0-50 range of gray levels) whereas the second image is lighter and has most of the pixels between 200-255 range)
 
 ```python
-#Red color of the image
 red = image[:, :, 0]
-
-#Display the red histogram
 plt.hist(red.ravel(), bins=256)
 plt.title('Red Histogram')
 plt.show()
@@ -197,69 +177,44 @@ plt.show()
 
 --- 
 
-## Thresholding
+## ⚫ Thresholding = B&W Magic
 
-Partitioning an image into a foreground and
-background
-> By making it black and white
-
-> Thresholding from grayscale images 
+Split an image into foreground (white) & background (black)
 
 <img src="threshold1.JPG" width="700">
-
-We do so by setting each pixel to:
-- 255 (white) if pixel > thresh value
-- 0 (black) if pixel < thresh value
-
----
 
 Application of thresholding
 - Object detection
 - Face detection
 
----
-
-1) First threshold (image > thresh)
-
 ```python
-#set optimal threshold value
 thresh = 127
-
-# Apply thresholding to the image
 binary = image > thresh
-
-# Show the original and thresholded
 show_image(image,'Original')
 show_image(binary,'Thresholded')
 ```
 
 <img src="thr1.JPG" width="500">
 
-2) Inverted threshold (image <= thresh)
+## 🔄 Inverted threshold
 
 ```python
 inverted_binary = image <= thresh
-
-show_image(image,'Original')
-show_image(inverted_binary,'Inverted thresholded')
 ```
 
 <img src="thr2.JPG" width="500">
 
-3) Categories :
+## 🧪 Thresholding Techniques
 
-- Global / Histogram based: good for uniform backgrounds
-- Local / adaptive: for uneven background illumination
+- Global: Simple, for uniform lighting
+- Local (adaptive): For uneven lighting
 
-4) Other thresholding algorithms
+### Try all thresholds techniques:
 
 ```python
 from skimage.filters import try_all_threshold
+fig, ax = try_all_threshold(image, verbose=False)
 
-# Obtain all the resulting images
-fig, ax = try_all_threshold (image, verbose=False)
-
-# Showing resulting plots
 show_plot(fig, ax)
 ```
 
@@ -267,52 +222,34 @@ show_plot(fig, ax)
 
 ---
 
-5) Optimal thresh value using Global based
-
-> for uniform background images
+## ✅ Global Threshold with Otsu
 
 ```python
-# Import the otsu threshold function
 from skimage.filters import threshold_otsu
 
-# Obtain the optimal threshold value
 thresh = threshold_otsu(image)
-
-# Apply thresholding to the image
 binary_global = image > thresh
-
-# Show the original and binarized image
-show_image(image, 'Original')
-show_image(binary_global, 'Global thresholding')
 ```
 
 <img src="thr4.JPG" width="800">
 
-6) Optimal thresh value using Local based
-
-> For uneven background
+## 🧠 Local Thresholding
 
 ```python
-# Import the local threshold function
 from skimage.filters import threshold_local
 
-# Set the block size to 35
 block_size = 35
-
-# Obtain the optimal local thresholding
 local_thresh = threshold_local(text_image, block_size, offset=10)
-
-# Apply local thresholding and obtain the binary image
-binary_local = text_image › local_thresh
-
-# Show the original and binarized image
-show_image (text_image, 'Original')
-show_image (binary_local, 'Local thresholding')
+binary_local = text_image > local_thresh
 ```
 
 <img src="thr5.JPG" width="500">
 
+### 💡 Summary
 
+Image processing lets you twist, flip, sharpen, and understand pictures at a pixel level using Python & scikit-image. 
+
+Time to get hands-on and pixel-smart!
 
 
 
