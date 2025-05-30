@@ -67,6 +67,6 @@ An Explainable AI (XAI) approach to anomaly detection in financial transactions 
 
 ## 🔄 Ongoing Updates
 
-Currently learning: **Supervised Machine Learning: Regression and Classification**
+📆 Most Recent Update: [30 May 2025 Log](https://github.com/sabrinaMKE201073/DSroadmap2025/blob/main/daily-logs/2025-05-30.md)
 
 I’ll keep updating this folder as I complete more lessons. Stay tuned!
