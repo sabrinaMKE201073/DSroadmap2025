@@ -195,23 +195,27 @@ plt.show()
 ```
 <img src="hist1.JPG" width="500">
 
-
-
-
-
-
-
-
-
-
 --- 
 
 ## Thresholding
 
+Partitioning an image into a foreground and
+background
+> By making it black and white
 
+> Thresholding from grayscale images 
 
+<img src="threshold1.JPG" width="700">
 
+We do so by setting each pixel to:
+- 255 (white) if pixel > thresh value
+- 0 (black) if pixel < thresh value
 
+---
+
+Application of thresholding
+- Object detection
+- Face detection
 
 
 
