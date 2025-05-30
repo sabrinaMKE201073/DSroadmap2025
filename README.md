@@ -69,4 +69,8 @@ An Explainable AI (XAI) approach to anomaly detection in financial transactions 
 
 📆 Most Recent Update: [30 May 2025 Log](https://github.com/sabrinaMKE201073/DSroadmap2025/blob/main/daily-logs/2025-05-30.md)
 
-I’ll keep updating this folder as I complete more lessons. Stay tuned!
+"Wrapping up May strong! 🔥 Finished functions in Python today and diving into image processing + Hugging Face. Lining things up for my food image classification project next. 🚀 #100DaysOfCode #AIEngineerJourney #DataScience"
+
+--- 
+
+🚀 I’ll keep updating this folder as I complete more lessons. Stay tuned!
