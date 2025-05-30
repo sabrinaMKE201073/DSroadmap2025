@@ -68,7 +68,7 @@ show_image(binary, 'Binary image')
 
 ---
 
-### Exercise 4: Apply uneven background illumination for better result\
+### Exercise 4: Apply uneven background illumination for better result
 
 <img src="e41.JPG" width="300">
 
@@ -109,6 +109,32 @@ show_image(binary_local, 'Local thresholding')
 
 📌 Much better version using Local threshold for this kind of image, if the image has a wide variation of background intensity.
 
+---
 
 
+### Exercise 5: Trying other methods of thresholding
+
+<img src="e51.JPG" width="300">
+
+```python
+# Import the try all function
+from skimage.filters import try_all_threshold
+
+# Import the rgb to gray convertor function 
+from skimage.color import rgb2gray
+
+# Turn the fruits_image to grayscale
+grayscale = rgb2gray(fruits_image)
+
+# Use the try all method on the resulting grayscale image
+fig, ax = try_all_threshold(grayscale, verbose=False)
+
+# Show the resulting plots
+plt.show()
+```
+<p align="center">
+  <img src="e52.JPG" width="400">
+</p>
+
+📌 From all of the above thresholding method, this image works good with some global thresholding methods (like the "Yen" and "Mean") and not so well in others, (like the "Minimum").
 
