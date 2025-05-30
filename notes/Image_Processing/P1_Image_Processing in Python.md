@@ -1,4 +1,4 @@
-<img src="scikitimage.JPG" width="350">
+<img src="scikitimage.JPG" width="200">
 
 ## What is image processing?
 > subset of computer vision
@@ -29,11 +29,41 @@ Operations to on images and videos to:
 
 ---
 
-## What is an image
+## What is an image?
 A digital image is an array/matrix/square pixels which arranged in columns & rows (2-dimensional matrix)
 
 <img src="imagee.JPG" width="500">
 
 <img src="grayscale.JPG" width="500">
+
+--- 
+
+## Import image for scikit-image
+
+```python
+from skimage import data
+rocket_image = data.rocket()
+```
+<img src="skimage1.JPG" width="300">
+
+## RGB vs Grayscale color
+
+```python
+from skimage import color
+grayscale = color.rgb2gray(original)
+rgb = color.gray2rgb(grayscale)
+```
+<img src="gray1.JPG" width="300">
+
+```python
+#using matplotlib function to show image
+show_image(grayscale, "Grayscale")
+```
+<img src="gray2.JPG" width="200">
+
+
+
+
+
 
 
