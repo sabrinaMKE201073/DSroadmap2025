@@ -5,3 +5,5 @@ Operations to on images and videos to:
 - Enhance an image
 - Extract useful information
 - Analyze it and make decisions
+
+<img src="Image1.JPG" width="350">
