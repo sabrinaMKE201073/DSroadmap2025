@@ -133,15 +133,40 @@ plt.show()
 ```
 <img src="graymap.JPG" width="700">
 
+### Shapes & Sizes
+> To accessing the shape & size of this image:
 
+<img src="shape2.JPG" width="300">
 
+```python
+madrid_image.shape  #shape of (426, 640, 3)
 
+madrid_image.size   #817920
+```
+🖊️ The picture displayed consist the height of 426, width of 640 and 3 color of representation (RGB-3 image).
 
+Next, the image consist of 817920 total number of pixels.
 
+---
 
+### Flipping images 
 
+1) vertically
+```python
+vertically_flipped = np.flipud(madrid_image)
+show_image(vertically_flipped,'Vertically flipped image')
+```
 
+<img src="vetical.JPG" width="300">
 
+2) horizontally
+
+```python
+horizontally_flipped = np.fliplr(madrid_image)
+show_image(horizontally_flipped,'Horizontally flipped image')
+```
+
+<img src="horizontal.JPG" width="300">
 
 ---
 
