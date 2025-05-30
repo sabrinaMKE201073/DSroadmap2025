@@ -40,3 +40,35 @@ plt.show()
 
 📌With this histogram we see that the image is quite reddish, meaning it has a sensation of warmness. This is because it has a wide and large distribution of bright red pixels, from 0 to around 150.
 
+---
+
+### Exercise 3: Apply global thresholding
+
+<img src="e31.JPG" width="300">
+
+```python
+# Import the otsu threshold function
+from skimage.filters import threshold_otsu
+
+# Make the image grayscale using rgb2gray
+chess_pieces_image_gray = rgb2gray(chess_pieces_image)
+
+# Obtain the optimal threshold value with otsu
+thresh = threshold_otsu(chess_pieces_image_gray)
+
+# Apply thresholding to the image
+binary = chess_pieces_image_gray > thresh
+
+# Show the image
+show_image(binary, 'Binary image')
+```
+<p align="center">
+  <img src="e32.JPG" width="400">
+</p>
+
+
+
+
+
+
+
