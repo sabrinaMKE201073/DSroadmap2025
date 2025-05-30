@@ -217,16 +217,28 @@ Application of thresholding
 - Object detection
 - Face detection
 
+---
 
+```python
+thresh = 127
 
+# Apply thresholding to the image
+binary = image > thresh
 
+# Show the original and thresholded
+show_image(image,'Original')
+show_image(binary,'Thresholded')
+```
 
+<img src="thr1.JPG" width="500">
 
+<img src="thr2.JPG" width="500">
 
+<img src="thr3.JPG" width="700">
 
+<img src="thr4.JPG" width="700">
 
-
-
+<img src="thr5.JPG" width="500">
 
 
 
