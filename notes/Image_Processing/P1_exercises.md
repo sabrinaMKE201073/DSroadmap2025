@@ -1,4 +1,6 @@
-### Exercise 1: Flipping out
+# 🖼️ Image Processing Exercises with scikit-image
+
+### 🌀 Exercise 1: Flip it!
 
 <img src="e11.JPG" width="300">
 
@@ -19,7 +21,7 @@ show_image(seville_horizontal_flip, 'Seville')
 
 ---
 
-### Exercise 2: Histograms
+### 📊 Exercise 2: Red Hot Histogram
 
 <img src="e22.JPG" width="300">
 
@@ -38,11 +40,11 @@ plt.show()
   <img src="e21.JPG" width="400">
 </p>
 
-📌With this histogram we see that the image is quite reddish, meaning it has a sensation of warmness. This is because it has a wide and large distribution of bright red pixels, from 0 to around 150.
+📌 *This histogram shows a warm reddish tone—most pixels range between 0–150.*
 
 ---
 
-### Exercise 3: Apply global thresholding
+### 🌓 Exercise 3: Go Binary with Global Threshold
 
 <img src="e31.JPG" width="300">
 
@@ -68,7 +70,7 @@ show_image(binary, 'Binary image')
 
 ---
 
-### Exercise 4: Apply uneven background illumination for better result
+### 🌗 Exercise 4: Uneven Background? Try Local Threshold
 
 <img src="e41.JPG" width="300">
 
@@ -85,7 +87,7 @@ show_image(binary_global, 'Global thresholding')
   <img src="e42.JPG" width="400">
 </p>
 
-📌if using the global threshold, some of the formula is unclear after thresholded.
+📌 *Global thresholding can miss some text when the background isn't uniform.*
 
 ```python
 # Import the local threshold function
@@ -107,12 +109,12 @@ show_image(binary_local, 'Local thresholding')
   <img src="e43.JPG" width="400">
 </p>
 
-📌 Much better version using Local threshold for this kind of image, if the image has a wide variation of background intensity.
+📌 *Local thresholding shines when dealing with varied lighting.*
 
 ---
 
 
-### Exercise 5: Trying other methods of thresholding
+### 🧪 Exercise 5: Test All Thresholds!
 
 <img src="e51.JPG" width="300">
 
@@ -140,7 +142,7 @@ plt.show()
 
 ---
 
-### Exercise 6: Apply thresholding
+### 🛠️ Exercise 6: Binarize Those Tools
 
 <img src="e61.JPG" width="500">
 
