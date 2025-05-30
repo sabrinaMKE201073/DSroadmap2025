@@ -1,3 +1,5 @@
+# Introduction to Image Processing & scikit-image
+
 <img src="scikitimage.JPG" width="200">
 
 ## What is image processing?
@@ -84,5 +86,109 @@ show_image(gray_scaled_rocket, 'Grayscale image')
 
 <img src="original1.JPG" width="200">
 <img src="or2gray.JPG" width="200">
+
+
+---
+
+## Numpy for Images
+
+Fundamentals of image processing
+techniques
+- Flipping
+- Extract and analyze features
+
+```python
+#load image using Matplotlib
+madrid_image = plt.imread('/madrid.jpeg')
+
+type(madrid_image)   #output: <class 'numpy.ndarray'>
+```
+
+### Colors with Numpy
+
+1) Default colormap in RGB
+
+```python
+# Obtaining the red values of the image
+red image[:, :, 0]
+
+# Obtaining the green values of the image
+green image [:, :, 1]
+
+# Obtaining the blue values of the image
+blue = image[:, :, 2]
+```
+<img src="rgb.JPG" width="700">
+
+🖊️ The picture is displayed in the default colormap, different intensities in each tone
+
+
+2) Gray colormap in RGB
+
+```python
+plt.imshow(red, cmap="gray")
+plt.title('Red')
+plt.axis('off')
+plt.show()
+```
+<img src="graymap.JPG" width="700">
+
+
+
+
+
+
+
+
+
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--- 
+
+## Thresholding
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
