@@ -8,7 +8,7 @@ Operations to on images and videos to:
 - Extract useful information
 - Analyze it and make decisions
 
-<img src="Image1.JPG" width="350">
+<img src="Image1.JPG" width="300">
 
 ### Purposes
 
@@ -32,9 +32,9 @@ Operations to on images and videos to:
 ## What is an image?
 A digital image is an array/matrix/square pixels which arranged in columns & rows (2-dimensional matrix)
 
-<img src="imagee.JPG" width="500">
+<img src="imagee.JPG" width="400">
 
-<img src="grayscale.JPG" width="500">
+<img src="grayscale.JPG" width="400">
 
 --- 
 
@@ -61,9 +61,28 @@ show_image(grayscale, "Grayscale")
 ```
 <img src="gray2.JPG" width="200">
 
+---
 
+### Exercise: RGB to grayscale
 
+```python
+# Import the modules from skimage
+from skimage import data, color
 
+# Load the rocket image
+rocket = data.rocket()
 
+# Convert the image to grayscale
+gray_scaled_rocket = color.rgb2gray(rocket)
+
+# Show the original image
+show_image(rocket, 'Original RGB image')
+
+# Show the grayscale image
+show_image(gray_scaled_rocket, 'Grayscale image')
+```
+
+<img src="original1.JPG" width="200">
+<img src="or2gray.JPG" width="200">
 
 
