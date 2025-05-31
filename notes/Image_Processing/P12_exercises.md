@@ -196,6 +196,7 @@ show_image(edge_sobel, "Edges with Sobel")
   <img src="ex12.JPG" width="400">
 </p>
 
+📌 The edges of all the figures in the scene are highlighted.
 
 
 
