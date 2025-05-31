@@ -200,7 +200,19 @@ show_image(edge_sobel, "Edges with Sobel")
 
 ### Exercise 2: Using Gaussian filter (to reduce noise)
 
-<img src="building_image.JPG" width="400">
+<img src="building_image.JPG" width="100">
+
+```python
+# Import Gaussian filter 
+from skimage.filters import gaussian
+
+# Apply filter
+gaussian_image = gaussian(building_image, multichannel=True)
+
+# Show original and resulting image to compare
+show_image(building_image, "Original")
+show_image(gaussian_image, "Reduced sharpness Gaussian")
+```
 
 <p align="center">
   <img src="building_image_outtputt.JPG" width="400">
