@@ -1,4 +1,4 @@
-# 🖼️ Image Processing Exercises with scikit-image
+# 🖼️ PART 1 : Image Processing Exercises with scikit-image
 
 ### 🌀 Exercise 1: Flip it!
 
@@ -144,7 +144,7 @@ plt.show()
 
 ### 🛠️ Exercise 6: Binarize Those Tools
 
-<img src="e61.JPG" width="500">
+<img src="e61.JPG" width="400">
 
 ```python
 # Import threshold and gray convertor functions
@@ -165,7 +165,50 @@ show_image(binary_image, 'Binarized image')
 ```
 
 <p align="center">
-  <img src="e62.JPG" width="500">
+  <img src="e62.JPG" width="400">
 </p>
+
+# 🖼️ PART 2 : Filters, Contrast, Transformation and Morphology
+
+### Exercise 1: Edge detection
+
+<img src="ex1.JPG" width="400">
+
+```python
+# Import the color module
+from skimage import color
+
+# Import the filters module and sobel function
+from skimage.filters import sobel
+
+# Make the image grayscale
+soaps_image_gray = color.rgb2gray(soaps_image)
+
+# Apply edge detection filter
+edge_sobel = sobel(soaps_image_gray)
+
+# Show original and resulting image to compare
+show_image(soaps_image, "Original")
+show_image(edge_sobel, "Edges with Sobel")
+```
+
+<p align="center">
+  <img src="ex12.JPG" width="400">
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
