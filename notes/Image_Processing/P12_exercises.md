@@ -198,7 +198,13 @@ show_image(edge_sobel, "Edges with Sobel")
 
 📌 The edges of all the figures in the scene are highlighted.
 
+### Exercise 2: Using Gaussian filter (to reduce noise)
 
+<img src="building_image.JPG" width="400">
+
+<p align="center">
+  <img src="building_image_outtputt.JPG" width="400">
+</p>
 
 
 
