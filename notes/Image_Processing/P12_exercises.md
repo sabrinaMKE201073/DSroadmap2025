@@ -312,5 +312,25 @@ show_image(rescaled_without_aa, "Transformed without anti aliasing")
 
 📌 Anti aliasing filter prevents the poor pixelation effect to happen, making it look better but also less sharp.
 
+---
 
+### Exercise 7: Enlarging images
+
+```python
+from skimage.transform import rescale
+from skimage import data
+
+rocket_image = data.rocket()
+enlarged_rocket_image = rescale(rocket_image,3,anti_aliasing=True, multichannel=True)
+
+show_image(rocket_image)
+show_image(enlarged_rocket_image, "3 times enlarged image")
+```
+<img src="rocket1.JPG" width="300">
+
+<p align="center">
+  <img src="rocket2.JPG" width="400">
+</p>
+
+📌 The image went from being 600 pixels wide to over 1700 and it still does not look poorly pixelated.
 
