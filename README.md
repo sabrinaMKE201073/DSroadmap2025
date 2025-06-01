@@ -31,6 +31,8 @@ Welcome to my learning repository! This repo contains:
 - ✅ Intro to Functions in Python
 ---
 
+## 🧠 Courses to be completed in June 2025
+
 | **Course**                               | **Estimated Time** | **Status**  |
 | ---------------------------------------- | ------------------ | ----------- |
 | 🔄 Image Processing in Python            | \~2 hours left     | In Progress |
@@ -74,8 +76,8 @@ An Explainable AI (XAI) approach to anomaly detection in financial transactions 
 ---
 
 📅 **June Goal Progress**:  
-[▓▓▓░░░░░░] 2 / 5 courses complete  
-[▓▓░░░░░░] 1 / 3 projects in progress  
+[▓▓░░░░░░] 1 / 6 courses complete  
+[░░░░░░░░] 0 / 3 projects in progress  
 
 ---
 
