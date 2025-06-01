@@ -361,3 +361,19 @@ show_image(image_resized, 'Resized image')
   <img src="dog2.JPG" width="300">
 </p>
 
+### Exercise 9: Morphology erosion on Handwritten letters
+
+```python
+# Import the morphology module
+from skimage import morphology
+
+# Obtain the eroded shape 
+eroded_image_shape = morphology.binary_erosion(upper_r_image)
+# See results
+show_image(upper_r_image, 'Original')
+show_image(eroded_image_shape, 'Eroded image')
+```
+<p align="center">
+  <img src="letterR.JPG" width="300">
+</p>
+📌 Erosion is useful for removing minor white noise.
