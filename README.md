@@ -12,7 +12,7 @@ Welcome to my learning repository! This repo contains:
 - **Languages:** Python, SQL  
 - **Libraries:** pandas, Seaborn, scikit-learn, OpenCV  
 - **Concepts:** EDA, Machine Learning, LLMs, Transfer Learning, XAI  
-- **Tools:** Jupyter, Git, GitHub, DataCamp, Coursera
+- **Tools:** Jupyter, Git, GitHub, DataCamp
 
 ---
 
