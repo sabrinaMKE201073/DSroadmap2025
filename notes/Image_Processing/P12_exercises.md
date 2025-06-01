@@ -263,6 +263,23 @@ show_image(image_eq, 'Resulting image')
   <img src="adap2.JPG" width="300">
 </p>
 
+---
+
+### Exercise 5: Contrast on cup of tea 
+
+<img src="cup1.JPG" width="200">
+
+```python
+from skimage import data, exposure
+original_image = data.coffee()
+adapthist_eq_image = exposure.equalize_adapthist(original_image,clip_limit=0.03)
+show_image(original_image)
+show_image(adapthist_eq_image, '#ImageProcessingDatacamp')
+```
+
+<p align="center">
+  <img src="cup2.JPG" width="300">
+</p>
 
 
 
