@@ -391,11 +391,11 @@ show_image(world_image, 'Original')
 show_image(dilated_image, 'Dilated image')
 ```
 <p align="center">
-  <img src="map1.JPG" width="300">
+  <img src="map1.JPG" width="400">
 </p>
 
 <p align="center">
-  <img src="map2.JPG" width="300">
+  <img src="map2.JPG" width="400">
 </p>
 
 📌 Dilation morphology method able to removed the noise of the segmented image and now it became more uniform.
