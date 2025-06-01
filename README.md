@@ -31,7 +31,7 @@ Welcome to my learning repository! This repo contains:
 - ✅ Intro to Functions in Python
 ---
 
-## 🧠 Courses to be completed in June 2025
+## 🎓 Courses Planned for June 2025
 
 | **Course**                               | **Estimated Time** | **Status**  |
 | ---------------------------------------- | ------------------ | ----------- |
