@@ -3,8 +3,16 @@
 
 Welcome to my learning repository! This repo contains:
 
-- My personal notes and code from the **DataCamp Associate Data Scientist** track  
+- My personal notes and code from my own planning track from Datacamp  
 - Plans and progress for **strategic AI/data projects** as part of my job search in 2025
+
+---
+
+## 🧰 Tools & Skills  
+- **Languages:** Python, SQL  
+- **Libraries:** pandas, Seaborn, scikit-learn, OpenCV  
+- **Concepts:** EDA, Machine Learning, LLMs, Transfer Learning, XAI  
+- **Tools:** Jupyter, Git, GitHub, DataCamp, Coursera
 
 ---
 
@@ -32,6 +40,8 @@ Welcome to my learning repository! This repo contains:
 | 🔜 Unsupervised Learning in Python       | \~4 hours          | Not started |
 | 🔜 ML with Tree-Based Models in Python   | \~5 hours          | Not started |
 
+### 📜 Upcoming Certification  
+- Python Data Associate (in progress)
   
 ---
 
@@ -63,18 +73,17 @@ An Explainable AI (XAI) approach to anomaly detection in financial transactions 
 
 ---
 
+📅 **June Goal Progress**:  
+[▓▓▓░░░░░░] 2 / 5 courses complete  
+[▓▓░░░░░░] 1 / 3 projects in progress  
+
+---
+
 ## 🔗 Connect With Me
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/nurulsabrina1910/)  
 - 📁 [Back to Main GitHub](https://github.com/sabrinaMKE201073)
 
----
-
-## 🔄 Ongoing Updates
-
-📆 Most Recent Update: [30 May 2025 Log](https://github.com/sabrinaMKE201073/DSroadmap2025/blob/main/daily-logs/2025-05-30.md)
-
-"Wrapping up May strong! 🔥 Finished functions in Python today and diving into image processing + Hugging Face. Lining things up for my food image classification project next. 🚀 #100DaysOfCode #AIEngineerJourney #DataScience"
 
 --- 
 
