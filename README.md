@@ -47,14 +47,6 @@ Welcome to my learning repository! This repo contains:
   
 ---
 
-## 🚀 Why I Created This Repo
-
-- 📌 To document and track my data science upskilling  
-- 💼 To build a public portfolio for job applications  
-- 🧪 To apply what I learn through real-world projects
-
----
-
 ## 💼 Portfolio Projects – June 2025 Plan
 
 I’m working on 3 focused, job-relevant portfolio projects:
