@@ -377,3 +377,29 @@ show_image(eroded_image_shape, 'Eroded image')
   <img src="letterR.JPG" width="300">
 </p>
 📌 Erosion is useful for removing minor white noise.
+
+---
+
+### Exercise 10: Morphology dilation on thresholded image
+
+```python
+from skimage import morphology
+
+dilated_image = morphology.binary_dilation(world_image)
+
+show_image(world_image, 'Original')
+show_image(dilated_image, 'Dilated image')
+```
+<p align="center">
+  <img src="map1.JPG" width="300">
+</p>
+
+<p align="center">
+  <img src="map2.JPG" width="300">
+</p>
+
+📌 Dilation morphology method able to removed the noise of the segmented image and now it became more uniform.
+
+
+
+
