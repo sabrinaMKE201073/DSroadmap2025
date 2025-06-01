@@ -334,3 +334,30 @@ show_image(enlarged_rocket_image, "3 times enlarged image")
 
 📌 The image went from being 600 pixels wide to over 1700 and it still does not look poorly pixelated.
 
+---
+
+### Exercise 8: Proportionally resizing
+
+```python
+# Import the module and function
+from skimage.transform import resize
+
+# Set proportional height so its half its size
+height = int(dogs_banner.shape[0] / 2)
+width = int(dogs_banner.shape[1] / 2)
+
+# Resize using the calculated proportional height and width
+image_resized = resize(dogs_banner, (height, width),
+                       anti_aliasing=True)
+
+# Show the original and resized image
+show_image(dogs_banner, 'Original')
+show_image(image_resized, 'Resized image')
+```
+
+<img src="dog1.JPG" width="300">
+
+<p align="center">
+  <img src="dog2.JPG" width="400">
+</p>
+
