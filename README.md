@@ -22,12 +22,17 @@ Welcome to my learning repository! This repo contains:
 - ✅ Understanding Artificial Intelligence
 - ✅ Intro to Functions in Python
 ---
-- 🔄 Image Processing in Python (Datacamp)
-- 🔄 Supervised Machine Learning: Regression and Classification *(Current progress on coursera)*
----
 
-- 🔜 Cleaning Data with Python *(Next)*   
-- 🔜 Introduction to Statistics in Python *(Next)*  
+| **Course**                               | **Estimated Time** | **Status**  |
+| ---------------------------------------- | ------------------ | ----------- |
+| 🔄 Image Processing in Python            | \~2 hours left     | In Progress |
+| 🔜 Cleaning Data with Python             | \~3 hours          | Not started |
+| 🔜 Intro to Statistics in Python         | \~3 hours          | Not started |
+| 🔜 Supervised Learning with scikit-learn | \~4 hours          | Not started |
+| 🔜 Unsupervised Learning in Python       | \~4 hours          | Not started |
+| 🔜 ML with Tree-Based Models in Python   | \~5 hours          | Not started |
+
+  
 ---
 
 ## 🚀 Why I Created This Repo
