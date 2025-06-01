@@ -271,8 +271,10 @@ show_image(image_eq, 'Resulting image')
 
 ```python
 from skimage import data, exposure
+
 original_image = data.coffee()
 adapthist_eq_image = exposure.equalize_adapthist(original_image,clip_limit=0.03)
+
 show_image(original_image)
 show_image(adapthist_eq_image, '#ImageProcessingDatacamp')
 ```
@@ -282,11 +284,33 @@ show_image(adapthist_eq_image, '#ImageProcessingDatacamp')
 </p>
 
 
+---
 
+### Exercise 6: Aliasing, rotating and rescaling of a cat
 
+<img src="cat1.JPG" width="200">
 
+```python
+from skimage.transform import rotate, rescale
 
+# Rotate the image 90 degrees clockwise 
+rotated_cat_image = rotate(image_cat, -90)
 
+# Rescale with anti aliasing
+rescaled_with_aa = rescale(rotated_cat_image, 1/4, anti_aliasing=True, multichannel=True)
+
+# Rescale without anti aliasing
+rescaled_without_aa = rescale(rotated_cat_image, 1/4, anti_aliasing=False, multichannel=True)
+
+show_image(rescaled_with_aa, "Transformed with anti aliasing")
+show_image(rescaled_without_aa, "Transformed without anti aliasing")
+```
+
+<p align="center">
+  <img src="cat2.JPG" width="400">
+</p>
+
+📌 Anti aliasing filter prevents the poor pixelation effect to happen, making it look better but also less sharp.
 
 
 
