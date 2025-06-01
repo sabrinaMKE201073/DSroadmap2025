@@ -246,6 +246,23 @@ show_image(xray_image_eq, 'Resulting image')
   <img src="xray_res.JPG" width="300">
 </p>
 
+---
+
+### Exercise 4: Contrast on aerial places 
+
+<img src="aerial1.JPG" width="200">
+
+```python
+from skimage import exposure
+image_eq =  exposure.equalize_adapthist(image_aerial,clip_limit=0.03)
+show_image(image_aerial, 'Original')
+show_image(image_eq, 'Resulting image')
+```
+
+<p align="center">
+  <img src="adap2.JPG" width="300">
+</p>
+
 
 
 
