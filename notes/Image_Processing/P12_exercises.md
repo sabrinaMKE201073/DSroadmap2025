@@ -358,6 +358,6 @@ show_image(image_resized, 'Resized image')
 <img src="dog1.JPG" width="300">
 
 <p align="center">
-  <img src="dog2.JPG" width="400">
+  <img src="dog2.JPG" width="300">
 </p>
 
