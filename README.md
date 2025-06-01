@@ -16,7 +16,7 @@ Welcome to my learning repository! This repo contains:
 
 ---
 
-## 🧠 Courses Covered So Far
+## 🧠 Courses Covered So Far (May 2025)
 
 - ✅ Introduction to Python  
 - ✅ Intermediate Python  
@@ -35,7 +35,7 @@ Welcome to my learning repository! This repo contains:
 
 | **Course**                               | **Estimated Time** | **Status**  |
 | ---------------------------------------- | ------------------ | ----------- |
-| 🔄 Image Processing in Python            | \~2 hours left     | In Progress |
+| ✅ Image Processing in Python            |                    | Completed   |
 | 🔜 Cleaning Data with Python             | \~3 hours          | Not started |
 | 🔜 Intro to Statistics in Python         | \~3 hours          | Not started |
 | 🔜 Supervised Learning with scikit-learn | \~4 hours          | Not started |
