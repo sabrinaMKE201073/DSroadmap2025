@@ -200,7 +200,7 @@ show_image(edge_sobel, "Edges with Sobel")
 
 ### Exercise 2: Using Gaussian filter (to reduce noise)
 
-<img src="building_image.JPG" width="100">
+<img src="building_image.JPG" width="200">
 
 ```python
 # Import Gaussian filter 
@@ -218,8 +218,33 @@ show_image(gaussian_image, "Reduced sharpness Gaussian")
   <img src="building_image_outtputt.JPG" width="400">
 </p>
 
+---
 
+### Exercise 3: Contrast on chest x-ray
 
+<img src="xray_in.JPG" width="200">
+
+```python
+# Import the required module
+from skimage import exposure
+
+# Show original x-ray image and its histogram
+show_image(chest_xray_image, 'Original x-ray')
+
+plt.title('Histogram of image')
+plt.hist(chest_xray_image.ravel(), bins=256)
+plt.show()
+
+# Use histogram equalization to improve the contrast
+xray_image_eq =  exposure.equalize_hist(chest_xray_image)
+
+# Show the resulting image
+show_image(xray_image_eq, 'Resulting image')
+```
+
+<p align="center">
+  <img src="xray_res.JPG" width="300">
+</p>
 
 
 
