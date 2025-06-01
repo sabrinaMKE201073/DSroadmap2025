@@ -29,13 +29,14 @@ Welcome to my learning repository! This repo contains:
 - ✅ Large Language Models (LLMs) Concepts  
 - ✅ Understanding Artificial Intelligence
 - ✅ Intro to Functions in Python
+- ✅ Image Processing in Python (completed on June 1, 2025)
+  
 ---
 
 ## 🎓 Courses Planned for June 2025
 
 | **Course**                               | **Estimated Time** | **Status**  |
 | ---------------------------------------- | ------------------ | ----------- |
-| ✅ Image Processing in Python            |                    | Completed   |
 | 🔜 Cleaning Data with Python             | \~3 hours          | Not started |
 | 🔜 Intro to Statistics in Python         | \~3 hours          | Not started |
 | 🔜 Supervised Learning with scikit-learn | \~4 hours          | Not started |
