@@ -1,4 +1,6 @@
-## Finding inconsistent categories
+## Data cleaning (data preparation steps)
+
+### Finding inconsistent categories
 > data that are needed to be dropped
 
 ### Example 1
