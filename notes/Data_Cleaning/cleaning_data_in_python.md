@@ -86,9 +86,28 @@ mappings = {'Monday':'weekday', 'Tuesday':'weekday', 'Wednesday': 'weekday',
 airlines['day_week'] = airlines['day'].replace(mappings)
 ```
 
+### Identify common patterns in what travelers are saying about the airport
+
+> Their response is stored in the `survey_response` column. Upon a closer look, you realized a few of the answers gave the shortest possible character amount without much substance.
+>
+> In this exercise, you will isolate the responses with a character count higher than 40 , and make sure your new DataFrame contains responses with 40 characters or more using an `assert` statement.
 
 
+```python
+# Store length of each row in survey_response column
+resp_length = airlines['survey_response'].str.len()
 
+# Find rows in airlines where resp_length > 40
+airlines_survey = airlines[resp_length > 40]
+
+# Assert minimum survey_response length is > 40
+assert airlines_survey['survey_response'].str.len().min() > 40
+
+# Print new survey_response column
+print(airlines_survey['survey_response'])
+```
+
+<img src="4a.JPG" width="500">
 
 
 
