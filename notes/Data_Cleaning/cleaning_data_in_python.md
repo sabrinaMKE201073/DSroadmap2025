@@ -88,6 +88,7 @@ airlines['day_week'] = airlines['day'].replace(mappings)
 
 ### Identify common patterns in what travelers are saying about the airport
 
+### Example 4
 > Their response is stored in the `survey_response` column. Upon a closer look, you realized a few of the answers gave the shortest possible character amount without much substance.
 >
 > In this exercise, you will isolate the responses with a character count higher than 40 , and make sure your new DataFrame contains responses with 40 characters or more using an `assert` statement.
@@ -109,8 +110,22 @@ print(airlines_survey['survey_response'])
 
 <img src="4a.JPG" width="500">
 
+---
+
+### Missing values
+### Example 5
+> You just received a new version of the `banking` DataFrame containing data on the amount held and invested for new and existing customers. However, there are rows with missing `inv_amount` values.
 
 
+```python
+# Print number of missing values in banking
+print(banking.isna().sum())
 
+# Visualize missingness matrix
+msno.matrix(banking)
+plt.show()
+```
+
+<img src="5a.JPG" width="250">
 
 
