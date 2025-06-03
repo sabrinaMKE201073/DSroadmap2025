@@ -42,6 +42,7 @@ Welcome to my learning repository! This repo contains:
 | 🔜 Supervised Learning with scikit-learn | \~4 hours          | Not started |
 | 🔜 Unsupervised Learning in Python       | \~4 hours          | Not started |
 | 🔜 ML with Tree-Based Models in Python   | \~5 hours          | Not started |
+| 🔜 Deep Learning for Images with PyTorch | \~5 hours          | Not started |
 
 ### 📜 Upcoming Certification  
 - Python Data Associate (in progress)
