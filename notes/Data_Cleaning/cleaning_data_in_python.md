@@ -128,4 +128,16 @@ plt.show()
 
 <img src="5a.JPG" width="250">
 
+```python
+# Isolate missing and non missing values of inv_amount
+missing_investors = banking[banking['inv_amount'].isna()]
+investors = banking[~banking['inv_amount'].isna()]
 
+# Sort banking by age and visualize
+banking_sorted = banking.sort_values(by='age')
+msno.matrix(banking_sorted)
+plt.show()
+```
+<img src="5b.JPG" width="250">
+
+*missing values are only due to young bank account holders not investing their money! Better set it to 0 with `.fillna()`.*
