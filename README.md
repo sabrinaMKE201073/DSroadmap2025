@@ -16,24 +16,29 @@ Welcome to my learning repository! This repo contains:
 
 ---
 
-## 🧠 Courses Completed During Career Break  
+## ✅ Courses Completed During Career Break  
 _(motto: consistency is the key!)_
 
-- ✅ Microsoft Power BI Workshop (completed on Feb 26, 2025)
-- ✅ Introduction to Python (completed on April 17, 2025)
-- ✅ Intermediate Python  (completed on April 27, 2025)
-- ✅ Data Manipulation with pandas  (completed on April 29, 2025)
-- ✅ Joining Data with pandas (completed on May 3, 2025)
-- ✅ Introduction to SQL (completed on May 7, 2025)
-- ✅ Intermediate SQL (completed on May 9, 2025)
-- ✅ Introduction to Data Visualization with Seaborn (completed on May 17, 2025)
-- ✅ Large Language Models (LLMs) Concepts  (completed on May 21, 2025)
-- ✅ Understanding Artificial Intelligence (completed on May 21, 2025)
-- ✅ EDA in Python (completed on May 22, 2025)  
-- ✅ Intro to Functions in Python (completed on May 30, 2025)
-- ✅ Image Processing in Python (completed on June 1, 2025)
-- ✅ Cleaning Data with Python (completed on June 4, 2025)
-  
+
+| **Course**                                      | **Completion Date** |
+|------------------------------------------------|----------------------|
+| Microsoft Power BI Workshop                    | Feb 26, 2025         |
+| Introduction to Python                         | Apr 17, 2025         |
+| Intermediate Python                            | Apr 27, 2025         |
+| Data Manipulation with pandas                  | Apr 29, 2025         |
+| Joining Data with pandas                       | May 3, 2025          |
+| Introduction to SQL                            | May 7, 2025          |
+| Intermediate SQL                               | May 9, 2025          |
+| Introduction to Data Visualization with Seaborn| May 17, 2025         |
+| Large Language Models (LLMs) Concepts          | May 21, 2025         |
+| Understanding Artificial Intelligence          | May 21, 2025         |
+| Exploratory Data Analysis in Python            | May 22, 2025         |
+| Intro to Functions in Python                   | May 30, 2025         |
+| Image Processing in Python                     | June 1, 2025         |
+| Cleaning Data with Python                      | June 4, 2025         |
+
+> 🎯 **14 courses completed** from Feb–June 2025 — consistent progress every month!
+
 ---
 
 ## 🎓 Courses Planned for June 2025
