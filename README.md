@@ -30,6 +30,7 @@ Welcome to my learning repository! This repo contains:
 - ✅ Understanding Artificial Intelligence
 - ✅ Intro to Functions in Python
 - ✅ Image Processing in Python (completed on June 1, 2025)
+- ✅ Cleaning Data with Python (completed on June 4, 2025)
   
 ---
 
@@ -37,7 +38,6 @@ Welcome to my learning repository! This repo contains:
 
 | **Course**                               | **Estimated Time** | **Status**  |
 | ---------------------------------------- | ------------------ | ----------- |
-| 🔜 Cleaning Data with Python             | \~3 hours          | Not started |
 | 🔜 Intro to Statistics in Python         | \~3 hours          | Not started |
 | 🔜 Supervised Learning with scikit-learn | \~4 hours          | Not started |
 | 🔜 Unsupervised Learning in Python       | \~4 hours          | Not started |
@@ -70,8 +70,12 @@ An Explainable AI (XAI) approach to anomaly detection in financial transactions 
 ---
 
 📅 **June Goal Progress**:  
-[▓▓░░░░░░] 1 / 6 courses complete  
+[▓▓░░░░░░] 2 / 7 courses complete  
 [░░░░░░░░] 0 / 3 projects in progress  
+
+---
+
+“Just wrapped up Cleaning Data in Python 🧹 — excited to apply these skills to my projects! Next up: Statistics & Supervised ML. #DataScience #LearningJourney”
 
 ---
 
