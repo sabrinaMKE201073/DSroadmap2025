@@ -164,10 +164,11 @@ full_restaurants = restaurants.append(non_dup)
 print(full_restaurants)
 ```
 
-<img src="6a.JPG" width="400">
+<img src="6a.JPG" width="500">
 
 ---
 
+*Linking the DataFrames is arguably the most straightforward step of record linkage. You are now ready to get started on that recommendation engine!*
 
 
 
