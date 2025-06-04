@@ -38,7 +38,7 @@ Welcome to my learning repository! This repo contains:
 
 | **Course**                               | **Estimated Time** | **Status**  |
 | ---------------------------------------- | ------------------ | ----------- |
-| 🔜 Intro to Statistics in Python         | \~3 hours          | Not started |
+| 📝 Intro to Statistics in Python         | \~3 hours          | In progress |
 | 🔜 Supervised Learning with scikit-learn | \~4 hours          | Not started |
 | 🔜 Unsupervised Learning in Python       | \~4 hours          | Not started |
 | 🔜 ML with Tree-Based Models in Python   | \~5 hours          | Not started |
