@@ -141,3 +141,33 @@ plt.show()
 <img src="5b.JPG" width="250">
 
 *missing values are only due to young bank account holders not investing their money! Better set it to 0 with `.fillna()`.*
+
+---
+
+### Linking them together
+### Example 6
+> You've generated the different pairs of potentially matching rows, searched for exact matches between the `cuisine_type` and `city` columns, but compared for similar strings in the `rest_name` column. You stored the DataFrame containing the scores in `potential_matches`.
+> Now it's finally time to link both DataFrames. 
+
+```python
+# Isolate potential matches with row sum >=3
+matches = potential_matches[potential_matches.sum(axis = 1) >= 3]
+
+# Get values of second column index of matches
+matching_indices = matches.index.get_level_values(1)
+
+# Subset restaurants_new based on non-duplicate values
+non_dup = restaurants_new[~restaurants_new.index.isin(matching_indices)]
+
+# Append non_dup to restaurants
+full_restaurants = restaurants.append(non_dup)
+print(full_restaurants)
+```
+
+<img src="6a.JPG" width="400">
+
+---
+
+
+
+
