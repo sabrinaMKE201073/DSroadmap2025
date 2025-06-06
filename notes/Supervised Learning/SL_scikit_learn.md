@@ -1,3 +1,8 @@
+## Exercise 1: KNN model performance example for churn dataset
+
+> Interpreting model complexity is a great way to evaluate supervised learning performance. Your aim is to produce a model that can interpret the relationship between features and the target variable, as well as generalize well when exposed to new observations.
+> The training and test sets have been created from the churn_df dataset and preloaded as X_train, X_test, y_train, and y_test.
+
 ```python
 # Import the module
 from sklearn.model_selection import train_test_split
@@ -51,7 +56,7 @@ plt.show()
 ```
 
 <left>
-  <img src="1.JPG" width="250">
+  <img src="1.JPG" width="400">
 </left>
 
 Training accuracy decreases and test accuracy increases as the number of neighbors gets larger. For the test set, accuracy peaks with 7 neighbors, suggesting it is the optimal value for our model.
