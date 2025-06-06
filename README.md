@@ -38,7 +38,7 @@ _(motto: consistency is the key!)_
 | Cleaning Data with Python                      | June 4, 2025         |
 | Intro to Statistics in Python                  | June 6, 2025         |
 
-> 🎯 **14 courses completed** from Feb–June 2025 — consistent progress every month!
+> 🎯 **15 courses completed** from Feb–June 2025 — consistent progress every month!
 
 ---
 
