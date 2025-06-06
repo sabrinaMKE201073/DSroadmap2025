@@ -36,6 +36,7 @@ _(motto: consistency is the key!)_
 | Intro to Functions in Python                   | May 30, 2025         |
 | Image Processing in Python                     | June 1, 2025         |
 | Cleaning Data with Python                      | June 4, 2025         |
+| Intro to Statistics in Python                  | June 6, 2025         |
 
 > 🎯 **14 courses completed** from Feb–June 2025 — consistent progress every month!
 
@@ -45,8 +46,7 @@ _(motto: consistency is the key!)_
 
 | **Course**                               | **Estimated Time** | **Status**     |
 | ---------------------------------------- | ------------------ | -------------- |
-| 🟡 Intro to Statistics in Python         | ~3 hours           | ⏳ In Progress |
-| 🔜 Supervised Learning with scikit-learn | ~4 hours           | Not Started    |
+| 🔜 Supervised Learning with scikit-learn | ~4 hours           | ⏳ In Progress |
 | 🔜 Unsupervised Learning in Python       | ~4 hours           | Not Started    |
 | 🔜 ML with Tree-Based Models in Python   | ~5 hours           | Not Started    |
 | 🔜 Deep Learning for Images with PyTorch | ~5 hours           | Not Started    |
@@ -77,7 +77,7 @@ An Explainable AI (XAI) approach to anomaly detection in financial transactions 
 ---
 
 📅 **June Goal Progress**:  
-[▓▓░░░░░░] 2 / 7 courses complete  
+[▓▓▓▓░░░░] 3 / 7 courses complete  
 [░░░░░░░░] 0 / 3 projects in progress  
 
 ---
