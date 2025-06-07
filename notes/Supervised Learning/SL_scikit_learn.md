@@ -1,3 +1,5 @@
+# Machine learning with scikit-learn
+
 ## Exercise 1: KNN model performance example for churn dataset
 
 > Interpreting model complexity is a great way to evaluate supervised learning performance. Your aim is to produce a model that can interpret the relationship between features and the target variable, as well as generalize well when exposed to new observations.
