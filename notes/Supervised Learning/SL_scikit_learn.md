@@ -1,5 +1,4 @@
-# Machine learning with scikit-learn
-
+# Machine learning 
 ## SUPERVISED LEARNING WITH SCIKIT- LEARN
 
 ### Exercise 1: KNN model performance example for churn dataset
