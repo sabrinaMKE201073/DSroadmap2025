@@ -37,8 +37,10 @@ _(motto: consistency is the key!)_
 | Image Processing in Python                     | June 1, 2025         |
 | Cleaning Data with Python                      | June 4, 2025         |
 | Intro to Statistics in Python                  | June 6, 2025         |
+| Introduction to Importing Data in Python       | June 12, 2025        |
+| Intermediate Importing Data in Python          | June 13, 2025        |
 
-> 🎯 **15 courses completed** from Feb–June 2025 — consistent progress every month!
+> 🎯 **17 courses completed** from Feb–June 2025 — consistent progress every month!
 
 ---
 
@@ -50,44 +52,11 @@ _(motto: consistency is the key!)_
 | 🔜 Unsupervised Learning in Python       | ~4 hours           | Not Started    |
 | 🔜 ML with Tree-Based Models in Python   | ~5 hours           | Not Started    |
 | 🔜 Deep Learning for Images with PyTorch | ~5 hours           | Not Started    |
-
-### 📜 Upcoming Certification  
-- 🏅 Python Data Associate — *In Progress*
   
 ---
 
-## 💼 Portfolio Projects – June 2025 Plan
-
-I’m working on 3 focused, job-relevant portfolio projects:
-
-### 🧠 CareerMatchAI  
-A Personalized Job Recommender System using LLM/NLP and content-based filtering  
-> *Helps job seekers match to relevant roles based on resume and job description text*
-
-### 🐦 BirdNet++  
-Upgraded version of my master’s thesis: CNN-based Fine-Grained Bird Species Classification with transfer learning  
-> *Improves classification accuracy for similar-looking bird species using transfer learning*
-
-### 💸 TransactiScan  
-An Explainable AI (XAI) approach to anomaly detection in financial transactions for AML compliance  
-> *Detects suspicious transactions and provides human-readable explanations for analysts*
-
-🎯 **Target:** Complete at least **2 projects by June 15, 2025**
-
----
-
 📅 **June Goal Progress**:  
-[▓▓▓▓░░░░] 3 / 7 courses complete  
-[░░░░░░░░] 0 / 3 projects in progress  
-
----
-
-## 📣 Latest Update  
-
-> “Just wrapped up **Cleaning Data in Python** 🧹 — excited to apply these skills to my projects!  
-> Next up: **Statistics & Supervised ML** 💪  
->  
-> #DataScience #LearningJourney #AIProjects #Python”
+[▓▓▓▓░░░░] 5 / 9 courses complete  
 
 ---
 
