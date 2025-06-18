@@ -63,3 +63,29 @@ plt.show()
 </left>
 
 Training accuracy decreases and test accuracy increases as the number of neighbors gets larger. For the test set, accuracy peaks with 7 neighbors, suggesting it is the optimal value for our model.
+
+
+---
+
+### Exercise 2: Visualizing a linear regression model
+
+```python
+# Import matplotlib.pyplot
+import matplotlib.pyplot as plt
+
+# Create scatter plot
+plt.scatter(X, y, color="blue")
+
+# Create line plot
+plt.plot(X, predictions, color="red")
+plt.xlabel("Radio Expenditure ($)")
+plt.ylabel("Sales ($)")
+
+# Display the plot
+plt.show()
+```
+
+<img src="regression1.JPG" width="300">
+
+
+
