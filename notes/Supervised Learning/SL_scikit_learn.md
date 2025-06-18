@@ -62,7 +62,7 @@ plt.show()
   <img src="1.JPG" width="400">
 </left>
 
-Training accuracy decreases and test accuracy increases as the number of neighbors gets larger. For the test set, accuracy peaks with 7 neighbors, suggesting it is the optimal value for our model.
+🔍Training accuracy decreases and test accuracy increases as the number of neighbors gets larger. For the test set, accuracy peaks with 7 neighbors, suggesting it is the optimal value for our model.
 
 
 ---
@@ -87,5 +87,7 @@ plt.show()
 
 <img src="regression1.JPG" width="300">
 
+🔍The model nicely captures a near-perfect linear correlation between radio advertising expenditure and sales!
 
+---
 
