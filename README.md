@@ -46,12 +46,13 @@ _(motto: consistency is the key!)_
 
 ## 🎓 Courses Planned for June 2025
 
-| **Course**                               | **Estimated Time** | **Status**     |
-| ---------------------------------------- | ------------------ | -------------- |
-| 🔜 Supervised Learning with scikit-learn | ~4 hours           | ⏳ In Progress |
-| 🔜 Unsupervised Learning in Python       | ~4 hours           | Not Started    |
-| 🔜 ML with Tree-Based Models in Python   | ~5 hours           | Not Started    |
-| 🔜 Deep Learning for Images with PyTorch | ~5 hours           | Not Started    |
+| **Course**                                          | **Estimated Time** | **Status**     | **Priority**    |
+| --------------------------------------------------- | ------------------ | -------------- | --------------- |
+| ✅ **Data Governance Fundamentals** (Datacamp)       | \~10 hours         | 🟡 In Progress | 🔥 Top Priority |
+| 🔜 Supervised Learning with scikit-learn (Datacamp) | \~4 hours          | ⏳ In Progress  | Medium          |
+| 🔜 Unsupervised Learning in Python (DataCamp)       | \~4 hours          | Not Started    | Low             |
+| 🔜 ML with Tree-Based Models in Python (DataCamp)   | \~5 hours          | Not Started    | Low             |
+| 🔜 Deep Learning for Images with PyTorch (DataCamp) | \~5 hours          | Not Started    | Low             |
   
 ---
 
