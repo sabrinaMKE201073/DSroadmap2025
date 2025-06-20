@@ -41,7 +41,7 @@ _(motto: consistency is the key!)_
 | Intermediate Importing Data in Python          | June 13, 2025        |
 | Introduction to Data Privacy                   | June 20, 2025        |
 
-> 🎯 **17 courses completed** from Feb–June 2025 — consistent progress every month!
+> 🎯 **18 courses completed** from Feb–June 2025 — consistent progress every month!
 
 ---
 
