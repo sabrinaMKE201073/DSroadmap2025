@@ -40,8 +40,9 @@ _(motto: consistency is the key!)_
 | Introduction to Importing Data in Python       | June 12, 2025        |
 | Intermediate Importing Data in Python          | June 13, 2025        |
 | Introduction to Data Privacy                   | June 20, 2025        |
+| Introduction to Data Security                  | June 24, 2025        |
 
-> 🎯 **18 courses completed** from Feb–June 2025 — consistent progress every month!
+> 🎯 **19 certifications courses completed** from Feb–June 2025 — consistent progress every month!
 
 ---
 
@@ -49,7 +50,7 @@ _(motto: consistency is the key!)_
 
 | **Course**                                          | **Estimated Time** | **Status**     | **Priority**    |
 | --------------------------------------------------- | ------------------ | -------------- | --------------- |
-| ✅ **Data Governance Fundamentals** (Datacamp)       | \~8 hours         | 🟡 In Progress | 🔥 Top Priority |
+| ✅ **Data Governance Concepts** (Datacamp)          | \~2 hours         | 🟡 In Progress | 🔥 Top Priority |
 | 🔜 Supervised Learning with scikit-learn (Datacamp) | \~4 hours          | ⏳ In Progress  | Medium          |
 | 🔜 Unsupervised Learning in Python (DataCamp)       | \~4 hours          | Not Started    | Low             |
 | 🔜 ML with Tree-Based Models in Python (DataCamp)   | \~5 hours          | Not Started    | Low             |
