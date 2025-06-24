@@ -19,6 +19,7 @@ Welcome to my learning repository! This repo contains:
 ## ✅ Courses Completed During Career Break  
 _(motto: consistency is the key!)_
 
+> “This repo documents my consistent upskilling journey during my 2025 career break — with a focus on data science, Python, analytics, and data privacy fundamentals.”
 
 | **Course**                                      | **Completion Date** |
 |------------------------------------------------|----------------------|
