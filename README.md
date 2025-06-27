@@ -88,6 +88,3 @@ This learning journey is designed to prepare me for hybrid roles across:
 
 🚀 *I’ll continue updating this folder with upcoming lessons and project releases. Stay tuned!*
 
----
-
-🚀 I’ll keep updating this folder as I complete more lessons. Stay tuned!
