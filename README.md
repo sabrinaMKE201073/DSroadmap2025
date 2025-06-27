@@ -1,5 +1,6 @@
-# 🧭 DSroadmap2025  
-## 📊 Data Science Learning Journey + AI Portfolio Projects
+# 🧭 DSroadmap2025 
+
+### 📈 Strengthening My Skills in Data, AI & Privacy + AI Portfolio Projects (2025)
 
 Welcome! 
 This repository documents my self-driven learning and portfolio-building journey during my 2025 career break — starting from a 3-month pause to recharge, followed by a structured return to upskilling in data science, AI, and data privacy.
