@@ -2,7 +2,7 @@
 
 ### 📈 Strengthening My Skills in Data, AI & Privacy + AI Portfolio Projects (2025)
 
-Welcome! 
+Welcome!  
 This repository documents my self-driven learning and portfolio-building journey during my 2025 career break — starting from a 3-month pause to recharge, followed by a structured return to upskilling in data science, AI, and data privacy.
 
 - 📘 Personal notes and code from my structured learning path (DataCamp + self-learning)
@@ -76,25 +76,48 @@ This repository documents my self-driven learning and portfolio-building journey
 
 ---
 
-## 🎯 Career Relevance
+## 🧭 Long-Term Path: Data Scientist 2025+
 
-This learning journey is designed to prepare me for hybrid roles across:
+> _“This roadmap supports my long-term transition into full-time data science roles by end of 2025 — combining technical fluency, ethical awareness, and real-world project delivery.”_
 
-- **Data Privacy & Governance** (e.g., regulatory compliance, DPO support, risk-aware data workflows)  
-- **AI & Responsible Innovation** (e.g., LLM ecosystems, explainable models, data-centric AI projects)  
-- **Cross-functional tech teams** (using analytics, coding, and ethical insights to bridge tech & business)
+### 🔄 Next Phases
+
+**📅 August–September**  
+- Resume machine learning foundations  
+- Topics: supervised learning, model evaluation, tree-based models (scikit-learn)
+
+**📅 October–November**  
+- Deepen skills in deep learning and image analysis  
+- Tools: PyTorch, CNNs, transfer learning  
+- Focus on computer vision and real-time model deployment
+
+**📅 November–December**  
+- Explore LLM applications and data-centric AI  
+- Topics: prompt engineering, fine-tuning basics, text generation pipelines  
+- Tools: Hugging Face Transformers, open-source LLMs
+
+**📌 Throughout 2025**  
+- Build and document portfolio projects  
+- Apply knowledge in practical, ethical, and business-aware contexts  
+- Maintain consistent technical growth across Python, ML, and AI domains
 
 ---
 
+## 🎯 Career Relevance
+
+This roadmap is designed to support roles in:
+
+- **Data Science & AI Engineering** – modeling, experimentation, automation  
+- **Data Privacy & Governance** – ethical AI, regulatory understanding, secure data handling  
+- **Cross-Functional Data Teams** – collaborating across analytics, product, and engineering
+
+---
 
 ## 🔗 Connect With Me
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/nurulsabrina1910/)  
 - 📁 [Back to Main GitHub](https://github.com/sabrinaMKE201073)
 
-
---- 
-
+---
 
 🚀 *I’ll continue updating this folder with upcoming lessons and project releases. Stay tuned!*
-
