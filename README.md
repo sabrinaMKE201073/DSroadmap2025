@@ -50,20 +50,29 @@ This repository documents my self-driven learning and portfolio-building journey
 
 ---
 
-## 🎓 Courses Planned (June 2025 Final Stretch)
+## 📘 July 2025 Learning Roadmap: Applied Data Skills
 
-| **Course**                                          | **Est. Time** | **Status**     | **Priority**    |
-| --------------------------------------------------- | ------------- | -------------- | --------------- |
-| Supervised Learning with scikit-learn (DataCamp)    | ~4 hrs        | ⏳ In Progress  | Medium          |
-| Unsupervised Learning in Python (DataCamp)          | ~4 hrs        | Not Started    | Low             |
-| ML with Tree-Based Models in Python (DataCamp)      | ~5 hrs        | Not Started    | Low             |
-| Deep Learning for Images with PyTorch (DataCamp)    | ~5 hrs        | Not Started    | Low             |
+> _"Focused learning to strengthen core skills in Excel, SQL, and Power BI for data cleaning, analysis, and insight communication."_  
+
+| **Step** | **Course**                                      | **Platform** | **Focus Area**             | **Priority** |
+|---------|--------------------------------------------------|--------------|-----------------------------|--------------|
+| 1️⃣     | Data Preparation in Excel                        | DataCamp     | Excel (cleaning + formulas) | Very High    |
+| 2️⃣     | Data Analysis in Excel                           | DataCamp     | Excel (insights + pivots)   | Very High    |
+| 3️⃣     | Joining Data in SQL                              | DataCamp     | SQL (joins & structure)     | High         |
+| 4️⃣     | Analyzing Business Data in SQL                   | DataCamp     | SQL (business KPIs)         | High         |
+| 5️⃣     | Introduction to Power BI                         | DataCamp     | Power BI (interface + charts)| Medium-High  |
+| 6️⃣     | Introduction to DAX in Power BI                  | DataCamp     | Power BI (metrics + logic)  | Medium-High  |
+| 7️⃣     | Data Visualization in Power BI                   | DataCamp     | Power BI (dashboard design) | Medium-High  |
+| 8️⃣     | Data Preparation in Power BI                     | DataCamp     | Power BI (Power Query)      | Medium       |
+
+📌 _Optional (Late July/August)_:  
+• **Data Modeling in Power BI** — for multi-table dashboards  
+• **Customer Churn Case Study** — for hands-on portfolio development  
 
 ---
 
-
-📅 **June Goal Progress:**  
-`[▓▓▓▓▓░░░░]` **8 / 12 courses completed** *(as of June 24, 2025)*
+📅 **July Focus:**  
+`[░░░░░░░░]` *Starting July 1 – applying tools that turn raw data into insights.*
 
 ---
 
