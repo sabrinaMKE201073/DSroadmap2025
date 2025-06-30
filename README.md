@@ -80,6 +80,11 @@ This repository documents my self-driven learning and portfolio-building journey
 
 > _“This roadmap supports my long-term transition into full-time data science roles by end of 2025 — combining technical fluency, ethical awareness, and real-world project delivery.”_
 
+## 📊 Learning Timeline (Jul–Dec 2025)
+
+![DSroadmap2025 Timeline](./dsroadmap2025_timeline.png)
+
+
 ### 🔄 Next Phases
 
 **📅 August–September**  
