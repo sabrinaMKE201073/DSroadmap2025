@@ -19,51 +19,40 @@ This repository documents my self-driven learning and portfolio-building journey
 
 ---
 
-## ✅ Certifications Completed During Career Break (Feb–Jun 2025)
+## ✅ Certifications & Active Learning Tracker (2025)
 
 > _"Consistency is key — this section reflects my structured growth in analytics, AI, and data protection principles."_
 
-| **Course**                                      | **Completion Date** |
-|------------------------------------------------|----------------------|
-| Microsoft Power BI Workshop                    | Feb 26, 2025         |
-| Introduction to Python                         | Apr 17, 2025         |
-| Intermediate Python                            | Apr 27, 2025         |
-| Data Manipulation with pandas                  | Apr 29, 2025         |
-| Joining Data with pandas                       | May 3, 2025          |
-| Introduction to SQL                            | May 7, 2025          |
-| Intermediate SQL                               | May 9, 2025          |
-| Seaborn: Data Visualization                    | May 17, 2025         |
-| Large Language Models (LLMs) Concepts          | May 21, 2025         |
-| Understanding Artificial Intelligence          | May 21, 2025         |
-| Exploratory Data Analysis in Python            | May 22, 2025         |
-| Intro to Functions in Python                   | May 30, 2025         |
-| Image Processing in Python                     | Jun 1, 2025          |
-| Cleaning Data with Python                      | Jun 4, 2025          |
-| Statistics in Python                           | Jun 6, 2025          |
-| Importing Data in Python (Beginner)            | Jun 12, 2025         |
-| Importing Data in Python (Intermediate)        | Jun 13, 2025         |
-| Introduction to Data Privacy                   | Jun 20, 2025         |
-| Introduction to Data Security                  | Jun 24, 2025         |
-| Data Governance Concepts                       | Jun 24, 2025         |
-
-> 🎯 **20 certification courses** completed — blending technical fluency with data governance and AI foundations.
-
----
-
-## 📘 July 2025 Learning Roadmap: Applied Data Skills
-
-> _"Focused learning to strengthen core skills in Excel, SQL, and Power BI for data cleaning, analysis, and insight communication."_  
-
-| **Step** | **Course**                                      | **Platform** | **Focus Area**             | **Priority** |
-|---------|--------------------------------------------------|--------------|-----------------------------|--------------|
-| 1️⃣     | Data Preparation in Excel                        | DataCamp     | Excel (cleaning + formulas) | Very High    |
-| 2️⃣     | Data Analysis in Excel                           | DataCamp     | Excel (insights + pivots)   | Very High    |
-| 3️⃣     | Joining Data in SQL                              | DataCamp     | SQL (joins & structure)     | High         |
-| 4️⃣     | Analyzing Business Data in SQL                   | DataCamp     | SQL (business KPIs)         | High         |
-| 5️⃣     | Introduction to Power BI                         | DataCamp     | Power BI (interface + charts)| Medium-High  |
-| 6️⃣     | Introduction to DAX in Power BI                  | DataCamp     | Power BI (metrics + logic)  | Medium-High  |
-| 7️⃣     | Data Visualization in Power BI                   | DataCamp     | Power BI (dashboard design) | Medium-High  |
-| 8️⃣     | Data Preparation in Power BI                     | DataCamp     | Power BI (Power Query)      | Medium       |
+| ✅ | **Course**                              | **Platform**   | **Focus Area**                          | **Completion Date** | **Priority**   |
+| - | --------------------------------------- | -------------- | --------------------------------------- | ------------------- | -------------- |
+| ✅ | Microsoft Power BI Workshop             | BelajarPowerBI | Power BI Workshop                       | Feb 26, 2025        | —              |
+| ✅ | Introduction to Python                  | DataCamp       | Python Basics                           | Apr 17, 2025        | —              |
+| ✅ | Intermediate Python                     | DataCamp       | Python Control Structures               | Apr 27, 2025        | —              |
+| ✅ | Data Manipulation with pandas           | DataCamp       | Data Wrangling                          | Apr 29, 2025        | —              |
+| ✅ | Joining Data with pandas                | DataCamp       | Data Integration                        | May 3, 2025         | —              |
+| ✅ | Introduction to SQL                     | DataCamp       | SQL Basics                              | May 7, 2025         | —              |
+| ✅ | Intermediate SQL                        | DataCamp       | SQL Aggregations                        | May 9, 2025         | —              |
+| ✅ | Seaborn: Data Visualization             | DataCamp       | Data Visualization                      | May 17, 2025        | —              |
+| ✅ | Large Language Models (LLMs) Concepts   | DataCamp       | AI Foundation                           | May 21, 2025        | —              |
+| ✅ | Understanding Artificial Intelligence   | DataCamp       | AI Basics                               | May 21, 2025        | —              |
+| ✅ | Exploratory Data Analysis in Python     | DataCamp       | EDA Techniques                          | May 22, 2025        | —              |
+| ✅ | Intro to Functions in Python            | DataCamp       | Python Functions                        | May 30, 2025        | —              |
+| ✅ | Image Processing in Python              | DataCamp       | OpenCV/Image Preprocessing              | Jun 1, 2025         | —              |
+| ✅ | Cleaning Data with Python               | DataCamp       | Data Cleaning                           | Jun 4, 2025         | —              |
+| ✅ | Statistics in Python                    | DataCamp       | Descriptive Stats + Distributions       | Jun 6, 2025         | —              |
+| ✅ | Importing Data in Python (Beginner)     | DataCamp       | Data Import                             | Jun 12, 2025        | —              |
+| ✅ | Importing Data in Python (Intermediate) | DataCamp       | Data Sources + APIs                     | Jun 13, 2025        | —              |
+| ✅ | Introduction to Data Privacy            | DataCamp       | Data Protection Concepts                | Jun 20, 2025        | —              |
+| ✅ | Introduction to Data Security           | DataCamp       | Cybersecurity Principles                | Jun 24, 2025        | —              |
+| ✅ | Data Governance Concepts                | DataCamp       | Compliance + Governance                 | Jun 24, 2025        | —              |
+| ✅ | Data Preparation in Excel               | DataCamp       | Excel (cleaning + formulas)             | Jul 8, 2025         | 🔴 Very High   |
+| ⬜ | Data Analysis in Excel                  | DataCamp       | Excel (insights + pivots)               | —                   | 🔴 Very High   |
+| ⬜ | Joining Data in SQL                     | DataCamp       | SQL (joins & structure)                 | —                   | 🟠 High        |
+| ⬜ | Analyzing Business Data in SQL          | DataCamp       | SQL (KPIs & business use cases)         | —                   | 🟠 High        |
+| ⬜ | Introduction to Power BI                | DataCamp       | Power BI (interface + visuals)          | —                   | 🟡 Medium-High |
+| ⬜ | Introduction to DAX in Power BI         | DataCamp       | Power BI (logic + calculations)         | —                   | 🟡 Medium-High |
+| ⬜ | Data Visualization in Power BI          | DataCamp       | Power BI (dashboard design)             | —                   | 🟡 Medium-High |
+| ⬜ | Data Preparation in Power BI            | DataCamp       | Power BI (Power Query + transformation) | —                   | 🟢 Medium      |
 
 📌 _Optional (Late July/August)_:  
 • **Data Modeling in Power BI** — for multi-table dashboards  
