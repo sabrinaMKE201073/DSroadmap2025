@@ -56,6 +56,8 @@ This repository documents my self-driven learning and portfolio-building journey
 | 5️⃣ | Analyzing Business Data in SQL  | 🔁 After   | 📊 Analytical |
 | 6️⃣ | Data Analysis in Excel          | ⏳ Later    | 😴 Low energy |
 
+> 🎯 21 certification courses completed — combining hands-on skills with foundational knowledge in Python, SQL, AI, and data governance.
+
 📌 _Optional (Late July/August)_:  
 • **Data Modeling in Power BI** — for multi-table dashboards  
 • **Customer Churn Case Study** — for hands-on portfolio development  
@@ -63,7 +65,7 @@ This repository documents my self-driven learning and portfolio-building journey
 ---
 
 📅 **July Focus:**  
-`[░░░░░░░░]` *Starting July 1 – applying tools that turn raw data into insights.*
+`[█░░░░░░░]` *Starting July 1 – applying tools that turn raw data into insights.*
 
 ---
 
